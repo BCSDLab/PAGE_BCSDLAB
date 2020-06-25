@@ -27,10 +27,10 @@
         </div>
         <div class="card-body">
           <p class="title">◆ 포지션</p>
-          <span>20-1기 {{ data.contents.track }} {{ data.position }}</span>
+          <span>20-3기 {{ data.contents.track }} {{ data.position }}</span>
 
           <p class="title">◆ 지원기간</p>
-          <span>2019년 12월 17일 ~ 2019년 12월 30일</span>
+          <span>2020년 06월 23일 ~ 2020년 07월 23일</span>
 
           <p class="title">◆ 지원조건</p>
           <ul class="list">
