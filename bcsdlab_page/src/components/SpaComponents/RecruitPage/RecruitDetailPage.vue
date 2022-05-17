@@ -22,7 +22,7 @@
           </div>
           <div
             class="d-day">
-            {{ setDday }}
+            <!-- {{ setDday }} -->
           </div>
         </div>
         <div class="card-body">
@@ -30,7 +30,7 @@
           <span>20-3기 {{ data.contents.track }} {{ data.position }}</span>
 
           <p class="title">◆ 지원기간</p>
-          <span>2020년 06월 23일 ~ 2020년 07월 23일</span>
+          <span>{{recruitDatas[0].period}}</span>
 
           <p class="title">◆ 지원조건</p>
           <ul class="list">
@@ -77,7 +77,7 @@
         <div class="card-footer">
           <a
             target="_blank"
-            href="http://bitly.kr/GWZKcwD">
+            href="https://forms.gle/Yc532QgUHETc7eez7">
             <button class="apply-btn">
               지원하기
             </button>
@@ -106,7 +106,8 @@ export default {
   data() {
     return {
       data: null,
-      date: new Date()
+      date: new Date(),
+      recruitDatas
     }
   },
   computed: {
