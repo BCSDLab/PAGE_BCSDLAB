@@ -418,7 +418,7 @@ export const trackDatas = [
             'title': 'Front-End란 무엇인가?'
           },
           {
-            'title': '강의듣고 따라가며 HTML+CSS에 익숙해지기',
+            'title': 'HTML+CSS',
             'descriptions': [
               'WEB1 - HTML & Internet',
               'WEB2 - CSS'
@@ -467,7 +467,7 @@ export const trackDatas = [
               '정규표현식',
               'JSON',
               'Event Handler',
-              '실습 2: JS 실습(지난 주차에 만드신 .html 파일과 .css 파일을 이용해 실제 동작을 위한 script문을 추가)'
+              '실습 2: JS 실습'
             ]
           },
           {
@@ -492,7 +492,7 @@ export const trackDatas = [
             'descriptions': [
               'Document - Web API',
               'Window - Web API',
-              '각각의 property, method 정리'
+              'property, method 정리'
             ]
           }
         ]
@@ -548,7 +548,7 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'Web Storage 각각의 목적, 사용이유, 장단점, 사용방법 정리',
+            'title': 'Web Storage',
             'descriptions': [
               'cookie',
               'session storage',
@@ -561,7 +561,7 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'FE Framework는 무엇인가? 왜 React를 사용하는가?',
+            'title': 'FE Framework는 무엇인가?',
           },
           {
             'title': 'React 설치'
@@ -645,13 +645,13 @@ export const trackDatas = [
         'week': '15',
         'contents': [
           {
-            'title': 'git이란?'
+            'title': 'git'
           },
           {
-            'title': '코드 컨벤션이란??'
+            'title': '코드 컨벤션'
           },
           {
-            'title': '브랜치 네이밍 규칙?'
+            'title': '브랜치 네이밍 규칙'
           }
         ]
       },
@@ -1076,7 +1076,7 @@ export const trackDatas = [
             'title': 'Bottom Navigation',
             'descriptions': [
               'Bottom Navigation이란?',
-              'Bottom Navigation 과 Navigation Drawer 비교 분석',
+              'Bottom Navigation과 Navigation Drawer',
             ]
           },
           {
@@ -1218,7 +1218,7 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습: Open Source Library 실습'
+            'title': '실습: Open Source Library'
           },
         ]
       },
@@ -1551,18 +1551,18 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '컴퓨터는 게임 프로그램과 모니터의 동기화를 어떻게 수행할까?',
+            'title': '게임 프로그램과 모니터의 동기화 수행과정',
             'descriptions': [
               'frame buffer, double buffering, screen tearing',
               'v-sync, free-sync g-sync'
             ]
           },
           {
-            'title': '컴퓨터는 게임 프로그램의 게임 세계를 어떻게 화면의 형태로 변환할까?',
+            'title': '게임 프로그램과 화면의 형태로 변환',
             'descriptions': [
               'rendering pipeline'
             ]
-          }
+          },
         ]
       },
       {
@@ -1590,7 +1590,7 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '프로그래밍에서 동기(sync)와 비동기(async)는 어떻게 다를까?',
+            'title': '프로그래밍에서 동기(sync)와 비동기(async)',
             'descriptions': [
               '동기/비동기의 동작',
               'C#의 동기/비동기'
@@ -1627,27 +1627,6 @@ export const trackDatas = [
       {
         'week': '6',
         'contents': [
-          {
-            'title': '컴퓨터는 어떻게 화면을 출력할까?',
-            'descriptions': [
-              'RGBA coloc space',
-              'color depth',
-              'screen resolution'
-            ]
-          },
-          {
-            'title': '컴퓨터는 게임 프로그램과 모니터의 동기화를 어떻게 수행할까?',
-            'descriptions': [
-              'frame buffer, double buffering, screen tearing',
-              'v-sync, free-sync g-sync'
-            ]
-          },
-          {
-            'title': '컴퓨터는 게임 프로그램의 게임 세계를 어떻게 화면의 형태로 변환할까?',
-            'descriptions': [
-              'rendering pipeline'
-            ]
-          },
           {
             'title': '실습1',
             'descriptions': [
@@ -1724,7 +1703,10 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'Unity에서 제공하는 Coroutine과 C# Async/Await의 공통점과 차이점'
+            'title': 'Unity의 Coroutine과 C# Async/Await',
+            'descriptions': [
+              '공통점과 차이점'
+            ]
           },
           {
             'title': '실습',
