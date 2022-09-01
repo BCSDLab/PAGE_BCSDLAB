@@ -12,7 +12,7 @@
 
       <div class="submit__btns">
         <span
-          @click="clickBtn('https://forms.gle/Yc532QgUHETc7eez7')"
+          @click="clickBtn('https://forms.gle/P8ApXZ1nsbAizXXo9')"
           class="submit__btn-submit">지원하기</span>
 
         <span
@@ -24,19 +24,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'Submit',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    },
-    methods: {
-      clickBtn: function(url) {
-        window.open(url)
-      }
+export default {
+  name: 'Submit',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    clickBtn: function (url) {
+      window.open(url)
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

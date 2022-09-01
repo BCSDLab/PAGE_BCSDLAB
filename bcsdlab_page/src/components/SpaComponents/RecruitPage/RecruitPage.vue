@@ -39,7 +39,7 @@
       <div class="processes">
         <div
           v-for="(process, index) in processDatas"
-          :key="index" 
+          :key="index"
           class="process">
           <div class="process__step">{{ process.step }}</div>
           <div class="process__title">{{ process.title }}</div>
@@ -56,7 +56,7 @@
         <div class="advantage__list">
           <div
             v-for="(advantage, index) in advantageDatas"
-            :key="index" 
+            :key="index"
             class="advantage">
             <img
               class="advantage__logo"
@@ -90,48 +90,48 @@
         문의하기
       </button>
     </div>
-    
+
   </div>
 </template>
 
 <script>
-  import PositionCard from './Components/PositionCard';
-  export default {
-    name: 'RecruitPage',
-    components: {
-      'position-card': PositionCard
+import PositionCard from './Components/PositionCard'
+export default {
+  name: 'RecruitPage',
+  components: {
+    'position-card': PositionCard
+  },
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App',
+      informationDatas: [
+        { title: '모집 분야', contents: '기초를 위한 Novice<br>트랙의 Beginner<br>(모집하지 않는 트랙이 있을 수 있음)' },
+        { title: '모집 기간', contents: '1기 : 12월 중 ~ 01월 초<br>2기 : 02월 중 ~ 03월 초<br>3기 : 06월 중 ~ 07월 초<br>4기 : 08월 중 ~ 09월 초' },
+        { title: '지원 자격', contents: '매우 강한 책임감을 가진 학우<br>시간의 소중함을 아는 학우<br>자기주도적인 학우<br>성장에 대한 절박함이 있는 학우' }
+      ],
+      advantageDatas: [
+        { title: '온/오프라인 병행', description: '모교 출신 멘토들과의<br>24시간 상담 그리고 질의응답', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/24-1.png' },
+        { title: '효율적인 프로세스', description: '실제 스타트업에서 쓰이는<br>프로세스 차용', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/img-418801.png' },
+        { title: '포트폴리오 강화', description: '학부생으로서<br>가지기 힘든 실무 능력', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/26-1.png' },
+        { title: '취업 멘토링', description: '서류와 면접 준비에 대한<br>가이드', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/kisspng-mentorship-computer-icons-organization-learning-co-quill-5-ae-2-d-43-c-819253-5722715715248149085307.png' }
+      ],
+      processDatas: [
+        { step: '1', title: '지원서 접수', contents: '본인의 역량과 관심사에 따라<br>트랙을 선택합니다' },
+        { step: '2', title: '지원서 검토', contents: '개발자는 코딩테스트를 수행하고<br>디자이너는 포트폴리오를 살펴보며<br>지원자의 수준을 파악하고 어디부터<br>배워야할지 검토합니다' },
+        { step: '3', title: '커리큘럼 진행', contents: '트랙별 교육을 진행합니다<br>해당 교육과정은 각 직군 별로 상이하며약 6개월 간 진행됩니다' },
+        { step: '4', title: '회고', contents: '6개월간의 교육과 학습을 통해<br>느낀 점, 좋았던 점, 아쉬웠던 점 등<br>교육과정 내 배운 내용에 대해 확인 후<br>Regular로의 진입을 결정합니다' }
+      ]
+    }
+  },
+  methods: {
+    apply () {
+      window.open('https://forms.gle/P8ApXZ1nsbAizXXo9')
     },
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App',
-        informationDatas: [
-          { title: '모집 분야', contents: '기초를 위한 Novice<br>트랙의 Beginner<br>(모집하지 않는 트랙이 있을 수 있음)' },
-          { title: '모집 기간', contents: '1기 : 12월 중 ~ 01월 초<br>2기 : 02월 중 ~ 03월 초<br>3기 : 06월 중 ~ 07월 초<br>4기 : 08월 중 ~ 09월 초' },
-          { title: '지원 자격', contents: '매우 강한 책임감을 가진 학우<br>시간의 소중함을 아는 학우<br>자기주도적인 학우<br>성장에 대한 절박함이 있는 학우' }
-        ],
-        advantageDatas: [
-          { title: '온/오프라인 병행', description: '모교 출신 멘토들과의<br>24시간 상담 그리고 질의응답' , image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/24-1.png' },
-          { title: '효율적인 프로세스', description: '실제 스타트업에서 쓰이는<br>프로세스 차용', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/img-418801.png' },
-          { title: '포트폴리오 강화', description: '학부생으로서<br>가지기 힘든 실무 능력', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/26-1.png' },
-          { title: '취업 멘토링', description: '서류와 면접 준비에 대한<br>가이드', image_url: 'https://static.koreatech.in/bcsdlab_page_assets/img/kisspng-mentorship-computer-icons-organization-learning-co-quill-5-ae-2-d-43-c-819253-5722715715248149085307.png' },
-        ],
-        processDatas: [
-          { step: '1', title: '지원서 접수', contents: '본인의 역량과 관심사에 따라<br>트랙을 선택합니다' },
-          { step: '2', title: '지원서 검토', contents: '개발자는 코딩테스트를 수행하고<br>디자이너는 포트폴리오를 살펴보며<br>지원자의 수준을 파악하고 어디부터<br>배워야할지 검토합니다' },
-          { step: '3', title: '커리큘럼 진행', contents: '트랙별 교육을 진행합니다<br>해당 교육과정은 각 직군 별로 상이하며약 6개월 간 진행됩니다' },
-          { step: '4', title: '회고', contents: '6개월간의 교육과 학습을 통해<br>느낀 점, 좋았던 점, 아쉬웠던 점 등<br>교육과정 내 배운 내용에 대해 확인 후<br>Regular로의 진입을 결정합니다' }
-        ]
-      }
-    },
-    methods: {
-      apply() {
-        window.open("https://forms.gle/Yc532QgUHETc7eez7")
-      },
-      inquiry () {
-        window.open("https://www.facebook.com/BCSD-Lab-1727922507422214/?ref=bookmarks")
-      }
+    inquiry () {
+      window.open('https://www.facebook.com/BCSD-Lab-1727922507422214/?ref=bookmarks')
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -468,7 +468,7 @@
     cursor: pointer;
     box-sizing: border-box;
   }
-  
+
   button:focus {
     outline: none;
   }
