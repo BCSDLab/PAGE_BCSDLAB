@@ -56,7 +56,7 @@
             </li>
           </ul>
           <div>
-            ※ 상세 커리큘럼은 
+            ※ 상세 커리큘럼은
             <span
               @click="goTrack()"
               class="track">
@@ -71,13 +71,12 @@
               :name="tag"
             />
           </div>
-          
-          
+
         </div>
         <div class="card-footer">
           <a
             target="_blank"
-            href="https://forms.gle/Yc532QgUHETc7eez7">
+            href="https://forms.gle/P8ApXZ1nsbAizXXo9">
             <button class="apply-btn">
               지원하기
             </button>
@@ -87,7 +86,7 @@
             href="https://www.facebook.com/BCSD-Lab-1727922507422214/">
             <button class="inquiry-btn">
               문의하기
-            </button> 
+            </button>
           </a>
         </div>
       </div>
@@ -99,11 +98,11 @@
 import recruitDatas from '../../../static/recruitDatas'
 import Tag from './Components/Tag'
 export default {
-  name: "RecruitDetailPage",
+  name: 'RecruitDetailPage',
   components: {
     'tag': Tag
   },
-  data() {
+  data () {
     return {
       data: null,
       date: new Date(),
@@ -111,31 +110,30 @@ export default {
     }
   },
   computed: {
-    setDday() {
+    setDday () {
       if (this.date.getFullYear() === 2019) {
-        if (30 - this.date.getDate() > 0) return `D-${30 - this.date.getDate()}`;
-        else if(30 - this.date.getDate() === 0) return 'D-Day';
+        if (30 - this.date.getDate() > 0) return `D-${30 - this.date.getDate()}`
+        else if (30 - this.date.getDate() === 0) return 'D-Day'
         else return '모집 기간이 지났습니다.'
       } else {
-        return '모집 기간이 지났습니다.';
+        return '모집 기간이 지났습니다.'
       }
-      
     }
   },
   methods: {
-    goTrack() {
-      this.$router.push(`/track/${this.data.path[1]}`);
+    goTrack () {
+      this.$router.push(`/track/${this.data.path[1]}`)
     },
-    goBack() {
-      this.$router.push('/recruit');
+    goBack () {
+      this.$router.push('/recruit')
     }
   },
-  created() {
+  created () {
     if (this.$route.params.data === undefined) {
       // recruitDatas.filter(data => data.path[0] === this.$route.params.data)
-      this.data = recruitDatas.filter(data => data.path[0] === this.$route.params.id)[0];
+      this.data = recruitDatas.filter(data => data.path[0] === this.$route.params.id)[0]
     } else {
-      this.data = this.$route.params.data;
+      this.data = this.$route.params.data
     }
   }
 }
@@ -299,5 +297,4 @@ export default {
     color: #795cf2;
   }
 
-  
 </style>
