@@ -28,10 +28,6 @@ export default new Router({
       component: TrackPage,
       children: [
         {
-          path: 'novice',
-          component: TrackPage
-        },
-        {
           path: 'frontend',
           component: TrackPage
         },

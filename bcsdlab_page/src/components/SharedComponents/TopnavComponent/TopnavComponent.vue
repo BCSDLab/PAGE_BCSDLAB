@@ -29,7 +29,7 @@
           },
           {
             name: 'TRACKS',
-            link: "/track/novice"
+            link: "/track/frontend"
           },
           {
             name: 'ACTIVITY',

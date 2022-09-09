@@ -1,18 +1,4 @@
 const recruitDatas = [
-  /*
-  {
-    'position': 'Novice',
-    'contents': {
-      'name': '기초부터 꼼꼼히 배울 Novice 모집',
-      'tags': ['Novice', 'C', 'Git', 'VCS', '자료구조', '알고리즘', '네트워크']
-    },
-    'period': '2022년 하반기',
-    'path': ['novice', 'novice'],
-    'qualification': ['개발자가 되고 싶은 학우', '동기들보다 좀 더 앞서 나가고싶은 컴공 신입생', '기초부터 학습을 원하는 학우'],
-    'learningContents': ['C언어 기초', '협업와 형상관리 방법', '자료구조와 알고리즘의 기본', '컴퓨터 네트워크 기본'],
-    'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
-  },
-  */
   {
     'position': 'Beginner',
     'contents': {

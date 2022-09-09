@@ -12,7 +12,6 @@
       <div class="track__introduce-desc">
         5개의 TRACK으로 이루어져 있으며 <br>
         각 TRACK은 Mentor, Regular, Beginner로 구성되어 있습니다. <br>
-        그리고 TRACK 선택 전 기초 교육을 위한 Novice가 있습니다.
       </div>
 
       <div class="track__card__group">
@@ -73,51 +72,24 @@
         this.$router.push(link)
         document.documentElement.scrolltop = 0;
       },
+      
 
       async getTotalTrackInfo() {
-        let result = await api.getTotalTrackInfo();
-        result = result.data;
-        console.log(result);
 
-        for(let i=0; i<result.length; i++) {
-          switch(result[i].name) {
-            case 'FrontEnd':
-              this.trackDatas[0].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'BackEnd':
-              this.trackDatas[1].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Android':
-              this.trackDatas[2].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Game':
-              this.trackDatas[3].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'UI/UX':
-              this.trackDatas[4].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-          }
+        for(let i=0; i<5; i++) {
+          let track = await api.getTrackInfo(i+1);
+          console.log(track);
+          console.log(track.data.Members.length)
+          this.trackDatas[i].memberCount = String(track.data.Members.length).padStart(2,0);
         }
-      },
-
-      checkMemberCount: function(cnt) {
-        if(cnt < 10) {
-          return '0' + cnt;
-        }
-        return cnt;
       }
-    },
-
-
+    }, 
+    
     created() {
       this.getTotalTrackInfo()
     }
-  }
+  } 
+  
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
