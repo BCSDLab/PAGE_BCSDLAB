@@ -82,13 +82,14 @@
           console.log(track.data.Members.length)
           this.trackDatas[i].memberCount = String(track.data.Members.length).padStart(2,0);
         }
-      }, 
-
+      }
+    }, 
+    
     created() {
       this.getTotalTrackInfo()
     }
   } 
-  }
+  
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
