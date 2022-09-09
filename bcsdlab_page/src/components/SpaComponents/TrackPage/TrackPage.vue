@@ -67,9 +67,7 @@
           </tbody>
         </table>
       </div>
-      <div
-        v-if="selectedTrack != 'Novice'"
-        class="members">
+      <div class="members">
         <div class="title">MEMBERS</div>
         <div class="members__profile-container">
           <div class="members__profile-row">
@@ -122,9 +120,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="tools"
-        v-if="selectedTrack != 'Novice'">
+      <div class="tools">
         <div class="title">TECH STACK</div>
         <div class="tools-info">
           <div
@@ -154,8 +150,8 @@ import * as api from '../../../api/api'
     data () {
       return {
         msg: 'Welcome to Your Vue.js App',
-        tracks: ['Novice', 'Front-End', 'Back-End', 'Android', 'UI/UX', 'Game'],
-        selectedTrack: 'Novice',
+        tracks: ['Front-End', 'Back-End', 'Android', 'UI/UX', 'Game'],
+        selectedTrack: 'Front-End',
         aboutDatas: null,
         curriculums: null,
         members: null,
@@ -165,8 +161,8 @@ import * as api from '../../../api/api'
     },
     watch: {
       $route(to, from) {
-        if (to.path.split('/')[2] == 'novice') {
-          this.selectedTrack = 'Novice'
+        if (to.path.split('/')[2] === 'frontend') {
+          this.selectedTrack = 'Front-End'
           trackDatas.forEach((data) => {
           if (this.selectedTrack === data.name) {
               this.aboutDatas = data.about
@@ -190,9 +186,6 @@ import * as api from '../../../api/api'
         this.getTrackInfo(track);
 
         switch(track) {
-          case "Novice":
-            this.$router.push('novice')
-            break;
           case "Front-End":
             this.$router.push('frontend')
             break;
@@ -233,11 +226,11 @@ import * as api from '../../../api/api'
         else if (track == 'Front-End') id = 3;
         else if (track == 'Game') id = 4;
         else if (track == 'UI/UX') id = 7;
-        if (track != "Novice") {
+        if (track) {
           result = await api.getTrackInfo(id);
           let allMember = result.data.Members;
           this.teckStacks = result.data.TechStacks;
-          this.members = allMember.filter(member => member.track == track.split('-').join(''));
+          this.members = allMember.filter(member => member.track === track.split('-').join(''));
         }
         this.show = true;
       }
@@ -246,9 +239,6 @@ import * as api from '../../../api/api'
       let path = to.fullPath.split('/');
       console.log(path)
       switch(path[2]) {
-        case "novice":
-          this.selectedTrack = 'Novice';
-          break;
         case "frontend":
           this.selectedTrack = 'Front-End';
           break;
@@ -281,9 +271,6 @@ import * as api from '../../../api/api'
       console.log(this.selectedTrack);
       let path = this.$router.history.current.path.split('/');
       switch(path[2]) {
-        case "novice":
-          this.selectedTrack = "Novice";
-          break;
         case "frontend":
           this.selectedTrack = 'Front-End';
           break;

@@ -12,7 +12,6 @@
       <div class="track__introduce-desc">
         5개의 TRACK으로 이루어져 있으며 <br>
         각 TRACK은 Mentor, Regular, Beginner로 구성되어 있습니다. <br>
-        그리고 TRACK 선택 전 기초 교육을 위한 Novice가 있습니다.
       </div>
 
       <div class="track__card__group">
