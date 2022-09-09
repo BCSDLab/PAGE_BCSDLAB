@@ -72,50 +72,22 @@
         this.$router.push(link)
         document.documentElement.scrolltop = 0;
       },
+      
 
       async getTotalTrackInfo() {
-        let result = await api.getTotalTrackInfo();
-        result = result.data;
-        console.log(result);
 
-        for(let i=0; i<result.length; i++) {
-          switch(result[i].name) {
-            case 'FrontEnd':
-              this.trackDatas[0].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'BackEnd':
-              this.trackDatas[1].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Android':
-              this.trackDatas[2].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Game':
-              this.trackDatas[3].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'UI/UX':
-              this.trackDatas[4].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-          }
+        for(let i=0; i<5; i++) {
+          let track = await api.getTrackInfo(i+1);
+          console.log(track);
+          console.log(track.data.Members.length)
+          this.trackDatas[i].memberCount = String(track.data.Members.length).padStart(2,0);
         }
-      },
-
-      checkMemberCount: function(cnt) {
-        if(cnt < 10) {
-          return '0' + cnt;
-        }
-        return cnt;
-      }
-    },
-
+      }, 
 
     created() {
       this.getTotalTrackInfo()
     }
+  } 
   }
 </script>
 
