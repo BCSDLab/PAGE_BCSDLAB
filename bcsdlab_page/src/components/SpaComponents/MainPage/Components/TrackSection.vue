@@ -75,18 +75,10 @@
       
 
       async getTotalTrackInfo() {
-
-        for(let i=0; i<4; i++) {
-            let track = await api.getTrackInfo(i+1);
-            console.log(track);
-            console.log(track.data.Members.length)
-            this.trackDatas[i].memberCount = String(track.data.Members.length).padStart(2,0);
+        for(const [idx, i] of [1,2,3,4,7].entries()){
+          let track = await api.getTrackInfo(i);
+          this.trackDatas[idx].memberCount = String(track.data.Members.length).padStart(2,0);
         }
-        if(this.trackDatas[4].name === "UI/UX"){
-          let track = await api.getTrackInfo(7);
-          console.log(track);
-          return this.trackDatas[4].memberCount = String(track.data.Members.length).padStart(2,0);
-          }
       }
     },
     
