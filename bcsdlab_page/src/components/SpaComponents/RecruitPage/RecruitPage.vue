@@ -125,7 +125,7 @@ export default {
   },
   methods: {
     apply () {
-      window.open('https://forms.gle/P8ApXZ1nsbAizXXo9')
+      window.open('https://forms.gle/sQYk7Br2YGXrmUqQ7')
     },
     inquiry () {
       window.open('https://www.facebook.com/BCSD-Lab-1727922507422214/?ref=bookmarks')
