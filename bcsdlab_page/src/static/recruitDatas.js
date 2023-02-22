@@ -13,19 +13,19 @@ const recruitDatas = [
     'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
 
   },
-  {
-    'position': 'Beginner',
-    'contents': {
-      'name': '백엔드 트랙 Beginner 모집',
-      'track': 'BackEnd',
-      'tags': ['Web BackEnd', 'Beginner', 'Java', 'Spring', 'MySQL', 'Redis', 'AWS', 'Jenkins']
-    },
-    'period': '2023년 상반기',
-    'path': ['backend-beginner', 'backend'],
-    'qualification': ['Java 사용 경험이 있는 학우', '백엔드가 어떻게 구성되는지 알고 싶은 학우', '자신이 맡은 일에 최선을 다 할 수 있는 학우'],
-    'learningContents': ['데이터베이스 기본 개념', 'Spring Framework의 구조와 특징', '보안과 암호화 기초 이론 및 실습'],
-    'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
-  },
+  // {
+  //   'position': 'Beginner',
+  //   'contents': {
+  //     'name': '백엔드 트랙 Beginner 모집',
+  //     'track': 'BackEnd',
+  //     'tags': ['Web BackEnd', 'Beginner', 'Java', 'Spring', 'MySQL', 'Redis', 'AWS', 'Jenkins']
+  //   },
+  //   'period': '2023년 상반기',
+  //   'path': ['backend-beginner', 'backend'],
+  //   'qualification': ['Java 사용 경험이 있는 학우', '백엔드가 어떻게 구성되는지 알고 싶은 학우', '자신이 맡은 일에 최선을 다 할 수 있는 학우'],
+  //   'learningContents': ['데이터베이스 기본 개념', 'Spring Framework의 구조와 특징', '보안과 암호화 기초 이론 및 실습'],
+  //   'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
+  // },
   {
     'position': 'Beginner',
     'contents': {
