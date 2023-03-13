@@ -32,61 +32,60 @@
 </template>
 
 <script>
-  import * as api from '../../../../api/api'
+import * as api from '../../../../api/api'
 
-  export default {
-    name: 'Track',
-    data () {
-      return {
-        trackDatas: [
-          {
-            name: "Front-End",
-            memberCount: "02111",
-            link: "track/frontend"
-          },
-          {
-            name: "Back-End",
-            memberCount: "06",
-            link: "track/backend"
-          },
-          {
-            name: "Android",
-            memberCount: "06",
-            link: "track/android"
-          },
-          {
-            name: "Game",
-            memberCount: "10",
-            link: "track/game"
-          },
-          {
-            name: "UI/UX",
-            memberCount: "07",
-            link: "track/uiux"
-          }
-        ]
-      }
-    },
-    methods: {
-      goUrl: function(link) {
-        this.$router.push(link)
-        document.documentElement.scrolltop = 0;
-      },
-      
-
-      async getTotalTrackInfo() {
-        for(const [idx, i] of [1,2,3,4,7].entries()){
-          let track = await api.getTrackInfo(i);
-          this.trackDatas[idx].memberCount = String(track.data.Members.length).padStart(2,0);
+export default {
+  name: 'Track',
+  data () {
+    return {
+      trackDatas: [
+        {
+          name: 'Front-End',
+          memberCount: '02111',
+          link: 'track/frontend'
+        },
+        {
+          name: 'Back-End',
+          memberCount: '06',
+          link: 'track/backend'
+        },
+        {
+          name: 'Android',
+          memberCount: '06',
+          link: 'track/android'
+        },
+        {
+          name: 'Game',
+          memberCount: '10',
+          link: 'track/game'
+        },
+        {
+          name: 'UI/UX',
+          memberCount: '07',
+          link: 'track/uiux'
         }
-      }
-    },
-    
-    created() {
-      this.getTotalTrackInfo()
+      ]
     }
-  } 
-  
+  },
+  methods: {
+    goUrl: function (link) {
+      this.$router.push(link)
+      document.documentElement.scrolltop = 0
+    },
+
+    async getTotalTrackInfo () {
+      for (const [idx, i] of [3, 2, 1, 4, 7].entries()) {
+        let track = await api.getTrackInfo(i)
+        this.trackDatas[idx].memberCount = String(track.data.Members.length).padStart(2, 0)
+      }
+    }
+  },
+
+  created () {
+    this.getTotalTrackInfo()
+  }
+}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -231,6 +230,5 @@
     background: white;
     color: #795cf2;
   }
-
 
 </style>
