@@ -146,7 +146,7 @@ export const trackDatas = [
           },
           {
             'title': 'axios / fetch / XMLHttpRequest 사용법'
-          },
+          }
         ]
       },
       {
@@ -166,7 +166,7 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'FE Framework는 무엇인가?',
+            'title': 'FE Framework는 무엇인가?'
           },
           {
             'title': 'React 설치'
@@ -282,7 +282,7 @@ export const trackDatas = [
             ]
           }
         ]
-      },
+      }
     ]
   },
   {
@@ -410,7 +410,7 @@ export const trackDatas = [
           },
           {
             'title': '실습 5 : AOP를 활용한 시간측정'
-          },
+          }
         ]
       },
       {
@@ -448,7 +448,7 @@ export const trackDatas = [
               '공개키 암호화',
               '개인키 암호화',
               'Bcrypt',
-              'Salting, Key stretching'    
+              'Salting, Key stretching'
             ]
           },
           {
@@ -456,7 +456,7 @@ export const trackDatas = [
           },
           {
             'title': '실습 7 : 유저가 로그인 시 JWT 발급하기'
-          },
+          }
         ]
       },
       {
@@ -474,7 +474,7 @@ export const trackDatas = [
             'descriptions': [
               'AWS가입 및 EC2 생성',
               'tomcat, mysql 설치',
-              '로컬 DB 마이그레이션',
+              '로컬 DB 마이그레이션'
             ]
           }
         ]
@@ -534,7 +534,7 @@ export const trackDatas = [
             'title': 'Android 에 대한 이해',
             'descriptions': [
               'Android 란 무엇인가?',
-              'Android 버전 및 특징',
+              'Android 버전 및 특징'
             ]
           },
           {
@@ -546,7 +546,7 @@ export const trackDatas = [
               'git-flow cheatsheet',
               'Git 및 git-fork 설치'
             ]
-          },
+          }
         ]
       },
       {
@@ -566,7 +566,7 @@ export const trackDatas = [
               'View란?',
               'Widget 종류',
               'Widget 사용 방법',
-              'Widget 속성',
+              'Widget 속성'
             ]
           },
           {
@@ -575,9 +575,9 @@ export const trackDatas = [
               'LinearLayout이란?',
               'RelativeLayout이란?',
               'FrameLayout이란?',
-              'Constraint Layout이란?',
+              'Constraint Layout이란?'
             ]
-          },
+          }
         ]
       },
       {
@@ -609,7 +609,7 @@ export const trackDatas = [
               'Color',
               'Strings'
             ]
-          },
+          }
         ]
       },
       {
@@ -646,7 +646,7 @@ export const trackDatas = [
               'Dialog 커스텀',
               'AlertDialog 실습'
             ]
-          },
+          }
         ]
       },
       {
@@ -655,7 +655,7 @@ export const trackDatas = [
           {
             'title': 'Event Listener',
             'descriptions': [
-              'Event Listener란 무엇인가?',
+              'Event Listener란 무엇인가?'
             ]
           },
           {
@@ -669,9 +669,9 @@ export const trackDatas = [
             'descriptions': [
               'RecyclerView란?',
               'ListView 와 RecyclerView 차이',
-              'LayoutManager',
+              'LayoutManager'
             ]
-          },
+          }
         ]
       },
       {
@@ -681,7 +681,7 @@ export const trackDatas = [
             'title': 'Bottom Navigation',
             'descriptions': [
               'Bottom Navigation이란?',
-              'Bottom Navigation과 Navigation Drawer',
+              'Bottom Navigation과 Navigation Drawer'
             ]
           },
           {
@@ -697,7 +697,7 @@ export const trackDatas = [
               'TabLayout이란?',
               'TabLayout + ViewPager2 로 스와이프 탭 구현'
             ]
-          },
+          }
         ]
       },
       {
@@ -706,12 +706,12 @@ export const trackDatas = [
           {
             'title': 'Notification',
             'descriptions': [
-              'Oreo Notification과 이전 버전의 Notification 차이',
+              'Oreo Notification과 이전 버전의 Notification 차이'
             ]
           },
           {
             'title': 'Fragment 및 Notification 실습'
-          },
+          }
         ]
       },
       {
@@ -737,13 +737,13 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'Service와 Service 생명주기',
+            'title': 'Service와 Service 생명주기'
           },
           {
             'title': 'Android Foreground와 Background',
             'descriptions': [
               'Foreground와 Background란?',
-              'Oreo Background 제한',
+              'Oreo Background 제한'
             ]
           },
           {
@@ -824,7 +824,7 @@ export const trackDatas = [
           },
           {
             'title': '실습: Open Source Library'
-          },
+          }
         ]
       },
       {
@@ -834,7 +834,7 @@ export const trackDatas = [
             'title': '난독화',
             'descriptions': [
               '난독화란?',
-              'Proguard R8',
+              'Proguard R8'
             ]
           },
           {
@@ -942,7 +942,7 @@ export const trackDatas = [
             'descriptions': [
               '강의진행'
             ]
-          },
+          }
         ]
       },
       {
@@ -1114,32 +1114,16 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': '게임이란?',
+            'title': 'Git',
             'descriptions': [
-              '게임과 게임개발에 대한 간략한 역사',
-              '자신이 좋아하는 게임, 플레이했던 게임 소개'
+              '버전 관리 시스템과 Git'
             ]
           },
           {
-            'title': '게임 개발이란?',
+            'title': 'C#',
             'descriptions': [
-              '게임 개발 팀을 구성하는 직군들과 직무',
-              '게임 개발과 게임 운영의 차이',
-              '게임 개발 과정'
-            ]
-          },
-          {
-            'title': '게임 프로그램의 구조',
-            'descriptions': [
-              'game loop',
-              'frame과 frame rate'
-            ]
-          },
-          {
-            'title': '컴퓨터의 입력과 출력',
-            'descriptions': [
-              'polling 및 polling rate',
-              'refresh와 refresh rate'
+              '자료형, 문자 입출력, 배열',
+              '선택문과 반복문, 상수'
             ]
           }
         ]
@@ -1148,38 +1132,30 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': '컴퓨터는 어떻게 화면을 출력할까?',
+            'title': 'C#',
             'descriptions': [
-              'RGBA coloc space',
-              'color depth',
-              'screen resolution'
+              '함수와 모듈화',
+              '클래스'
             ]
           },
           {
-            'title': '게임 프로그램과 모니터의 동기화 수행과정',
+            'title': '객체지향 프로그래밍',
             'descriptions': [
-              'frame buffer, double buffering, screen tearing',
-              'v-sync, free-sync g-sync'
+              '객체지향 프로그래밍(OOP)이란?'
             ]
-          },
-          {
-            'title': '게임 프로그램과 화면의 형태로 변환',
-            'descriptions': [
-              'rendering pipeline'
-            ]
-          },
+          }
         ]
       },
       {
         'week': '3',
         'contents': [
           {
-            'title': 'C#이란?'
+            'title': '자료구조와 알고리즘'
           },
           {
-            'title': '실습',
+            'title': 'C#',
             'descriptions': [
-              'C# 강의 시청 후 프로그래밍'
+              'Collection'
             ]
           }
         ]
@@ -1188,24 +1164,14 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': '클래스란?',
+            'title': 'Unity 2D',
             'descriptions': [
-              '객체지향 프로그래밍(OOP)란?',
-              '캡슐화, 상속, 다형성, 추상화'
+              'Unity Interface, GameObject, Component',
+              'Transform, Event Function'
             ]
           },
           {
-            'title': '프로그래밍에서 동기(sync)와 비동기(async)',
-            'descriptions': [
-              '동기/비동기의 동작',
-              'C#의 동기/비동기'
-            ]
-          },
-          {
-            'title': '실습 ',
-            'descriptions': [
-              'C# 강의 시청 후 프로그래밍'
-            ]
+            'title': 'Unity 2D RPG 제작실습 1'
           }
         ]
       },
@@ -1213,56 +1179,22 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': 'C#의 Delegate',
+            'title': 'Unity 2D',
             'descriptions': [
-              'delegate, action, func, event'
+              'Input, Physics, Prefab, Sprite',
+              'Layer, UGUI, Animation'
             ]
           },
           {
-            'title': '게임에서 자료구조와 알고리즘을 공부해야하는 이유와 사용 예시'
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'C# 강의 시청 후 프로그래밍'
-            ]
+            'title': 'Unity 2D RPG 제작실습 2'
           }
         ]
       },
       {
-        'week': '6',
+        'week': '6 ~ 7',
         'contents': [
           {
-            'title': '실습1',
-            'descriptions': [
-              'C#으로 테트리스 만들기'
-            ]
-          },
-          {
-            'title': '실습2',
-            'descriptions': [
-              '버전 관리 시스템과 Git'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '7',
-        'contents': [
-          {
-            'title': '싱글톤 디자인패턴이란?'
-          },
-          {
-            'title': '상태 패턴이란?'
-          },
-          {
-            'title': '유한상태머신(FSM)이란?'
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'Unity 설치 및 기본세팅'
-            ]
+            'title': 'Unity 2D 모작 프로젝트 기획 및 구현'
           }
         ]
       },
@@ -1270,59 +1202,15 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'Rigidbody 컴포넌트',
+            'title': '회고 문서화',
             'descriptions': [
-              'Rigidbody의 Body type(Dynamic, Kinematic, Static)'
-            ]
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'Unity 2D 튜토리얼 - 루비의 모험'
-            ]
-          },
-        ]
-      },
-      {
-        'week': '9',
-        'contents': [
-          {
-            'title': '유니티 이벤트함수'
-          },
-          {
-            'title': '유니티에서 제공하는 Update 함수',
-            'descriptions': [
-              'Update, FixedUpdate, LateUpdate'
-            ]
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'Unity 2D 프로젝트 기획 및 구현'
-            ]
-          },
-
-        ]
-      },
-      {
-        'week': '10',
-        'contents': [
-          {
-            'title': 'Unity의 Coroutine과 C# Async/Await',
-            'descriptions': [
-              '공통점과 차이점'
-            ]
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'Unity 2D 프로젝트 기획 및 구현'
+              '프로젝트 회고 및 프로젝트 진행 내역 문서화'
             ]
           }
         ]
       },
       {
-        'week': '11',
+        'week': '9',
         'contents': [
           {
             'title': 'Vector에 대한 이해',
@@ -1342,10 +1230,29 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습',
+            'title': 'Unity 3D 튜토리얼',
             'descriptions': [
-              'Unity 3D 튜토리얼 - John Lemon’s Haunted Jaunt'
+              "John Lemon's Haunted Jaunt"
             ]
+          }
+        ]
+      },
+      {
+        'week': '10',
+        'contents': [
+          {
+            'title': 'Unity 3D 게임 제작의 이해'
+          },
+          {
+            'title': 'Unity 3D FPS 실습'
+          }
+        ]
+      },
+      {
+        'week': '11',
+        'contents': [
+          {
+            'title': 'Unity 3D FPS 실습'
           }
         ]
       },
@@ -1353,56 +1260,12 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': 'Unity 3D 게임 제작의 이해'
-          },
-          {
-            'title': 'Unity UI의 이해'
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              'Unity 3D 튜토리얼 - 게임 제작의 이해'
-            ]
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              '3D FPS'
-            ]
+            'title': '개인 프로젝트 구상 및 기획서 작성'
           }
         ]
       },
       {
-        'week': '13 ~ 14',
-        'contents': [
-          {
-            'title': 'Unity 3D 게임 제작의 이해',
-            'descriptions': [
-              '클래스의 상속성과 다형성'
-            ]
-          },
-          {
-            'title': '실습',
-            'descriptions': [
-              '3D FPS'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '15',
-        'contents': [
-          {
-            'title': '개인 프로젝트',
-            'descriptions': [
-              'Unity 개인 프로젝트 구상 및 기획서 작성',
-              '프로젝트에 대한 피드백'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '16 ~ 18',
+        'week': '13 ~ 16',
         'contents': [
           {
             'title': '개인 프로젝트',
@@ -1413,13 +1276,10 @@ export const trackDatas = [
         ]
       },
       {
-        'week': '19',
+        'week': '17',
         'contents': [
           {
-            'title': 'Unity 프로젝트 배포',
-            'descriptions': [
-              '회고'
-            ]
+            'title': '개인 프로젝트 시연 및 회고 진행'
           }
         ]
       }
