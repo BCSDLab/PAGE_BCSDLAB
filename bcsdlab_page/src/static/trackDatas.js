@@ -306,21 +306,15 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': 'database 기본 개념 조사',
+            'title': '객체와 클래스',
             'descriptions': [
-              '관계형 데이터베이스 모델이란?',
-              '테이블, 튜플, 필드, 뷰, 키, 인덱스',
-              '1대1 관계, 1대다 관계, 다대다 관계'
+              '객체지향 프로그래밍',
+              '객체 간 관계와 클래스 간 관계',
+              '상속과 구현'
             ]
           },
           {
-            'title': 'mysql, workbench, IntelliJ설치'
-          },
-          {
-            'title': '실습 1 : DB 설계',
-            'descriptions': [
-              '커뮤니티 사이트 테이블 생성(user, board, hashtag)'
-            ]
+            'title': '실습: 객체를 활용하는 프로그래밍'
           }
         ]
       },
@@ -328,32 +322,127 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
+            'title': 'JAVA',
+            'descriptions': [
+              'JAVA의 구조(JVM, JRE, JDK)',
+              'Collections Framework',
+              '객체지향 프로그래밍의 4가지 특징'
+            ]
+          },
+          {
+            'title': '실습: 객체지향적 프로그래밍',
+          }
+        ]
+     },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': 'MVC 패턴',
+            'descriptions': [
+              'MVC 패턴의 정의',
+              'MVC 패턴의 구성요소 설명'
+            ]
+          },
+          {
+            'title': '실습: MVC 패턴을 활용한 프로그래밍',
+          }
+        ]
+      },
+      {
+        'week': '4',
+        'contents': [
+          {
+            'title': 'git이란?',
+          },
+          {
+            'title': 'pull request'
+          },
+          {
+            'title': 'fork'
+          },
+          {
+            'title': '.gitignore'
+          },
+          {
+            'title': '실습 : pull request 날려보기'
+          }
+        ]
+      },
+      {
+        'week': '5',
+        'contents': [
+          {
+            'title': 'database란 무엇인가'
+          },
+          {
+            'title': 'database 기본 개념 조사',
+            'descriptions': [
+              '관계형 데이터베이스 모델이란?',
+              'DBMS 필수 기능',
+              '1대1 관계, 1대다 관계, 다대다 관계',
+              'mysql, workbench 설치'
+            ]
+          },
+          {
+            'title': '실습: DB 설계'
+          }
+        ]
+      },
+      {
+        'week': '6',
+        'contents': [
+          {
+            'title': '인터넷 네트워크 기초',
+            'descriptions': [
+              'IP, 인터넷 프로토콜',
+              'TCP, UDP',
+              'PORT',
+              'DNS',
+              'URI',
+              '웹 브라우저 요청 흐름'
+            ]
+          },
+          {
+            'title': 'HTTP',
+            'descriptions': [
+              'HTTP란?',
+              '클라이언트 서버 구조',
+              '무상태성',
+              '비연결성'
+            ]
+          },
+          {
+            'title': 'HTTP 메시지',
+         },
+          {
+            'title': '실습: REST API URI 설계'
+          }
+        ]
+      },
+      {
+        'week': '7',
+        'contents': [
+          {
             'title': 'ORM이란 무엇인가?'
           },
           {
-            'title': 'Maven이란 무엇인가?'
+            'title': '빌드도구란 무엇인가?',
+            'descriptions': [
+              'Maven',
+              'Gradle'
+            ]
           },
           {
             'title': 'JDBC'
           },
           {
-            'title': 'REST',
-            'descriptions': [
-              'API란?',
-              'REST API란?(구성, 특징, 장단점)',
-              'REST Method(POST, GET, PUT, DELETE)'
-            ]
-          },
-          {
-            'title': '실습 2 : JDBC를 이용한 CRUD'
-          },
-          {
-            'title': '실습 3 : RESTful하게 작성'
+            'title': '실습: JDBC를 이용한 CRUD'
           }
-        ]
+       ]
       },
       {
-        'week': '3',
+        'week': '8',
         'contents': [
           {
             'title': 'Spring',
@@ -362,19 +451,12 @@ export const trackDatas = [
             ]
           },
           {
-            'title': 'Maven',
-            'descriptions': [
-              'Maven이란 무엇인가?',
-              'Maven 프로젝트의 구조'
-            ]
-          },
-          {
-            'title': '실습 4 : Spring 실습(Hello, World)'
+            'title': '실습: Spring 프로젝트 환경설정(Hello, World)'
           }
         ]
       },
       {
-        'week': '4',
+        'week': '9',
         'contents': [
           {
             'title': 'Bean이란?',
@@ -395,7 +477,7 @@ export const trackDatas = [
         ]
       },
       {
-        'week': '5',
+        'week': '10',
         'contents': [
           {
             'title': 'MVC 패턴이란?'
@@ -409,12 +491,12 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습 5 : AOP를 활용한 시간측정'
+            'title': '실습 : AOP를 활용한 로그 측정'
           }
         ]
       },
       {
-        'week': '6',
+        'week': '11',
         'contents': [
           {
             'title': 'Mybatis, JDBC',
@@ -428,70 +510,70 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습 6 : Mybatis를 활용한 CRUD'
-          }
-        ]
-      },
-      {
-        'week': '7',
-        'contents': [
-          {
-            'title': '쿠키(Cookie) & 세션(Session)'
-          },
-          {
-            'title': 'HTTP, HTTPS'
-          },
-          {
-            'title': '암호화',
-            'descriptions': [
-              '단방향 암호화',
-              '공개키 암호화',
-              '개인키 암호화',
-              'Bcrypt',
-              'Salting, Key stretching'
-            ]
-          },
-          {
-            'title': 'JWT'
-          },
-          {
-            'title': '실습 7 : 유저가 로그인 시 JWT 발급하기'
-          }
-        ]
-      },
-      {
-        'week': '8',
-        'contents': [
-          {
-            'title': 'AWS EC2 생성',
-            'descriptions': [
-              'Ubuntu tomcat 설치?',
-              'Ubuntu mysql 설치'
-            ]
-          },
-          {
-            'title': '실습 8 : AWS 실습',
-            'descriptions': [
-              'AWS가입 및 EC2 생성',
-              'tomcat, mysql 설치',
-              '로컬 DB 마이그레이션'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '9 ~ 11',
-        'contents': [
-          {
-            'title': 'Project',
-            'descriptions': [
-              '자율 상용화 서비스 기획'
-            ]
+            'title': '실습 : Mybatis를 활용한 CRUD'
           }
         ]
       },
       {
         'week': '12',
+        'contents': [
+          {
+            'title': '보안 기초',
+            'descriptions': [
+              '보안, 암호화, 복호화',
+              '해싱 알고리즘'
+            ]
+          },
+          {
+            'title': '백엔드를 위한 보안',
+            'descriptions': [
+              'HTTPS',
+              '쿠키, 세션, JWT',
+              'bcrypt'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '13',
+        'contents': [
+          {
+            'title': 'AWS',
+            'descriptions': [
+              '온프레미스와 클라우드의 차이',
+              'AWS의 핵심 요소'
+            ]
+          },
+          {
+            'title': 'EC2 인스턴스 생성',
+            'descriptions': [
+              '생성 절차',
+              '설정 방법'
+            ]
+          },
+          {
+            'title': '회고 안내',
+            'descriptions': [
+              '회고프로젝트 설명 및 일정 안내',
+              '프로젝트 진행시 유의사항 안내',
+              '선배들이 진행했던 프로젝트 간단 소개'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '14 ~ 16',
+        'contents': [
+          {
+            'title': 'Project',
+            'descriptions': [
+              '자유 주제로 개인 프로젝트 진행'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '17',
         'contents': [
           {
             'title': '회고'
