@@ -20,13 +20,11 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': 'Front-End란 무엇인가?'
-          },
-          {
-            'title': 'HTML+CSS',
+            'title': 'git이란?',
             'descriptions': [
-              'WEB1 - HTML & Internet',
-              'WEB2 - CSS'
+              '원격 git 저장소',
+              'git gui',
+              'Markdown'
             ]
           }
         ]
@@ -35,9 +33,21 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': 'Javascript 기초 지식',
+            'title': 'FrontEnd는 무엇을 배우는 것인가? (역할과 이해)'
+          },
+          {
+            'title': 'HTML',
             'descriptions': [
-              'WEB2 - JavaScript'
+              'HTML이 뭘까?',
+              '다양한 태그, 어트리뷰트',
+              'html 문서 구조 (head, body)'
+            ]
+          },
+          {
+            'title': 'CSS',
+            'descriptions': [
+              'CSS가 뭘까? (구조, 적용방식)',
+              'box model'
             ]
           }
         ]
@@ -46,18 +56,10 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': 'responsive web'
-          },
-          {
-            'title': 'CSS Framework',
+            'title': 'Javascript 기초 지식',
             'descriptions': [
-              'bootstrap'
-            ]
-          },
-          {
-            'title': '실습 1 : HTML+CSS 실습',
-            'descriptions': [
-              'bootstrap을 활용한 회원가입/로그인 폼 만들기'
+              'WEB2 - JavaScript - 생활코딩',
+              'Hello, world! - 모던 JS튜토리얼'
             ]
           }
         ]
@@ -66,20 +68,10 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'javascript에 대한 심화 공부',
-            'descriptions': [
-              'event handler, event listener',
-              '정규표현식',
-              'JSON',
-              'Event Handler',
-              '실습 2: JS 실습'
-            ]
+            'title': 'CSS / 반응형 웹'
           },
           {
-            'title': '실습 2 : js 실습 ',
-            'descriptions': [
-              'JavaScript를 활용해 동적인 웹 만들기'
-            ]
+            'title': '실습 1 : HTML + CSS 실습'
           }
         ]
       },
@@ -87,18 +79,14 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': 'DOM 정리',
+            'title': 'javascript에 대한 심화 공부',
             'descriptions': [
-              'DOM 소개 - Web API'
+              '템플릿 리터럴(백틱``)',
+              'event',
+              '정규식(RegExp)'
             ]
-          },
-          {
-            'title': 'document, window 객체',
-            'descriptions': [
-              'Document - Web API',
-              'Window - Web API',
-              'property, method 정리'
-            ]
+          }, {
+            'title': '실습 2 : javascript 실습'
           }
         ]
       },
@@ -106,20 +94,11 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': 'FE와 연관된 HTTP, HTTPS 정리',
+            'title': '브라우저, DOM',
             'descriptions': [
-              'http protocol 이란?',
-              'request method',
-              'status code',
-              'request / response',
-              'request header / response header'
+              'DOM에 대한 개념',
+              'document, window 객체'
             ]
-          },
-          {
-            'title': 'CORS는 왜 발생하고 어떻게 해결할까?'
-          },
-          {
-            'title': 'XSS, CSRF 방지 방법'
           }
         ]
       },
@@ -127,30 +106,34 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': '동기 / 비동기 함수란?',
+            'title': 'HTTP',
             'descriptions': [
-              'Event Loop',
-              'WEB API',
-              'Call Stack'
+              'http, https에 대한 공부 - FE 관련',
+              'json'
             ]
-          },
-          {
-            'title': 'callback이란?'
-          },
-          {
-            'title': 'callback 지옥 회피법',
-            'descriptions': [
-              'promise',
-              'async / await'
-            ]
-          },
-          {
-            'title': 'axios / fetch / XMLHttpRequest 사용법'
           }
         ]
       },
       {
         'week': '8',
+        'contents': [
+          {
+            'title': '비동기 처리와 Callback',
+            'descriptions': [
+              '동기/비동기 함수란?',
+              'callback이란?',
+              'callback 지옥 회피법에 대한 공부',
+              'axios / fetch / XMLHttpRequest 사용법'
+
+            ]
+          },
+          {
+            'title': '실습 3 : axios 실습'
+          }
+        ]
+      },
+      {
+        'week': '9',
         'contents': [
           {
             'title': 'Web Storage',
@@ -159,20 +142,9 @@ export const trackDatas = [
               'session storage',
               'local storage'
             ]
-          }
-        ]
-      },
-      {
-        'week': '9',
-        'contents': [
-          {
-            'title': 'FE Framework는 무엇인가?'
           },
           {
-            'title': 'React 설치'
-          },
-          {
-            'title': 'JSX 개념'
+            'title': '실습 4 : Web Storage 실습'
           }
         ]
       },
@@ -180,16 +152,11 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'React 렌더 방식의 이해',
+            'title': 'React 설치',
             'descriptions': [
-              'render phase, commit phase'
+              'useState, useEffect 사용',
+              '실습 4까지 완성한 페이지 컴포넌트 단위로 구분해 보기'
             ]
-          },
-          {
-            'title': '컴포넌트 Life Cycle'
-          },
-          {
-            'title': 'React Hooks 사용하기'
           }
         ]
       },
@@ -197,10 +164,13 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': 'nodejs, npm, yarn'
+            'title': 'React기본',
+            'descriptions': [
+              'useState, useEffect, useRef 이용'
+            ]
           },
           {
-            'title': 'package.json 파일은 무엇일까?'
+            'title': 'React의 특징'
           }
         ]
       },
@@ -208,10 +178,13 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': 'routing 개념'
-          },
-          {
-            'title': 'react-router-dom 정리'
+            'title': 'React와 라이브러리',
+            'descriptions': [
+              'node.js, npm, yarn',
+              'App.js, index.js의 역할',
+              'styled-components 설치 후 사용해 보기',
+              'SPA란? SPA에서 라우팅이란?'
+            ]
           }
         ]
       },
@@ -219,13 +192,7 @@ export const trackDatas = [
         'week': '13',
         'contents': [
           {
-            'title': 'redux는 왜 쓰는걸까?'
-          },
-          {
-            'title': 'Redux 활용'
-          },
-          {
-            'title': 'react-redux 이해와 활용'
+            'title': 'React 심화'
           }
         ]
       },
@@ -233,16 +200,13 @@ export const trackDatas = [
         'week': '14',
         'contents': [
           {
-            'title': 'CSS 선택자',
+            'title': '전역상태관리 라이브러리',
             'descriptions': [
-              '종류와 사용법 숙지'
+              'Recoil',
+              'Jotai',
+              'Zustand',
+              'Redux toolkit'
             ]
-          },
-          {
-            'title': 'display 사용법'
-          },
-          {
-            'title': 'CSS 실습'
           }
         ]
       },
@@ -250,39 +214,27 @@ export const trackDatas = [
         'week': '15',
         'contents': [
           {
-            'title': 'git'
-          },
-          {
-            'title': '코드 컨벤션'
-          },
-          {
-            'title': '브랜치 네이밍 규칙'
+            'title': 'React 실습'
           }
         ]
       },
       {
-        'week': '16 ~ 17',
+        'week': '16 ~ 18',
         'contents': [
           {
-            'title': 'FrontEnd 응용 - 개인 프로젝트 작성',
-            'descriptions': [
-              'react-router-dom을 활용한 라우팅',
-              'redux를 활용한 전역 상태 관리'
-            ]
+            'title': 'Front-End 개인 프로젝트'
           }
         ]
       },
       {
-        'week': '18',
+        'week': '19',
         'contents': [
           {
-            'title': 'FrontEnd 응용 - 개인 프로젝트 회고',
-            'descriptions': [
-              '애플리케이션 설명, 비기너 교육 회고'
-            ]
+            'title': 'FrontEnd 응용 - 회고'
           }
         ]
       }
+
     ]
   },
   {
@@ -330,10 +282,10 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습: 객체지향적 프로그래밍',
+            'title': '실습: 객체지향적 프로그래밍'
           }
         ]
-     },
+      },
       {
         'week': '3',
         'contents': [
@@ -345,7 +297,7 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '실습: MVC 패턴을 활용한 프로그래밍',
+            'title': '실습: MVC 패턴을 활용한 프로그래밍'
           }
         ]
       },
@@ -353,7 +305,7 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'git이란?',
+            'title': 'git이란?'
           },
           {
             'title': 'pull request'
@@ -413,8 +365,8 @@ export const trackDatas = [
             ]
           },
           {
-            'title': 'HTTP 메시지',
-         },
+            'title': 'HTTP 메시지'
+          },
           {
             'title': '실습: REST API URI 설계'
           }
@@ -439,7 +391,7 @@ export const trackDatas = [
           {
             'title': '실습: JDBC를 이용한 CRUD'
           }
-       ]
+        ]
       },
       {
         'week': '8',
