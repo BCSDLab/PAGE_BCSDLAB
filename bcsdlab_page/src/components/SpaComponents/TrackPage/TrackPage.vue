@@ -532,6 +532,7 @@ export default {
   .members__profile-img {
     width: 100%;
     height: 201.3px;
+    object-fit: cover;
   }
 
   .members__profile-info {
