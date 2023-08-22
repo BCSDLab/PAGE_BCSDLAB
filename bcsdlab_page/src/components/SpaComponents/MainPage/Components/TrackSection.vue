@@ -54,6 +54,12 @@ export default {
           memberCount: '06',
           link: 'track/android'
         },
+
+        {
+          name: 'iOS',
+          memberCount: '04',
+          link: 'track/ios'
+        },
         {
           name: 'Game',
           memberCount: '10',
@@ -74,7 +80,7 @@ export default {
     },
 
     async getTotalTrackInfo () {
-      for (const [idx, i] of [3, 2, 1, 4, 7].entries()) {
+      for (const [idx, i] of [3, 2, 1, 8, 4, 7].entries()) {
         let track = await api.getTrackInfo(i)
         this.trackDatas[idx].memberCount = String(track.data.Members.length).padStart(2, 0)
       }

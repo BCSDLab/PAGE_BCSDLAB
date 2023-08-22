@@ -150,7 +150,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      tracks: ['Front-End', 'Back-End', 'Android', 'UI/UX', 'Game'],
+      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'UI/UX', 'Game'],
       selectedTrack: 'Front-End',
       aboutDatas: null,
       curriculums: null,
@@ -201,6 +201,9 @@ export default {
         case 'Game':
           this.$router.push('game')
           break
+        case 'iOS':
+          this.$router.push('ios')
+          break
       }
     },
     contentStyle (length, index) {
@@ -226,6 +229,7 @@ export default {
       else if (track === 'Front-End') id = 3
       else if (track === 'Game') id = 4
       else if (track === 'UI/UX') id = 7
+      else if (track === 'UI/UX') id = 8
       if (track) {
         result = await api.getTrackInfo(id)
         let allMember = result.data.Members
@@ -253,6 +257,9 @@ export default {
         break
       case 'game':
         this.selectedTrack = 'Game'
+        break
+      case 'ios':
+        this.selectedTrack = 'iOS'
         break
     }
 
@@ -285,6 +292,9 @@ export default {
         break
       case 'game':
         this.selectedTrack = 'Game'
+        break
+      case 'ios':
+        this.selectedTrack = 'iOS'
         break
     }
 

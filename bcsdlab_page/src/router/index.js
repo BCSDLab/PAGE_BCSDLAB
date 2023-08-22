@@ -46,6 +46,10 @@ export default new Router({
         {
           path: 'game',
           component: TrackPage
+        },
+        {
+          path: 'ios',
+          component: TrackPage
         }
       ]
 
