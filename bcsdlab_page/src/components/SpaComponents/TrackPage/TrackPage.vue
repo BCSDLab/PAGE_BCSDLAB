@@ -229,7 +229,7 @@ export default {
       else if (track === 'Front-End') id = 3
       else if (track === 'Game') id = 4
       else if (track === 'UI/UX') id = 7
-      else if (track === 'UI/UX') id = 8
+      else if (track === 'iOS') id = 8
       if (track) {
         result = await api.getTrackInfo(id)
         let allMember = result.data.Members
