@@ -18,45 +18,44 @@
 </template>
 
 <script>
-  export default {
-    name: 'Topnav',
-    data () {
-      return {
-        menus: [
-          {
-            name: 'ABOUT',
-            link: "/"
-          },
-          {
-            name: 'TRACKS',
-            link: "/track/frontend"
-          },
-          {
-            name: 'ACTIVITY',
-            link: "/activity"
-          },
-          {
-            name: 'TECH',
-            link: "/tech"
-          },
-          {
-            name: 'RECRUIT',
-            link: "/recruit"
-          },
-        ]
-      }
-    },
-    methods: {
-      goUrl: function(link) {
-        if(link==='/tech') {
-          alert("준비 중 입니다.")
+export default {
+  name: 'Topnav',
+  data () {
+    return {
+      menus: [
+        {
+          name: 'ABOUT',
+          link: '/about'
+        },
+        {
+          name: 'TRACKS',
+          link: '/track/frontend'
+        },
+        {
+          name: 'ACTIVITY',
+          link: '/activity'
+        },
+        {
+          name: 'TECH',
+          link: '/tech'
+        },
+        {
+          name: 'RECRUIT',
+          link: '/recruit'
         }
-        else {
-          this.$router.push(link)
-        }
+      ]
+    }
+  },
+  methods: {
+    goUrl: function (link) {
+      if (link === '/tech') {
+        alert('준비 중 입니다.')
+      } else {
+        this.$router.push(link)
       }
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
