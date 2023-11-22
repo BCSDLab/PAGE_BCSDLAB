@@ -15,26 +15,28 @@
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
-    data () {
-      return {
+export default {
+  name: 'Footer',
+  data () {
+    return {
 
-      }
-    },
-    methods: {
-      goUrl: function(link) {
-        this.$router.push(link)
-      }
+    }
+  },
+  methods: {
+    goUrl: function (link) {
+      this.$router.push(link)
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .footer {
-    height: 179px;
+    position: relative;
+    height: 160px;
     background-color: #778391;
+    z-index:1;
   }
 
   .footer__logo img{
