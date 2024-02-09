@@ -3,16 +3,16 @@ export const trackDatas = [
     'name': 'Front-End',
     'about': [
       {
-        'title': '모던 Javascript 사용',
-        'description': 'View Library React에 대한 이해와 활용'
+        'title': '확장성과 재사용성을 고려한 엔지니어링',
+        'description': 'React를 활용한 컴포넌트 기반의 UI 개발'
       },
       {
-        'title': '사용자 입장에서의 접근',
-        'description': '여러 시나리오 및 환경에 대한 대처 능력 함양'
+        'title': '새로운 기술 토픽 공유',
+        'description': '지속적으로 발전하는 웹 트렌드에 맞춰<br>최신 기술 도입을 논의하고, 이를 프로젝트에 적용'
       },
       {
-        'title': 'Component 기반 개발',
-        'description': '재사용과 유지보수의 용이성을 보장하는 설계 능력'
+        'title': '사용자 경험 향상',
+        'description': '웹 접근성, 크로스 브라우징, 검색 엔진 최적화,<br>그리고 개인화된 경험 제공'
       }
     ],
     'curriculums': [
