@@ -3,7 +3,7 @@
     <div class="topnav__logo">
       <img
         @click="goUrl('/')"
-        src="https://static.koreatech.in/assets/bcsdlab_img/topnav__bcsdlab__logo.png" alt="">
+        src="https://image.bcsdlab.com/favicon.ico" alt="bcsdlab logo">
     </div>
 
     <div class="topnav__menu__container">
