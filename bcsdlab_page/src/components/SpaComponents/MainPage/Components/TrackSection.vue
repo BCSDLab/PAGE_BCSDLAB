@@ -12,7 +12,6 @@
       <div class="track__introduce-desc">
         5개의 TRACK으로 이루어져 있으며 <br>
         각 TRACK은 Mentor, Regular, Beginner로 구성되어 있습니다. <br>
-        그리고 TRACK 선택 전 기초 교육을 위한 Novice가 있습니다.
       </div>
 
       <div class="track__card__group">
@@ -33,91 +32,66 @@
 </template>
 
 <script>
-  import * as api from '../../../../api/api'
+import * as api from '../../../../api/api'
 
-  export default {
-    name: 'Track',
-    data () {
-      return {
-        trackDatas: [
-          {
-            name: "Front-End",
-            memberCount: "02111",
-            link: "track/frontend"
-          },
-          {
-            name: "Back-End",
-            memberCount: "06",
-            link: "track/backend"
-          },
-          {
-            name: "Android",
-            memberCount: "06",
-            link: "track/android"
-          },
-          {
-            name: "Game",
-            memberCount: "10",
-            link: "track/game"
-          },
-          {
-            name: "UI/UX",
-            memberCount: "07",
-            link: "track/uiux"
-          }
-        ]
-      }
-    },
-    methods: {
-      goUrl: function(link) {
-        this.$router.push(link)
-        document.documentElement.scrolltop = 0;
-      },
+export default {
+  name: 'Track',
+  data () {
+    return {
+      trackDatas: [
+        {
+          name: 'Front-End',
+          memberCount: '02111',
+          link: 'track/frontend'
+        },
+        {
+          name: 'Back-End',
+          memberCount: '06',
+          link: 'track/backend'
+        },
+        {
+          name: 'Android',
+          memberCount: '06',
+          link: 'track/android'
+        },
 
-      async getTotalTrackInfo() {
-        let result = await api.getTotalTrackInfo();
-        result = result.data;
-        console.log(result);
-
-        for(let i=0; i<result.length; i++) {
-          switch(result[i].name) {
-            case 'FrontEnd':
-              this.trackDatas[0].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'BackEnd':
-              this.trackDatas[1].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Android':
-              this.trackDatas[2].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'Game':
-              this.trackDatas[3].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-            case 'UI/UX':
-              this.trackDatas[4].memberCount = this.checkMemberCount(result[i].headcount);
-              break;
-
-          }
+        {
+          name: 'iOS',
+          memberCount: '04',
+          link: 'track/ios'
+        },
+        {
+          name: 'Game',
+          memberCount: '10',
+          link: 'track/game'
+        },
+        {
+          name: 'UI/UX',
+          memberCount: '07',
+          link: 'track/uiux'
         }
-      },
-
-      checkMemberCount: function(cnt) {
-        if(cnt < 10) {
-          return '0' + cnt;
-        }
-        return cnt;
-      }
-    },
-
-
-    created() {
-      this.getTotalTrackInfo()
+      ]
     }
+  },
+  methods: {
+    goUrl: function (link) {
+      this.$router.push(link)
+      document.documentElement.scrolltop = 0
+    },
+
+    async getTotalTrackInfo () {
+      for (const [idx, i] of [3, 2, 1, 8, 4, 7].entries()) {
+        let track = await api.getTrackInfo(i)
+        this.trackDatas[idx].memberCount = String(track.data.Members.length).padStart(2, 0)
+      }
+    }
+  },
+
+  created () {
+    this.getTotalTrackInfo()
   }
+}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -262,6 +236,5 @@
     background: white;
     color: #795cf2;
   }
-
 
 </style>

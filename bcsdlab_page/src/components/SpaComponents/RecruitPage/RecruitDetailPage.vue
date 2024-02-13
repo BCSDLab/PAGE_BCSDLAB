@@ -27,7 +27,7 @@
         </div>
         <div class="card-body">
           <p class="title">◆ 포지션</p>
-          <span>20-3기 {{ data.contents.track }} {{ data.position }}</span>
+          <span>23년도 하반기 {{ data.contents.track }} {{ data.position }}</span>
 
           <p class="title">◆ 지원기간</p>
           <span>{{recruitDatas[0].period}}</span>
@@ -76,7 +76,7 @@
         <div class="card-footer">
           <a
             target="_blank"
-            href="https://forms.gle/P8ApXZ1nsbAizXXo9">
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdSC__CQPMvbi2Sa-wDV3jWe0JOpMrj8Vsn2d5SO6uAgVhdTw/viewform">
             <button class="apply-btn">
               지원하기
             </button>

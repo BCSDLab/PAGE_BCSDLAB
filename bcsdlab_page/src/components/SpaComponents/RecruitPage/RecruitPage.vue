@@ -117,7 +117,7 @@ export default {
       ],
       processDatas: [
         { step: '1', title: '지원서 접수', contents: '본인의 역량과 관심사에 따라<br>트랙을 선택합니다' },
-        { step: '2', title: '지원서 검토', contents: '개발자는 코딩테스트를 수행하고<br>디자이너는 포트폴리오를 살펴보며<br>지원자의 수준을 파악하고 어디부터<br>배워야할지 검토합니다' },
+        { step: '2', title: '지원서 검토', contents: '개발자, 디자이너는 지원 서류를 통해<br>지원자의 수준을 파악하고 어디부터<br>배워야할지 검토합니다' },
         { step: '3', title: '커리큘럼 진행', contents: '트랙별 교육을 진행합니다<br>해당 교육과정은 각 직군 별로 상이하며약 6개월 간 진행됩니다' },
         { step: '4', title: '회고', contents: '6개월간의 교육과 학습을 통해<br>느낀 점, 좋았던 점, 아쉬웠던 점 등<br>교육과정 내 배운 내용에 대해 확인 후<br>Regular로의 진입을 결정합니다' }
       ]
@@ -125,7 +125,7 @@ export default {
   },
   methods: {
     apply () {
-      window.open('https://forms.gle/P8ApXZ1nsbAizXXo9')
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSdSC__CQPMvbi2Sa-wDV3jWe0JOpMrj8Vsn2d5SO6uAgVhdTw/viewform')
     },
     inquiry () {
       window.open('https://www.facebook.com/BCSD-Lab-1727922507422214/?ref=bookmarks')
