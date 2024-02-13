@@ -1,18 +1,18 @@
 export const trackDatas = [
   {
-    'name': 'Novice',
+    'name': 'Front-End',
     'about': [
       {
-        'title': '프로그래밍 기초',
-        'description': '현대 프로그래밍 언어의 근간인 C, C++에 대한 이해'
+        'title': '확장성과 재사용성을 고려한 엔지니어링',
+        'description': 'React를 활용한 컴포넌트 기반의 UI 개발'
       },
       {
-        'title': '컴퓨터 공학 기초',
-        'description': '개발자로서 갖춰야할 최소한의 지식 학습'
+        'title': '새로운 기술 토픽 공유',
+        'description': '지속적으로 발전하는 웹 트렌드에 맞춰<br>최신 기술 도입을 논의하고, 이를 프로젝트에 적용'
       },
       {
-        'title': '강의와 피드백 그리고 질의응답',
-        'description': '완전히 이해할 수 있게 지원'
+        'title': '사용자 경험 향상',
+        'description': '웹 접근성, 크로스 브라우징, 검색 엔진 최적화,<br>그리고 개인화된 경험 제공'
       }
     ],
     'curriculums': [
@@ -20,10 +20,11 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': 'C언어 #1',
+            'title': 'git이란?',
             'descriptions': [
-              'C언어 프로그래밍 기본',
-              '자료형'
+              '원격 git 저장소',
+              'git gui',
+              'Markdown'
             ]
           }
         ]
@@ -32,10 +33,21 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': 'C언어 #2',
+            'title': 'FrontEnd는 무엇을 배우는 것인가? (역할과 이해)'
+          },
+          {
+            'title': 'HTML',
             'descriptions': [
-              '표준 입/출력 도구',
-              '연산자 기본'
+              'HTML이 뭘까?',
+              '다양한 태그, 어트리뷰트',
+              'html 문서 구조 (head, body)'
+            ]
+          },
+          {
+            'title': 'CSS',
+            'descriptions': [
+              'CSS가 뭘까? (구조, 적용방식)',
+              'box model'
             ]
           }
         ]
@@ -44,11 +56,10 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': 'C언어 #3',
+            'title': 'Javascript 기초 지식',
             'descriptions': [
-              '연산자 응용',
-              '기본 제어문',
-              '반복문'
+              'WEB2 - JavaScript - 생활코딩',
+              'Hello, world! - 모던 JS튜토리얼'
             ]
           }
         ]
@@ -57,11 +68,10 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'C언어 #4',
-            'descriptions': [
-              '배열',
-              '함수에 대한 기본 이론'
-            ]
+            'title': 'CSS / 반응형 웹'
+          },
+          {
+            'title': '실습 1 : HTML + CSS 실습'
           }
         ]
       },
@@ -69,10 +79,14 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': 'C언어 #5',
+            'title': 'javascript에 대한 심화 공부',
             'descriptions': [
-              '메모리와 포인터'
+              '템플릿 리터럴(백틱``)',
+              'event',
+              '정규식(RegExp)'
             ]
+          }, {
+            'title': '실습 2 : javascript 실습'
           }
         ]
       },
@@ -80,10 +94,10 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': 'C언어 #6',
+            'title': '브라우저, DOM',
             'descriptions': [
-              '함수 응용',
-              '구조체와 공용체'
+              'DOM에 대한 개념',
+              'document, window 객체'
             ]
           }
         ]
@@ -92,10 +106,10 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': 'C언어 #7',
+            'title': 'HTTP',
             'descriptions': [
-              '파일 입출력',
-              '변수와 상수 고급 이론'
+              'http, https에 대한 공부 - FE 관련',
+              'json'
             ]
           }
         ]
@@ -104,11 +118,17 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'C언어 #8',
+            'title': '비동기 처리와 Callback',
             'descriptions': [
-              '전처리기',
-              '함수에 대한 고급 이론'
+              '동기/비동기 함수란?',
+              'callback이란?',
+              'callback 지옥 회피법에 대한 공부',
+              'axios / fetch / XMLHttpRequest 사용법'
+
             ]
+          },
+          {
+            'title': '실습 3 : axios 실습'
           }
         ]
       },
@@ -116,11 +136,15 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'C++언어 #1',
+            'title': 'Web Storage',
             'descriptions': [
-              'C++ 프로그래밍 기본',
-              '클래스'
+              'cookie',
+              'session storage',
+              'local storage'
             ]
+          },
+          {
+            'title': '실습 4 : Web Storage 실습'
           }
         ]
       },
@@ -128,10 +152,10 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'C++언어 #2',
+            'title': 'React 설치',
             'descriptions': [
-              '동적할당과 객체 복사',
-              '상속과 접근 제어'
+              'useState, useEffect 사용',
+              '실습 4까지 완성한 페이지 컴포넌트 단위로 구분해 보기'
             ]
           }
         ]
@@ -140,12 +164,13 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': 'C++언어 #3',
+            'title': 'React기본',
             'descriptions': [
-              '제네릭 프로그래밍(generic programming)',
-              '템플릿 프로그래밍(template programming)',
-              'STL(standard template library)'
+              'useState, useEffect, useRef 이용'
             ]
+          },
+          {
+            'title': 'React의 특징'
           }
         ]
       },
@@ -153,9 +178,12 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': 'C++언어 #4',
+            'title': 'React와 라이브러리',
             'descriptions': [
-              'std::vector 구현하기'
+              'node.js, npm, yarn',
+              'App.js, index.js의 역할',
+              'styled-components 설치 후 사용해 보기',
+              'SPA란? SPA에서 라우팅이란?'
             ]
           }
         ]
@@ -164,25 +192,7 @@ export const trackDatas = [
         'week': '13',
         'contents': [
           {
-            'title': '형상 관리 시스템',
-            'descriptions': [
-              '형상 관리 시스템(version control system)',
-              'Git',
-              'Git과 SourceTree의 활용'
-            ]
-          },
-          {
-            'title': '협업',
-            'descriptions': [
-              'Git Flow',
-              'Markdown'
-            ]
-          },
-          {
-            'title': '객체지향 프로그래밍',
-            'descriptions': [
-              '객체지향 프로그래밍(Object-Oriented Programming)이란?'
-            ]
+            'title': 'React 심화'
           }
         ]
       },
@@ -190,39 +200,12 @@ export const trackDatas = [
         'week': '14',
         'contents': [
           {
-            'title': '자료구조 기초',
+            'title': '전역상태관리 라이브러리',
             'descriptions': [
-              '자료구조(data structure)란?',
-              '공간복잡도(spacial complexity)와 시간 복잡도(temporal',     
-              'complexity)란?',
-              '빅오 표기법(Big-O notation)이란?',
-              '선형 자료구조와 비선형 자료구조의 종류'
-            ]
-          },
-          {
-            'title': '배열',
-            'descriptions': [
-              '배열(array)이란?',
-              '정적 배열(static array)',
-              '동적 배열(dynamic array)',
-            ]
-          },
-          {
-            'title': '연결리스트',
-            'descriptions': [
-              '연결리스트(linked list)란?',
-              '단일 연결리스트(single linked list)',
-              '이중 연결리스트(double linked list)',
-              '순환 연결리스트(circular linked list)'
-            ]
-          },
-          {
-            'title': '자료구조 구현하기 #1',
-            'descriptions': [
-              '동적 배열(dynamic array)',
-              '단일 연결리스트(single linked list)',
-              '이중 연결리스트(double linked list)',
-              '순환 연결리스트(circular linked list)'
+              'Recoil',
+              'Jotai',
+              'Zustand',
+              'Redux toolkit'
             ]
           }
         ]
@@ -231,100 +214,15 @@ export const trackDatas = [
         'week': '15',
         'contents': [
           {
-            'title': '스택',
-            'descriptions': [
-              '스택(stack)이란?'
-            ]
-          },
-          {
-            'title': '큐',
-            'descriptions': [
-              '큐(queue)란?',
-              '환형 큐(circular queue)란?'
-            ]
-          },
-          {
-            'title': '데크',
-            'descriptions': [
-              '데크(deque)란?'
-            ]
-          },
-          {
-            'title': '자료구조 구현하기 #2',
-            'descriptions': [
-              '스택(stack)',
-              '큐(queue)',
-              '환형 큐(circular queue)',
-              '데크(deque)'
-            ]
+            'title': 'React 실습'
           }
         ]
       },
       {
-        'week': '16',
+        'week': '16 ~ 18',
         'contents': [
           {
-            'title': '그래프',
-            'descriptions': [
-              '그래프(graph)란?',
-              '유방향 그래프(directed graph)',
-              '무방향 그래프(undirected graph)'
-            ]
-          },
-          {
-            'title': '트리',
-            'descriptions': [
-              '트리(tree)란?',
-              '힙(heap)',
-            ]
-          },
-          {
-            'title': '해시 테이블',
-            'descriptions': [
-              '해싱(hashing)',
-              '해시 테이블(hash table)이란?',
-              '개방 주소법(open addressing)',
-              '체이닝(chaining)',
-            ]
-          },
-          {
-            'title': '자료구조 구현하기 #3',
-            'descriptions': [
-              '이진 검색 트리(binary search tree)',
-              '최대 힙(maximum heap)',
-              '최소 힙(minimum heap)',
-              '2차원 배열을 이용한 그래프',
-              '리스트를 이용한 그래프',
-              '해시 테이블',
-            ]
-          }
-        ]
-      },
-      {
-        'week': '17',
-        'contents': [
-          {
-            'title': '분할 정복(divide & conquer)'
-          },
-          {
-            'title': '탐욕적 방법(greedy method)'
-          }
-        ]
-      },
-      {
-        'week': '18',
-        'contents': [
-          {
-            'title': '그래프 탐색',
-            'descriptions': [
-              '깊이 우선 탐색(depth first search)',
-              '너비 우선 탐색(breadth first search)',
-              '되추적(backtracking)',
-              '동적 계획법(dynamic programming)'
-            ]
-          },
-          {
-            'title': '동적 계획법(dynamic programming)',
+            'title': 'Front-End 개인 프로젝트'
           }
         ]
       },
@@ -332,354 +230,11 @@ export const trackDatas = [
         'week': '19',
         'contents': [
           {
-            'title': 'HTML & Internet',
-            'descriptions': [
-              'HTML(hypertext transfer markup language)',
-              'WWW(world wide web)',
-              'Internet',
-              'Server / Client'
-            ]
-          },
-          {
-            'title': '컴퓨터 네트워크',
-            'descriptions': [
-              '네트워크(network)',
-              'LAN / WAN(local area network / wide area network)',
-              '네트워크 토폴로지(network topology)',
-              '프로토콜(protocol)',
-              'OSI 7 계층(OSI 7 layers)'
-            ]
-          },
-          {
-            'title': '데이터 교환 방식',
-            'descriptions': [
-              '회선 교환 방식(circuit-switched network)',
-              '패킷 교환 방식(packet-switched network)',
-            ]
-          }
-        ]
-      }, 
-      {
-        'week': '20',
-        'contents': [
-          {
-            'title': 'TCP / IP Protocol Suite',
-            'descriptions': [
-              'TCP',
-              'UDP',
-              'IP',
-            ]
-          },
-          {
-            'title': 'HTTP(hypertext transfer protocol)',
-            'descriptions': [
-              'Request / Response',
-              'Methods',
-              'Message',
-            ]
-          },
-          {
-            'title': 'DNS(domain name server)'
-          },
-          {
-            'title': 'HTTP(hypertext transfer protocol)',
-            'descriptions': [
-              'NAT(network address translation)',
-              '포트(port)와 포트 포워딩(port forwarding)',
-              '동적 IP(dynamic IP) & 정적 IP(static IP)',
-              'DHCP(dynamic host configuration protocol)',
-            ]
+            'title': 'FrontEnd 응용 - 회고'
           }
         ]
       }
-    ]
-  },
-  {
-    'name': 'Front-End',
-    'about': [
-      {
-        'title': '모던 Javascript 사용',
-        'description': 'View Library React에 대한 이해와 활용'
-      },
-      {
-        'title': '사용자 입장에서의 접근',
-        'description': '여러 시나리오 및 환경에 대한 대처 능력 함양'
-      },
-      {
-        'title': 'Component 기반 개발',
-        'description': '재사용과 유지보수의 용이성을 보장하는 설계 능력'
-      }
-    ],
-    'curriculums': [
-      {
-        'week': '1',
-        'contents': [
-          {
-            'title': 'Front-End란 무엇인가?'
-          },
-          {
-            'title': 'HTML/CSS 기초 지식',
-            'descriptions': [
-              '웹 애플리케이션 만들기(CSS 실습까지, https://opentutorials.org/course/1688)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '2',
-        'contents': [
-          {
-            'title': 'Javascript 기초 지식',
-            'descriptions': [
-              '웹 애플리케이션 만들기(프로그래밍 ~ JS실습까지, https://opentutorials.org/course/1688)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '3',
-        'contents': [
-          {
-            'title': 'Responsive Web이란?'
-          },
-          {
-            'title': 'Bootstrap이 무엇(목적, 사용방법 등)인가?',
-            'descriptions': [
-              '특히 Layout / Content / Compoenent 위주 학습',
-              '실습 1: CSS 실습(Bootstrap 설치 및 회원가입/로그인 폼 만들기)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '4',
-        'contents': [
-          {
-            'title': 'Javascript 심화 1',
-            'descriptions': [
-              'JSON 타입에 대한 공부',
-              '정규식 활용법',
-              'Object Type',
-              'Event Handler',
-              '실습 2: JS 실습(지난 주차에 만드신 .html 파일과 .css 파일을 이용해 실제 동작을 위한 script문을 추가)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '5',
-        'contents': [
-          {
-            'title': 'Javascript 심화 2',
-            'descriptions': [
-              'DOM에 대한 개념',
-              'document 객체',
-              'windows 객체'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '6',
-        'contents': [
-          {
-            'title': 'HTTP Protocol이란?'
-          },
-          {
-            'title': 'HTTP Request Method의 종류와 각각의 차이점',
-            'descriptions': [
-              'GET',
-              'POST',
-              'PUT',
-              'DELETE'
-            ]
-          },
-          {
-            'title': 'HTTP Status Code',
-            'descriptions': [
-              '200, 201',
-              '400, 401, 402, 403, 412',
-              '500, 502'
-            ]
-          },
-          {
-            'title': 'Request / Response의 의미'
-          },
-          {
-            'title': 'Request Header / Response Header 중요한 것'
-          },
-          {
-            'title': 'CORS는 무엇인가?'
-          },
-          {
-            'title': '실습 3: JS 실습(4주차에 만든 과제로 실제 로그인/회원가입 api 호출)'
-          }
-        ]
-      },
-      {
-        'week': '7',
-        'contents': [
-          {
-            'title': 'Javascript 심화 3',
-            'descriptions': [
-              'Callback이란?',
-              'Callback Hell 회피법(Promise, async/await)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '8',
-        'contents': [
-          {
-            'title': 'Web Storage',
-            'descriptions': [
-              'cookie',
-              'session storage',
-              'local storage',
-              '실습 4: Web Storage 활용 실습'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '9',
-        'contents': [
-          {
-            'title': 'NPM이란?',
-            'descriptions': [
-              '사용 목적 및 설치'
-            ]
-          },
-          {
-            'title': 'Webpack이란?',
-            'descriptions': [
-              '사용 목적과 장점',
-              'package.json이란?',
-              '실습 5: 설치 및 tutorial (https://webpack.js.org/guides/getting-started/)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '10',
-        'contents': [
-          {
-            'title': 'React 입문 (1)',
-            'descriptions': [
-              'Front-End Framework는 무엇이며 왜 React를 사용하는가?',
-              'React 프로젝트 생성하기',
-              'React의 특징'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '11',
-        'contents': [
-          {
-            'title': 'React 입문 (2) - React Hook 1',
-            'descriptions': [
-              'JSX 이용하기',
-              'props로 값 전달하기',
-              'useState, useRef, useEffect 이용하기',
-              '조건부 렌더링'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '12',
-        'contents': [
-          {
-            'title': 'React 입문 (3) - React Hook 2',
-            'descriptions': [
-              'useMemo, useCallback 이용하기',
-              '배열 렌더링하기',
-              '배열에 요소 추가, 삭제, 수정하기'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '13',
-        'contents': [
-          {
-            'title': 'React 입문 (4) - React Hook 3',
-            'descriptions': [
-              'useReducer 이용하기',
-              'Context API 이용하여 전역 상태 관리'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '14',
-        'contents': [
-          {
-            'title': 'React 컴포넌트 스타일링',
-            'descriptions': [
-              'styled-components 설치하고 이용해보기',
-              'sass 설치하고 이용해보기'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '15',
-        'contents': [
-          {
-            'title': 'React Router',
-            'descriptions': [
-              'react-router-dom 설치하고 이용해보기'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '16',
-        'contents': [
-          {
-            'title': 'Redux (1)',
-            'descriptions': [
-              'Redux에 대한 이해와 활용'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '17',
-        'contents': [
-          {
-            'title': 'Redux (2)',
-            'descriptions': [
-              'Redux에 대한 이해와 활용',
-              'Redux MiddleWare란 무엇이고 어떻게 이용하는가?'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '18 ~ 19',
-        'contents': [
-          {
-            'title': 'TodoList 프로젝트를 통한 실습',
-            'descriptions': [
-              'react-router-dom을 이용하여 라우팅 기능 넣기',
-              'redux를 이용하여 전역 상태 관리',
-              'api 연동을 통한 실무에 가까운 개발(api 제공)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '20',
-        'contents': [
-          {
-            'title': '회고'
-          }
-        ]
-      }
+
     ]
   },
   {
@@ -703,16 +258,15 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': 'HTML이 서버와 통신하는 방법',
+            'title': '객체와 클래스',
             'descriptions': [
-              'input (text), select, option, form 태그를 통한 Get과 Post 전송 차이 이해)'
+              '객체지향 프로그래밍',
+              '객체 간 관계와 클래스 간 관계',
+              '상속과 구현'
             ]
           },
           {
-            'title': 'nginx의 역할',
-            'descriptions': [
-              '웹서버, WAS)'
-            ]
+            'title': '실습: 객체를 활용하는 프로그래밍'
           }
         ]
       },
@@ -720,16 +274,15 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': 'database 기본 개념 조사',
+            'title': 'JAVA',
             'descriptions': [
-              '관계형 데이터베이스 모델이란?, 데이터와 정보의 차이, 테이블, 튜플(레코드), 속성(필드), 뷰, 키, 인덱스)'
+              'JAVA의 구조(JVM, JRE, JDK)',
+              'Collections Framework',
+              '객체지향 프로그래밍의 4가지 특징'
             ]
           },
           {
-            'title': 'MySQL 실습',
-            'descriptions': [
-              'MySQL에서의 CRUD, CRUD / where / order / group / having)'
-            ]
+            'title': '실습: 객체지향적 프로그래밍'
           }
         ]
       },
@@ -737,11 +290,14 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': 'JAVA를 활용한 Database 연동 (JDBC, Maven 사용)#1',
+            'title': 'MVC 패턴',
             'descriptions': [
-              'Maven이란 무엇인가?',
-              'java를 활용한 Database 연동'
+              'MVC 패턴의 정의',
+              'MVC 패턴의 구성요소 설명'
             ]
+          },
+          {
+            'title': '실습: MVC 패턴을 활용한 프로그래밍'
           }
         ]
       },
@@ -749,11 +305,19 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'JAVA를 활용한 Database 연동 (JDBC, Maven 사용)#2',
-            'descriptions': [
-              'Maven이란 무엇인가?',
-              'java를 활용한 Database 연동'
-            ]
+            'title': 'git이란?'
+          },
+          {
+            'title': 'pull request'
+          },
+          {
+            'title': 'fork'
+          },
+          {
+            'title': '.gitignore'
+          },
+          {
+            'title': '실습 : pull request 날려보기'
           }
         ]
       },
@@ -761,15 +325,19 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': '웹 서버와 WAS의 차이와 웹 서비스 구조'
+            'title': 'database란 무엇인가'
           },
           {
-            'title': 'RESTful API',
+            'title': 'database 기본 개념 조사',
             'descriptions': [
-              'REST란?',
-              'REST API란?',
-              'RESTful이란?'
+              '관계형 데이터베이스 모델이란?',
+              'DBMS 필수 기능',
+              '1대1 관계, 1대다 관계, 다대다 관계',
+              'mysql, workbench 설치'
             ]
+          },
+          {
+            'title': '실습: DB 설계'
           }
         ]
       },
@@ -777,15 +345,30 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': 'Spring',
+            'title': '인터넷 네트워크 기초',
             'descriptions': [
-              'Spring Framework란 무엇인가?',
-              '의존성 주입(Dependency Injection) / 제어의 역전(Inversion of Control)',
-              '관점 지향 프로그래밍 (Aspect Oriented Programming)',
+              'IP, 인터넷 프로토콜',
+              'TCP, UDP',
+              'PORT',
+              'DNS',
+              'URI',
+              '웹 브라우저 요청 흐름'
             ]
           },
           {
-            'title': 'Spring 실습 : Hello, World'
+            'title': 'HTTP',
+            'descriptions': [
+              'HTTP란?',
+              '클라이언트 서버 구조',
+              '무상태성',
+              '비연결성'
+            ]
+          },
+          {
+            'title': 'HTTP 메시지'
+          },
+          {
+            'title': '실습: REST API URI 설계'
           }
         ]
       },
@@ -793,21 +376,20 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': 'MVC 패턴이란?'
+            'title': 'ORM이란 무엇인가?'
           },
           {
-            'title': '컨트롤러와 서비스의 차이',
+            'title': '빌드도구란 무엇인가?',
             'descriptions': [
-              'url mapping',
-              '비즈니스 로직'
+              'Maven',
+              'Gradle'
             ]
           },
           {
-            'title': 'Spring MVC 실습',
-            'descriptions': [
-              '자바 서버 페이지(Java Server Pages)',
-              '어노테이션(Annotation)'
-            ]
+            'title': 'JDBC'
+          },
+          {
+            'title': '실습: JDBC를 이용한 CRUD'
           }
         ]
       },
@@ -815,22 +397,13 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'Mybatis란?',
+            'title': 'Spring',
             'descriptions': [
-              'ODBC란?'
+              'Spring Framework란 무엇인가?'
             ]
           },
           {
-            'title': 'DAO, DTO, VO',
-          },
-          {
-            'title': 'Spring MVC 실습',
-            'descriptions': [
-              'Transaction',
-              'Mapper',
-              'DAO',
-              'JSON'
-            ]
+            'title': '실습: Spring 프로젝트 환경설정(Hello, World)'
           }
         ]
       },
@@ -838,19 +411,20 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'Security Basic + Spring Security #1',
+            'title': 'Bean이란?',
             'descriptions': [
-              '쿠키(Cookie) & 세션(Session)',
-              'HTTPS'
+              'Bean scope(singleton vs prototype)',
+              'Bean properties'
             ]
           },
           {
-            'title': '암호화',
-            'descriptions': [
-              '단방향, 공개키, 개인키 암호화',
-              'bcrypt 암호화',
-              'salting 암호화'
-            ]
+            'title': 'Servlet, 컨테이너'
+          },
+          {
+            'title': '의존성 주입(DI) / 제어의 역전(IoC)'
+          },
+          {
+            'title': '관점지향 프로그래밍(Aspect Oriented Programming)'
           }
         ]
       },
@@ -858,10 +432,18 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'Spring#4 - Spring Security #2',
+            'title': 'MVC 패턴이란?'
+          },
+          {
+            'title': 'Spring MVC Request Lifecycle',
             'descriptions': [
-              'Spring Security를 사용해서 로그인 및 회원가입 구현'
+              '컨트롤러와 서비스의 차이',
+              'url mapping',
+              '비즈니스로직'
             ]
+          },
+          {
+            'title': '실습 : AOP를 활용한 로그 측정'
           }
         ]
       },
@@ -869,11 +451,18 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': 'Project Introduce',
+            'title': 'Mybatis, JDBC',
             'descriptions': [
-              '(선택1) MVC 디자인 패턴을 적용하여 관심있는 기능을 추가한 게시판 만들기',
-              '(선택2) OpenAPI를 이용한 자신만의 서비스 구현'
+              'Mybatis란?',
+              'DAO, DTO, VO',
+              'Transaction',
+              'Mapper',
+              'JSON',
+              'Data binding'
             ]
+          },
+          {
+            'title': '실습 : Mybatis를 활용한 CRUD'
           }
         ]
       },
@@ -881,9 +470,18 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': 'Project#1',
+            'title': '보안 기초',
             'descriptions': [
-              '자율 상용화 서비스 기획'
+              '보안, 암호화, 복호화',
+              '해싱 알고리즘'
+            ]
+          },
+          {
+            'title': '백엔드를 위한 보안',
+            'descriptions': [
+              'HTTPS',
+              '쿠키, 세션, JWT',
+              'bcrypt'
             ]
           }
         ]
@@ -892,42 +490,36 @@ export const trackDatas = [
         'week': '13',
         'contents': [
           {
-            'title': 'Project#2',
+            'title': 'AWS',
             'descriptions': [
-              '자율 상용화 서비스 기획'
+              '온프레미스와 클라우드의 차이',
+              'AWS의 핵심 요소'
+            ]
+          },
+          {
+            'title': 'EC2 인스턴스 생성',
+            'descriptions': [
+              '생성 절차',
+              '설정 방법'
+            ]
+          },
+          {
+            'title': '회고 안내',
+            'descriptions': [
+              '회고프로젝트 설명 및 일정 안내',
+              '프로젝트 진행시 유의사항 안내',
+              '선배들이 진행했던 프로젝트 간단 소개'
             ]
           }
         ]
       },
       {
-        'week': '14',
+        'week': '14 ~ 16',
         'contents': [
           {
-            'title': 'Project#3',
+            'title': 'Project',
             'descriptions': [
-              '자율 상용화 서비스 기획'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '15',
-        'contents': [
-          {
-            'title': 'Project 및 학습 보완',
-            'descriptions': [
-              '학습 진행도 고려한 유동적인 목표'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '16',
-        'contents': [
-          {
-            'title': 'Project 및 학습 보완',
-            'descriptions': [
-              '학습 진행도 고려한 유동적인 목표'
+              '자유 주제로 개인 프로젝트 진행'
             ]
           }
         ]
@@ -936,37 +528,7 @@ export const trackDatas = [
         'week': '17',
         'contents': [
           {
-            'title': 'Project#5 - Amazon Web Service',
-            'descriptions': [
-              '자율  상용화 서비스 발표'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '18',
-        'contents': [
-          {
-            'title': 'Server#1 - Redis'
-          }
-        ]
-      },
-      {
-        'week': '19',
-        'contents': [
-          {
-            'title': 'Server#2 - Linux'
-          }
-        ]
-      },
-      {
-        'week': '20',
-        'contents': [
-          {
-            'title': 'Server#3 - Nginx',
-            'descriptions': [
-              '최종 회고'
-            ]
+            'title': '회고'
           }
         ]
       }
@@ -993,10 +555,30 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': 'Android란? (장점 및 특징)',
+            'title': 'Kotlin 언어의 특징, 기본 문법',
             'descriptions': [
-              '버전 및 특징(~ Oreo, Pie)',
-              '안드로이드 스튜디오 설치'
+              '타입 추론, val, var, ?, !!, 프로퍼티, 커스텀 접근자',
+              '함수, 확장 함수, 고차 함수, 람다, 인라인 함수, 수신 객체 지정 람다',
+              '클래스, 클래스의 종류, companion object',
+              '컬렉션 확장 함수',
+              '제네릭'
+            ]
+          },
+          {
+            'title': 'Android 에 대한 이해',
+            'descriptions': [
+              'Android 란 무엇인가?',
+              'Android 버전 및 특징'
+            ]
+          },
+          {
+            'title': '안드로이드 스튜디오 설치'
+          },
+          {
+            'title': 'Git, Git flow 전략',
+            'descriptions': [
+              'git-flow cheatsheet',
+              'Git 및 git-fork 설치'
             ]
           }
         ]
@@ -1005,9 +587,29 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': 'Activity란?',
+            'title': 'Naming Convention',
             'descriptions': [
-              'Activity 생명 주기'
+              'XML Naming Convention',
+              'Kotlin Naming Convention',
+              'Const Naming convention'
+            ]
+          },
+          {
+            'title': '기본 Widget',
+            'descriptions': [
+              'View란?',
+              'Widget 종류',
+              'Widget 사용 방법',
+              'Widget 속성'
+            ]
+          },
+          {
+            'title': 'Layout 이란',
+            'descriptions': [
+              'LinearLayout이란?',
+              'RelativeLayout이란?',
+              'FrameLayout이란?',
+              'Constraint Layout이란?'
             ]
           }
         ]
@@ -1016,21 +618,31 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': '기본 Naming',
+            'title': 'Resource',
             'descriptions': [
-              'Java Class Naming(Camel Case)',
-              'xml Naming',
-              '변수 Naming'
+              'Drawable',
+              'Layout',
+              'Mipmap',
+              'Color',
+              'Strings'
             ]
           },
           {
-            'title': '기본 Widget',
+            'title': 'Styling and Theming',
             'descriptions': [
-              'Widget 사용 방법'
+              'themes.xml, Style 및 Custom style',
+              'textAppearance',
+              'attrs.xml'
             ]
           },
           {
-            'title': 'Widget 실습'
+            'title': '다양한 화면 크기, 버전, 다크 모드 대응',
+            'descriptions': [
+              '[resource]-[xxx]',
+              'Mipmap',
+              'Color',
+              'Strings'
+            ]
           }
         ]
       },
@@ -1051,11 +663,22 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': 'Fragment',
+            'title': 'Fragment란?',
             'descriptions': [
-              'Fragment란?',
               'Fragment 특징',
-              'Fragment 생명주기'
+              'Fragment 생명주기',
+              'FragmentManager 와 FragmentTransaction 활용',
+              'Fragment와 생성자 이슈',
+              '실습 : Activity 에서 버튼을 눌러 Fragment로 화면전환하기'
+            ]
+          },
+          {
+            'title': 'Dialog 이해',
+            'descriptions': [
+              'Dialog가 무엇인가?',
+              'Dialog 종류',
+              'Dialog 커스텀',
+              'AlertDialog 실습'
             ]
           }
         ]
@@ -1064,10 +687,23 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': 'Notification',
+            'title': 'Event Listener',
             'descriptions': [
-              'Oreo Notification과 이전 버전의 Notification 차이',
-              'Fragment 및 Notification 실습'
+              'Event Listener란 무엇인가?'
+            ]
+          },
+          {
+            'title': 'ListView',
+            'descriptions': [
+              'ListView란?'
+            ]
+          },
+          {
+            'title': 'RecyclerView',
+            'descriptions': [
+              'RecyclerView란?',
+              'ListView 와 RecyclerView 차이',
+              'LayoutManager'
             ]
           }
         ]
@@ -1076,10 +712,24 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': 'View',
+            'title': 'Bottom Navigation',
             'descriptions': [
-              'ListView / GridView란?',
-              'RecyclerView란?'
+              'Bottom Navigation이란?',
+              'Bottom Navigation과 Navigation Drawer'
+            ]
+          },
+          {
+            'title': 'ViewPager',
+            'descriptions': [
+              'ViewPager란?',
+              'ViewPager와 ViewPager2 차이'
+            ]
+          },
+          {
+            'title': 'TabLayout',
+            'descriptions': [
+              'TabLayout이란?',
+              'TabLayout + ViewPager2 로 스와이프 탭 구현'
             ]
           }
         ]
@@ -1088,11 +738,13 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'Drawer',
+            'title': 'Notification',
             'descriptions': [
-              'Navigation Drawer',
-              'ListView, Navgation Drawer 실습'
+              'Oreo Notification과 이전 버전의 Notification 차이'
             ]
+          },
+          {
+            'title': 'Fragment 및 Notification 실습'
           }
         ]
       },
@@ -1100,12 +752,18 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'Android Foreground와 Background',
+            'title': '공용 폴더에 파일 저장',
             'descriptions': [
-              'Foreground와 Background란?',
+              'Scoped Storage',
               'Oreo Background 제한',
               '뮤직플레이어 구현 실습'
             ]
+          },
+          {
+            'title': 'Content Provider'
+          },
+          {
+            'title': 'MediaStore'
           }
         ]
       },
@@ -1113,11 +771,17 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'Thread',
+            'title': 'Service와 Service 생명주기'
+          },
+          {
+            'title': 'Android Foreground와 Background',
             'descriptions': [
-              'Thread란 무엇인가?',
-              'StopWatch 구현 실습'
+              'Foreground와 Background란?',
+              'Oreo Background 제한'
             ]
+          },
+          {
+            'title': '실습: 뮤직플레이어 구현해보기'
           }
         ]
       },
@@ -1125,18 +789,23 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': 'Listener',
+            'title': 'Thread',
             'descriptions': [
-              'Listener란 무엇인가?',
-              'RecyclerView adapter에 Listener를 통해 클릭 시 해당 내용 가져오기 실습'
+              'Thread란 무엇인가?',
+              'ui 스레드와 스레드'
             ]
           },
           {
-            'title': '디자인 패턴',
+            'title': 'Coroutine',
             'descriptions': [
-              '디자인 패턴이란 무엇인가? (MVC, MVP, MVVM)',
-              '디자인 패턴(MVC), Navigation Drawer 실습'
+              'Coroutine이란 무엇인가?',
+              'Coroutine과 Thread 차이점',
+              'CoroutineScope, Dispatcher',
+              'Suspend Function'
             ]
+          },
+          {
+            'title': '실습: StopWatch 구현'
           }
         ]
       },
@@ -1144,22 +813,51 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': '오픈소스 라이브러리란 무엇인가?'
+            'title': '디자인 패턴이란 무엇인가?',
+            'descriptions': [
+              'Clean Architecture',
+              'Architectural Design Pattern'
+            ]
           },
           {
-            'title': 'Butterknife'
+            'title': 'MVC'
           },
           {
-            'title': 'Okhttp3 / Retrofit2'
+            'title': 'MVP'
           },
           {
-            'title': 'Glide'
+            'title': 'MVVM'
           },
           {
-            'title': 'Firebase Auth'
+            'title': 'MVI'
           },
           {
-            'title': 'Open Source Library 실습'
+            'title': 'View Binding과 Data Binding',
+            'descriptions': [
+              'View Binding과 Data Binding 이해'
+            ]
+          },
+          {
+            'title': '실습: 디자인 패턴(MVP,MVVM), Data Binding'
+          }
+        ]
+      },
+      {
+        'week': '13',
+        'contents': [
+          {
+            'title': 'Open Source',
+            'descriptions': [
+              '오픈소스 라이브러리란 무엇인가?',
+              'RxJava(RxKotlin)',
+              'Retrofit2',
+              'Glide',
+              'Jetpack',
+              'Meterial Design'
+            ]
+          },
+          {
+            'title': '실습: Open Source Library'
           }
         ]
       },
@@ -1167,14 +865,17 @@ export const trackDatas = [
         'week': '14',
         'contents': [
           {
-            'title': '난독화란?',
+            'title': '난독화',
             'descriptions': [
-              'Proguard',
-              '어플리케이션을 Proguard를 적용한 경우 / 아닌 경우 2가지로 컴파일 한 뒤 디컴파일하여 차이를 알아본다'
+              '난독화란?',
+              'Proguard R8'
             ]
           },
           {
-            'title': 'Open Source Library 실습, Progress Bar 실습'
+            'title': '자율 상용화 서비스 프로젝트 주제 선정'
+          },
+          {
+            'title': '실습: Open Source Library(Retrofit2) 실습'
           }
         ]
       },
@@ -1182,7 +883,7 @@ export const trackDatas = [
         'week': '15 ~ 19',
         'contents': [
           {
-            'title': '자율 상용화 서비스 만들기'
+            'title': '프로젝트 개발'
           }
         ]
       },
@@ -1191,6 +892,121 @@ export const trackDatas = [
         'contents': [
           {
             'title': '회고'
+          }
+        ]
+      }
+    ]
+  }, {
+    'name': 'iOS',
+    'about': [
+      {
+        'title': '기초 위주의 수업',
+        'description': '비기너 과정에 맞게 커리큘럼 구성'
+      },
+      {
+        'title': '디자인 패턴 기반의 프로젝트',
+        'description': '실무에서의 프로젝트 구조 이해'
+      },
+      {
+        'title': '프로젝트 기반의 커리큘럼',
+        'description': '프로젝트 제작 과정 이해'
+      }
+    ],
+    'curriculums': [
+      {
+        'week': '1~2',
+        'contents': [
+          {
+            'title': 'Swift 언어 특징 및 기본 문법',
+            'descriptions': [
+              '변수, 상수',
+              '옵셔널',
+              '함수, Closure'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': 'XCode 설치 및 프로젝트 생성',
+            'descriptions': [
+              'Xcode 설치 시 준비물',
+              'Xcode 설치',
+              'iOS 프로젝트 생성'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '4~5',
+        'contents': [
+          {
+            'title': '[프로젝트1] 인스타그램 만들기 - 화면 만들기',
+            'descriptions': [
+              '텍스트 넣기',
+              '레이아웃 구성하기',
+              '이미지 삽입하기'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '6',
+        'contents': [
+          {
+            'title': '[프로젝트1] 인스타그램 만들기 - 동작하기(1)',
+            'descriptions': [
+              'State에 대해',
+              'State에 따른 UI 변경 구현'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '7',
+        'contents': [
+          {
+            'title': '[프로젝트1] 인스타그램 만들기 - 동작하기(2)',
+            'descriptions': [
+              '여러 아이템 보여주기',
+              '다른 페이지로 이동'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '8~10',
+        'contents': [
+          {
+            'title': '[프로젝트2] 주변 식당 소개 앱 만들기 - 디자인 패턴',
+            'descriptions': [
+              '디자인 패턴에 대해',
+              'MVC, MVVM패턴의 특징과 차이점',
+              'SwiftUI에서의 MVVM 패턴 구조'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '11~13',
+        'contents': [
+          {
+            'title': '[프로젝트2] 주변 식당 소개 앱 만들기 - 라이브러리 활용',
+            'descriptions': [
+              'Cocoapod에 대해',
+              'Alamofire에 대해',
+              'API 연결'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '14~',
+        'contents': [
+          {
+            'title': '최종 과제 및 회고'
           }
         ]
       }
@@ -1219,17 +1035,17 @@ export const trackDatas = [
           {
             'title': 'UI/UX란 무엇인가 조사해보기',
             'descriptions': [
-              '멘토의 피드백'
+              '사전과제 피드백'
             ]
           },
           {
             'title': 'UI/UX 디자이너로서의 커리어 설계',
             'descriptions': [
-              '멘토의 강의( off-line / on-line )'
+              '강의 진행'
             ]
           },
           {
-            'title': '개발자가 보는 디자이너',
+            'title': '동아리내에서 UI/UX가 하는 작업',
             'descriptions': [
               '멘토의 강의( off-line / on-line )'
             ]
@@ -1237,13 +1053,70 @@ export const trackDatas = [
         ]
       },
       {
-        'week': '2 ~ 4',
+        'week': '2',
         'contents': [
           {
-            'title': '기초 UI/UX 디자인 교육',
+            'title': '앱의 유형별 차이와 Android / iOS 디자인 시 고려사항',
             'descriptions': [
-              '디바이스 환경 이해',
-              'UI/UX 프로세스 학습'
+              '사전과제 피드백'
+            ]
+          },
+          {
+            'title': 'Android / iOS 디자인 시 고려사항',
+            'descriptions': [
+              '강의 진행'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': 'UI/UX 디자인 트렌드',
+            'descriptions': [
+              '사전과제 피드백'
+            ]
+          },
+          {
+            'title': '참고 사이트',
+            'descriptions': [
+              'Notefolio',
+              'Pinterest',
+              'Behance'
+            ]
+          },
+          {
+            'title': '디자인 트렌드',
+            'descriptions': [
+              '강의진행'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '4',
+        'contents': [
+          {
+            'title': 'UI/UX 디자인 시스템, 기업사례 조사',
+            'descriptions': [
+              '사전과제 피드백'
+            ]
+          },
+          {
+            'title': '디자인시스템 + tool의 이해',
+            'descriptions': [
+              '강의진행'
+            ]
+          },
+          {
+            'title': '현업에서 쓰이는 도구들의 종류와 쓰임새',
+            'descriptions': [
+              'Adobe계열',
+              'Proto Pie',
+              'Sketch',
+              'Zeplin',
+              'BCSD에서 사용하는 도구'
             ]
           }
         ]
@@ -1252,20 +1125,15 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': '현업에서 쓰이는 도구들의 종류와 쓰임새',
+            'title': '디자인 프로세스 조사하기',
             'descriptions': [
-              'Adobe 계열(포토샵 / 일러스트레이터 / XD)',
-              'Proto Pie',
-              'Sketch(mac os only)',
-              'Zeplin'
+              '사전과제 피드백'
             ]
           },
           {
-            'title': 'BCSD Lab에서 쓰는 도구',
+            'title': 'UI/UX 디자인 프로세스',
             'descriptions': [
-              'Adobe XD',
-              'Adobe Photoshop',
-              'Zeplin'
+              '강의진행'
             ]
           }
         ]
@@ -1274,13 +1142,9 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': '디자이너와 개발자의 협업 프로세스',
+            'title': '와이어프레임',
             'descriptions': [
-              '서비스 기획',
-              'WireFrame',
-              'GUI 디자인',
-              'Prototype',
-              'Zeplin을 활용하여 전달'
+              '사전과제 피드백'
             ]
           }
         ]
@@ -1289,80 +1153,64 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': '협업 프로세스 실습(1)',
+            'title': 'GUI',
+            'descriptions': [
+              '사전과제 피드백'
+            ]
+          },
+          {
+            'title': 'GUI Benchmarking Practice',
+            'descriptions': [
+              'Mobile 2개, Web 2개씩'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '8 ~ 11',
+        'contents': [
+          {
+            'title': 'GUI Benchmarking Practice',
+            'descriptions': [
+              'Mobile 2개, Web 2개씩'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '12',
+        'contents': [
+          {
+            'title': 'UI 리뉴얼',
+            'descriptions': [
+              '제플린 사용법',
+              '제플린에서 기존 프로젝트 확인'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '13',
+        'contents': [
+          {
+            'title': 'UI 리뉴얼',
+            'descriptions': [
+              'Figma 사용법',
+              'Figma에서 기존 프로젝트 확인'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '14 ~ 18',
+        'contents': [
+          {
+            'title': '내가 만드는 상용화 서비스',
             'descriptions': [
               '서비스 기획',
-              'WireFrame'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '8',
-        'contents': [
-          {
-            'title': '협업 프로세스 실습(2)',
-            'descriptions': [
+              'WireFrame 제작',
               'GUI 디자인',
-              'Zeplin을 활용하여 전달'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '10',
-        'contents': [
-          {
-            'title': '디자이너는 어디에서 영감을 얻는가?',
-            'descriptions': [
-              'Notefolio',
-              'Pinterest(다른 디자이너들의 색깔을 알아보자)',
-              'Behance(영감을 얻고, 포트폴리오 게시까지)'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '11 ~ 14',
-        'contents': [
-          {
-            'title': 'GUI Benchmarking Practice',
-            'descriptions': [
-              '1인당 2개'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '17',
-        'contents': [
-          {
-            'title': 'GUI Benchmarking Practice',
-            'descriptions': [
-              '1인당 1개'
-            ]
-          },
-          {
-            'title': '내가 만드는 상용화 서비스',
-            'descriptions': [
-              '서비스 기획'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '18',
-        'contents': [
-          {
-            'title': 'GUI Benchmarking Practice',
-            'descriptions': [
-              '1인당 1개'
-            ]
-          },
-          {
-            'title': '내가 만드는 상용화 서비스',
-            'descriptions': [
-              'WireFrame 제작'
+              '제안서 제출'
             ]
           }
         ]
@@ -1371,16 +1219,15 @@ export const trackDatas = [
         'week': '19',
         'contents': [
           {
-            'title': 'GUI Benchmarking Practice',
+            'title': 'Zeplin을 활용하여 전달하는 방법',
             'descriptions': [
-              '1인당 1개'
+              '강의 진행'
             ]
           },
           {
-            'title': '내가 만드는 상용화 서비스',
+            'title': '자신이 만든 GUI 페이지 업로드하기',
             'descriptions': [
-              'GUI 디자인',
-              '제안서 제출'
+              '과제'
             ]
           }
         ]
@@ -1389,18 +1236,7 @@ export const trackDatas = [
         'week': '20',
         'contents': [
           {
-            'title': '내가 만드는 상용화 서비스',
-            'descriptions': [
-              '제안서 발표'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '23',
-        'contents': [
-          {
-            'title': '멘토 피드백'
+            'title': '회고'
           }
         ]
       }
@@ -1427,29 +1263,16 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': '"컴퓨터를 활용한 게임"에 대한 이해',
+            'title': 'Git',
             'descriptions': [
-              '재래식 게임의 특징',
-              '비디오 게임의 특징',
-              '재래식 게임과 비디오 게임의 비교'
+              '버전 관리 시스템과 Git'
             ]
           },
           {
-            'title': '"게임 개발"에 대한 이해',
+            'title': 'C#',
             'descriptions': [
-              '게임 개발의 간략한 역사',
-              '게임 개발 팀은 어떤 인력들로 구성되는가',
-              '게임 개발 인력들은 각자 어떤 업무를 수행하는가',
-              '일반적으로 게임은 어떤 순서로 개발되는가'
-            ]
-          },
-          {
-            'title': '"게임의 작동방식"에 대한 이해',
-            'descriptions': [
-              'game loop란? (keyword: input, update, render)',
-              'polling과 polling rate란? (keyword: response time of mouse and keyboard)',
-              'frame과 frame rate란? (keyword: delta time)',
-              'refresh와 refresh rate란? (keyword: monitor)'
+              '자료형, 문자 입출력, 배열',
+              '선택문과 반복문, 상수'
             ]
           }
         ]
@@ -1458,26 +1281,16 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': '"화면을 표현하는 기술"에 대한 이해',
+            'title': 'C#',
             'descriptions': [
-              'RGBA coloc space',
-              'color depth',
-              'screen resolution'
+              '함수와 모듈화',
+              '클래스'
             ]
           },
           {
-            'title': '"게임 화면 동기화 기술"에 대한 이해',
+            'title': '객체지향 프로그래밍',
             'descriptions': [
-              'frame buffer란?',
-              'double buffering이란? (keyword: screen tearing)',
-              'v-sync, free-sync, g-sync란?'
-            ]
-          },
-          {
-            'title': '"rendering pipeline"에 대한 이해',
-            'descriptions': [
-              'rendering pipeline은 무엇이며 필요성은? (keyword: cpu pipeline)',
-              'rendering pipline의 각 단계에서 수행하는 작업 요약'
+              '객체지향 프로그래밍(OOP)이란?'
             ]
           }
         ]
@@ -1486,9 +1299,12 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': 'software renderer (1)',
+            'title': '자료구조와 알고리즘'
+          },
+          {
+            'title': 'C#',
             'descriptions': [
-              '#1 Creating a Display ~ #11 Fill Conventions'
+              'Collection'
             ]
           }
         ]
@@ -1497,10 +1313,14 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'software renderer (2)',
+            'title': 'Unity 2D',
             'descriptions': [
-              '#12 Edge Scanning ~ #22 Lighting/Finale'
+              'Unity Interface, GameObject, Component',
+              'Transform, Event Function'
             ]
+          },
+          {
+            'title': 'Unity 2D RPG 제작실습 1'
           }
         ]
       },
@@ -1508,70 +1328,22 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': '"assembly language"에 대한 이해',
+            'title': 'Unity 2D',
             'descriptions': [
-              'assembly language란?',
-              'x86 assembly lanuage의 명령어와 레지스터',
-              'assembly language로 hello world 출력하기'
+              'Input, Physics, Prefab, Sprite',
+              'Layer, UGUI, Animation'
             ]
           },
           {
-            'title': '"character user interface"에 대한 이해',
-            'descriptions': [
-              'C/CPP로 hello world 코드 작성 후 disassembly 해보기',
-              '빈 콘솔 화면에서 아무 키를 누를 때마다 hello world를 한 글자씩 출력하는 프로젝트 만들기',
-              '콘솔 화면에서 임의의 문자를 화살표로 움직일 수 있는 프로젝트 만들기'
-            ]
+            'title': 'Unity 2D RPG 제작실습 2'
           }
         ]
       },
       {
-        'week': '6',
+        'week': '6 ~ 7',
         'contents': [
           {
-            'title': '"graphics api"에 대한 이해',
-            'descriptions': [
-              'opgnGL과 state machine이란?',
-              'directX와 direct3D란?',
-              'openGL과 direct3D의 비교'
-            ]
-          },
-          {
-            'title': '"game engine"에 대한 이해',
-            'descriptions': [
-              'unity engine과 mono란?',
-              'unity engine과 blueprint란?',
-              'unity engine과 unreal engine의 비교'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '7',
-        'contents': [
-          {
-            'title': '"compiler per platform"에 대한 이해',
-            'descriptions': [
-              'msvc, gcc, clang이란?',
-              'undefined behavior란 무엇이며 왜 필요한지?',
-              '컴파일러마다 결과가 다른 undefined behavior를 찾아보기'
-            ]
-          },
-          {
-            'title': '"visual studio IDE"에 대한 이해',
-            'descriptions': [
-              'project와 solution이란?',
-              '".lib"와 ".dll", 그리고 ".a"와 ".so"란?',
-              'vs IDE를 사용해 lib와 dll을 만들어보기'
-            ]
-          },
-          {
-            'title': '"debugging"에 대한 이해',
-            'descriptions': [
-              'compile error, runtime error, logical error란?',
-              '위의 3가지 오류를 해결하는 방법은?',
-              'vs IDE에서 사용할 수 있는 디버깅 기능들은?'
-            ]
+            'title': 'Unity 2D 모작 프로젝트 기획 및 구현'
           }
         ]
       },
@@ -1579,11 +1351,9 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': '"C#"에 대한 이해',
+            'title': '회고 문서화',
             'descriptions': [
-              '.net framework란?',
-              'C#이란 무엇이며 특징은?',
-              '참고자료 4번 github에 정리하기'
+              '프로젝트 회고 및 프로젝트 진행 내역 문서화'
             ]
           }
         ]
@@ -1592,13 +1362,26 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': '"unity 2D"에 대한 이해',
+            'title': 'Vector에 대한 이해',
             'descriptions': [
-              '참고자료 1번에서 unity hub 란 무엇이며, 어떻게 사용하는가를 알아보기',
-              '참고자료 2번에서 매우 간단한 게임을 만들어보고 github에 저장소로 남기기',
-              '참고자료 3번에서 unity 와 vs IDE 를 연동하여 디버깅 해보기',
-              '참고자료 4번에서 타일기반 게임을 만들어보고 github에 저장소로 남기기',
-              '위의 과정에서 배운 것들 중 인상적인 것들 정리하기'
+              '3D 공간에서의 point와 vector의 차이점',
+              '월드 좌표계, 로컬 좌표계',
+              '벡터의 내적',
+              '벡터의 외적'
+            ]
+          },
+          {
+            'title': 'Quaternion에 대한 이해',
+            'descriptions': [
+              'euler angle',
+              'gimbal lock',
+              'quaternion'
+            ]
+          },
+          {
+            'title': 'Unity 3D 튜토리얼',
+            'descriptions': [
+              "John Lemon's Haunted Jaunt"
             ]
           }
         ]
@@ -1607,12 +1390,10 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': '"unity 2D"에 대한 이해',
-            'descriptions': [
-              '참고자료 1번 또는 2번에서 2D 슈팅 게임을 만들어보고 github에 저장소로 남기기',
-              '참고자료 3번에서 다양한 해상도를 지원하는 UI 작성을 알아보기',
-              '위의 과정에서 배운 것들 중 인상적인 것들 정리하기'
-            ]
+            'title': 'Unity 3D 게임 제작의 이해'
+          },
+          {
+            'title': 'Unity 3D FPS 실습'
           }
         ]
       },
@@ -1620,20 +1401,7 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': '"unity async operation"에 대한 이해',
-            'descriptions': [
-              'unity coroutine이란?',
-              'unity async-await란?',
-              'unity coroutine과 unity async-await의 공통점과 차이점',
-              '튜토리얼 "2D Roguelike"의 coroutine 함수를 async-await로 변환해보기'
-            ]
-          },
-          {
-            'title': '"unity event system"에 대한 이해',
-            'descriptions': [
-              'unity event란 무엇이며 왜 필요한지?',
-              'event manager라는 개념을 사용하여 여러 클래스의 함수를 하나의 event로 묶는 방법'
-            ]
+            'title': 'Unity 3D FPS 실습'
           }
         ]
       },
@@ -1641,55 +1409,17 @@ export const trackDatas = [
         'week': '12',
         'contents': [
           {
-            'title': '"vector"에 대한 이해',
-            'descriptions': [
-              '3D 공간에서의 point와 vector의 차이점',
-              'homegeneous coordinate system이란 무엇이며 왜 필요한지?',
-              '벡터의 내적과 외적이 가지는 의미는 무엇이며 게임에서 어떻게 사용되는가?'
-            ]
-          },
-          {
-            'title': '"quaternion"에 대한 이해',
-            'descriptions': [
-              'euler angle이란 무엇이며 왜 필요한지?',
-              'gimbal lock이란 무엇이며 왜 발생하는지?',
-              'quaternion이란 무엇이며 어떤 특징을 가지는지'
-            ]
+            'title': '개인 프로젝트 구상 및 기획서 작성'
           }
         ]
       },
       {
-        'week': '13 ~ 14',
+        'week': '13 ~ 16',
         'contents': [
           {
-            'title': '"unity 3D"에 대한 이해',
+            'title': '개인 프로젝트',
             'descriptions': [
-              '참고자료 1번에서 간단한 3D 게임을 만들어보고 github에 저장소로 남기기',
-              '참고자료 2번에서 3D 슈팅 게임을 만들어보고 github에 저장소로 남기기',
-              '참고자료 2번에서 그래픽 효과 적용에 대해 알아보기',
-              '위의 과정에서 배운 것들 중 인상적인 것들 정리하기'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '15',
-        'contents': [
-          {
-            'title': 'Unity 프로젝트 개발 (1)',
-            'descriptions': [
-              '프로젝트 기획'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '16',
-        'contents': [
-          {
-            'title': 'Unity 프로젝트 개발 (2)',
-            'descriptions': [
-              '팀 편성 및 프로젝트 설계'
+              '프로젝트 진행사항 공유 및 피드백'
             ]
           }
         ]
@@ -1698,45 +1428,7 @@ export const trackDatas = [
         'week': '17',
         'contents': [
           {
-            'title': 'Unity 프로젝트 개발 (3)',
-            'descriptions': [
-              '프로토타입 개발'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '18',
-        'contents': [
-          {
-            'title': 'Unity 프로젝트 개발 (4)',
-            'descriptions': [
-              '기능 개발'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '19',
-        'contents': [
-          {
-            'title': 'Unity 프로젝트 개발 (5)',
-            'descriptions': [
-              '프로젝트 마무리',
-              '프로젝트 상호 평가',
-              '동료 상호 평가'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '20',
-        'contents': [
-          {
-            'title': 'Unity 프로젝트 배포',
-            'descriptions': [
-              '회고'
-            ]
+            'title': '개인 프로젝트 시연 및 회고 진행'
           }
         ]
       }
