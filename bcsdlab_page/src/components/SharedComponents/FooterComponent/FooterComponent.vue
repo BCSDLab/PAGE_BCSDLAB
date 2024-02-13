@@ -4,7 +4,7 @@
       <div class="footer__logo">
         <img
           @click="goUrl('')"
-          src="https://static.koreatech.in/assets/bcsdlab_img/topnav__bcsdlab__logo.png" alt="">
+          src="https://image.bcsdlab.com/favicon.ico" alt="bcadlab logo">
 
       </div>
       <div class="footer__copyright">
