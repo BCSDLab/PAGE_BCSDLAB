@@ -6,6 +6,7 @@ import ActivityPage from '@/components/SpaComponents/ActivityPage/ActivityPage'
 import TrackPage from '@/components/SpaComponents/TrackPage/TrackPage'
 import RecruitPage from '@/components/SpaComponents/RecruitPage/RecruitPage'
 import RecruitDetailPage from '@/components/SpaComponents/RecruitPage/RecruitDetailPage'
+import AboutPage from '@/components/SpaComponents/MainPage/AboutPage'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       component: MainPage
     },
     {
+      path: '/about',
+      name: 'About',
+      component: AboutPage
+    },
+    {
       path: '/activity',
       name: 'ActivityPage',
       component: ActivityPage
@@ -27,10 +33,6 @@ export default new Router({
       name: 'TrackPage',
       component: TrackPage,
       children: [
-        {
-          path: 'novice',
-          component: TrackPage
-        },
         {
           path: 'frontend',
           component: TrackPage
@@ -49,6 +51,10 @@ export default new Router({
         },
         {
           path: 'game',
+          component: TrackPage
+        },
+        {
+          path: 'ios',
           component: TrackPage
         }
       ]

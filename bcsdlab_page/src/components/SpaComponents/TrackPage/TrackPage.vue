@@ -67,9 +67,7 @@
           </tbody>
         </table>
       </div>
-      <div
-        v-if="selectedTrack != 'Novice'"
-        class="members">
+      <div class="members">
         <div class="title">MEMBERS</div>
         <div class="members__profile-container">
           <div class="members__profile-row">
@@ -122,9 +120,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="tools"
-        v-if="selectedTrack != 'Novice'">
+      <div class="tools">
         <div class="title">TECH STACK</div>
         <div class="tools-info">
           <div
@@ -146,172 +142,173 @@
 </template>
 
 <script>
-import { trackDatas } from '../../../static/trackDatas';
+import { trackDatas } from '../../../static/trackDatas'
 import * as api from '../../../api/api'
 
-  export default {
-    name: 'TrackPage',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App',
-        tracks: ['Novice', 'Front-End', 'Back-End', 'Android', 'UI/UX', 'Game'],
-        selectedTrack: 'Novice',
-        aboutDatas: null,
-        curriculums: null,
-        members: null,
-        teckStacks: null,
-        show: true
-      }
-    },
-    watch: {
-      $route(to, from) {
-        if (to.path.split('/')[2] == 'novice') {
-          this.selectedTrack = 'Novice'
-          trackDatas.forEach((data) => {
-          if (this.selectedTrack === data.name) {
-              this.aboutDatas = data.about
-              this.curriculums = data.curriculums
-            }
-          })
-        }
-      }
-    },
-    methods: {
-      selectTrack (track) {
-        this.show = false;
-        this.selectedTrack = track;
+export default {
+  name: 'TrackPage',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App',
+      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'UI/UX', 'Game'],
+      selectedTrack: 'Front-End',
+      aboutDatas: null,
+      curriculums: null,
+      members: null,
+      teckStacks: null,
+      show: true
+    }
+  },
+  watch: {
+    $route (to, from) {
+      if (to.path.split('/')[2] === 'frontend') {
+        this.selectedTrack = 'Front-End'
         trackDatas.forEach((data) => {
           if (this.selectedTrack === data.name) {
             this.aboutDatas = data.about
             this.curriculums = data.curriculums
           }
         })
-        console.log(track);
-        this.getTrackInfo(track);
-
-        switch(track) {
-          case "Novice":
-            this.$router.push('novice')
-            break;
-          case "Front-End":
-            this.$router.push('frontend')
-            break;
-          case "Back-End":
-            this.$router.push('backend');
-            break;
-          case "Android":
-            this.$router.push('android');
-            break;
-          case "UI/UX":
-            this.$router.push('uiux');
-            break;
-          case "Game":
-            this.$router.push('game');
-            break;
-        }
-      },
-      contentStyle (length, index) {
-        if (length % 2 == 0 && length > 2) {
-          if (index === length - 1 || index === length - 2) {
-            return {
-              'marginBottom': '0'
-            }
-          }
-        } else {
-          if (index === length - 1 && length > 2) {
-            return {
-              'marginBottom': '0'
-            }
-          }
-        }
-      },
-      async getTrackInfo (track) {
-        let id, result;
-        // console.log(track)
-        if (track == 'Android') id = 1;
-        else if (track == 'Back-End') id = 2;
-        else if (track == 'Front-End') id = 3;
-        else if (track == 'Game') id = 4;
-        else if (track == 'UI/UX') id = 7;
-        if (track != "Novice") {
-          result = await api.getTrackInfo(id);
-          let allMember = result.data.Members;
-          this.teckStacks = result.data.TechStacks;
-          this.members = allMember.filter(member => member.track == track.split('-').join(''));
-        }
-        this.show = true;
       }
-    },
-    beforeRouteUpdate (to, from, next) {
-      let path = to.fullPath.split('/');
-      console.log(path)
-      switch(path[2]) {
-        case "novice":
-          this.selectedTrack = 'Novice';
-          break;
-        case "frontend":
-          this.selectedTrack = 'Front-End';
-          break;
-        case "backend":
-          this.selectedTrack = 'Back-End';
-          break;
-        case "android":
-          this.selectedTrack = 'Android';
-          break;
-        case "uiux":
-          this.selectedTrack = 'UI/UX';
-          break;
-        case "game":
-          this.selectedTrack = 'Game';
-          break;
-      }
-
-      trackDatas.forEach((data) => {
-        if (this.selectedTrack === data.name) {
-          this.aboutDatas = data.about
-          this.curriculums = data.curriculums
-        }
-      })
-
-      document.documentElement.scrollTop = 0;
-      this.getTrackInfo(this.selectedTrack);
-      next();
-    },
-    created () {
-      console.log(this.selectedTrack);
-      let path = this.$router.history.current.path.split('/');
-      switch(path[2]) {
-        case "novice":
-          this.selectedTrack = "Novice";
-          break;
-        case "frontend":
-          this.selectedTrack = 'Front-End';
-          break;
-        case "backend":
-          this.selectedTrack = 'Back-End';
-          break;
-        case "android":
-          this.selectedTrack = 'Android';
-          break;
-        case "uiux":
-          this.selectedTrack = 'UI/UX';
-          break;
-        case "game":
-          this.selectedTrack = 'Game';
-          break;
-      }
-
-      trackDatas.forEach((data) => {
-        if (this.selectedTrack === data.name) {
-          this.aboutDatas = data.about
-          this.curriculums = data.curriculums
-        }
-      })
-
-      document.documentElement.scrollTop = 0;
-      this.getTrackInfo(this.selectedTrack);
     }
+  },
+  methods: {
+    selectTrack (track) {
+      this.show = false
+      this.selectedTrack = track
+      trackDatas.forEach((data) => {
+        if (this.selectedTrack === data.name) {
+          this.aboutDatas = data.about
+          this.curriculums = data.curriculums
+        }
+      })
+      console.log(track)
+      this.getTrackInfo(track)
+
+      switch (track) {
+        case 'Front-End':
+          this.$router.push('frontend')
+          break
+        case 'Back-End':
+          this.$router.push('backend')
+          break
+        case 'Android':
+          this.$router.push('android')
+          break
+        case 'UI/UX':
+          this.$router.push('uiux')
+          break
+        case 'Game':
+          this.$router.push('game')
+          break
+        case 'iOS':
+          this.$router.push('ios')
+          break
+      }
+    },
+    contentStyle (length, index) {
+      if (length % 2 === 0 && length > 2) {
+        if (index === length - 1 || index === length - 2) {
+          return {
+            'marginBottom': '0'
+          }
+        }
+      } else {
+        if (index === length - 1 && length > 2) {
+          return {
+            'marginBottom': '0'
+          }
+        }
+      }
+    },
+    async getTrackInfo (track) {
+      let id, result
+      // console.log(track)
+      if (track === 'Android') id = 1
+      else if (track === 'Back-End') id = 2
+      else if (track === 'Front-End') id = 3
+      else if (track === 'Game') id = 4
+      else if (track === 'UI/UX') id = 7
+      else if (track === 'iOS') id = 8
+      if (track) {
+        result = await api.getTrackInfo(id)
+        let allMember = result.data.Members
+        this.teckStacks = result.data.TechStacks
+        this.members = allMember.filter(member => member.track === track.split('-').join(''))
+      }
+      this.show = true
+    }
+  },
+  beforeRouteUpdate (to, from, next) {
+    let path = to.fullPath.split('/')
+    console.log(path)
+    switch (path[2]) {
+      case 'frontend':
+        this.selectedTrack = 'Front-End'
+        break
+      case 'backend':
+        this.selectedTrack = 'Back-End'
+        break
+      case 'android':
+        this.selectedTrack = 'Android'
+        break
+      case 'uiux':
+        this.selectedTrack = 'UI/UX'
+        break
+      case 'game':
+        this.selectedTrack = 'Game'
+        break
+      case 'ios':
+        this.selectedTrack = 'iOS'
+        break
+    }
+
+    trackDatas.forEach((data) => {
+      if (this.selectedTrack === data.name) {
+        this.aboutDatas = data.about
+        this.curriculums = data.curriculums
+      }
+    })
+
+    document.documentElement.scrollTop = 0
+    this.getTrackInfo(this.selectedTrack)
+    next()
+  },
+  created () {
+    console.log(this.selectedTrack)
+    let path = this.$router.history.current.path.split('/')
+    switch (path[2]) {
+      case 'frontend':
+        this.selectedTrack = 'Front-End'
+        break
+      case 'backend':
+        this.selectedTrack = 'Back-End'
+        break
+      case 'android':
+        this.selectedTrack = 'Android'
+        break
+      case 'uiux':
+        this.selectedTrack = 'UI/UX'
+        break
+      case 'game':
+        this.selectedTrack = 'Game'
+        break
+      case 'ios':
+        this.selectedTrack = 'iOS'
+        break
+    }
+
+    trackDatas.forEach((data) => {
+      if (this.selectedTrack === data.name) {
+        this.aboutDatas = data.about
+        this.curriculums = data.curriculums
+      }
+    })
+
+    document.documentElement.scrollTop = 0
+    this.getTrackInfo(this.selectedTrack)
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -328,7 +325,7 @@ import * as api from '../../../api/api'
     text-align: center;
     margin-bottom: 97.5px;
   }
-  
+
   .track-btn {
     width: 232px;
     border: none;
@@ -544,7 +541,8 @@ import * as api from '../../../api/api'
 
   .members__profile-img {
     width: 100%;
-    height: 201.3px; 
+    height: 201.3px;
+    object-fit: cover;
   }
 
   .members__profile-info {
@@ -651,7 +649,6 @@ import * as api from '../../../api/api'
     color: #778391;
     text-transform: uppercase;
   }
-
 
   .slide-fade-enter-active {
     transition: all .2s ease-in;
