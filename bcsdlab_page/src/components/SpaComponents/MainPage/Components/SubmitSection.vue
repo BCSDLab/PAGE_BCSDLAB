@@ -12,7 +12,7 @@
 
       <div class="submit__btns">
         <span
-          @click="clickBtn('https://forms.gle/P8ApXZ1nsbAizXXo9')"
+          @click="clickBtn('https://docs.google.com/forms/d/1srGyNIfmGkJ8lr1ecdRHD-bizq_2t_CKvX3G9Fwecss/edit')"
           class="submit__btn-submit">지원하기</span>
 
         <span

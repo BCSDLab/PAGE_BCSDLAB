@@ -29,39 +29,34 @@
             <div class="banner__title">
               {{ bannerDatas[nowBannerIndex].title }}
             </div>
-
-            <div class="banner__desc">
-              {{ bannerDatas[nowBannerIndex].desc }}
-            </div>
-
-            <div
-              v-if="nowBannerIndex === 1"
-              class="banner__date">
-              {{ bannerDatas[1].subInfo }}
-            </div>
-
-            <div class="banner__btns">
+            <div class="banner_content">
+              <div class="banner__desc">
+                {{ bannerDatas[nowBannerIndex].desc }}
+              </div>
+              <div
+                v-if="nowBannerIndex === 1"
+                class="banner__date">
+                {{ bannerDatas[1].subInfo }}
+              </div>
               <div
                 v-for="btn in bannerDatas[nowBannerIndex].btns"
                 @click="clickBtn(btn.btnLink)"
                 class="banner__btn">
                 {{ btn.btnTitle }}
               </div>
-            </div>
-
-            <div
-              class="banner__footer"
-              :class="{'banner__footer-second-margin': nowBannerIndex === 1}">
-              BCSD LAB은 현직 IT 실무에서 활동하는 멘토와 함께 프로젝트를 하는<br>
-              <span class="banner__footer-bold">스타트업형 프로세스 동아리</span>입니다.
               <div
-                @click="removeBanner"
-                class="banner__mouse">
-                <img src="https://static.koreatech.in/assets/bcsdlab_img/main_banner__mouse.png">
+                class="banner__footer"
+                :class="{'banner__footer-second-margin': nowBannerIndex === 1}">
+                BCSD LAB은 현직 IT 실무에서 활동하는 멘토와 함께 프로젝트를 하는<br>
+                <span class="banner__footer-bold">스타트업형 프로세스 동아리</span>입니다.
+                <!-- <div
+                  @click="removeBanner"
+                  class="banner__mouse">
+                  <img src="https://static.koreatech.in/assets/bcsdlab_img/main_banner__mouse.png">
+                </div> -->
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div
@@ -77,92 +72,90 @@
 </template>
 
 <script>
-  export default {
-    name: 'MainBanner',
-    props: {
-      nowBannerIndex: {
-        type: Number,
-        default: 0
-      }
-    },
-    data() {
-      return {
-        bannerDatas: [
-          {
-            backgroundImgUrl: "https://static.koreatech.in/assets/bcsdlab_img/main_banner__background.png",
-            backgroundColor: "",
-            title: "BCSD LAB",
-            desc: "Beyond Computer Software Development Laboratory ",
-            subInfo: "",
-            btns: [
-              {
-                btnTitle: "BCSD LAB 소개",
-                btnLink: "",
-              }
-            ]
-          }, {
-            backgroundImgUrl: "",
-            backgroundColor: "#f7941e",
-            title: "KOIN",
-            desc: "KOREATECH Community Site",
-            subInfo: "2018. 07",
-            subInfoImage: "https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png",
-            btns: [
-              {
-                btnTitle: "사이트 바로가기",
-                btnLink: "https://koreatech.in",
-              }
-            ]
-          }
-        ],
-        lastScrollTop: 0
-      }
-    },
-    methods: {
-      clickIndicator: function (index) {
-        this.$emit("selectBannerIndex", index)
-      },
-
-      clickBtn: function(link) {
-        switch(link) {
-          case '':
-            this.removeBanner();
-            break;
-
-          case 'https://koreatech.in':
-            window.open(link);
-            break;
-        }
-      },
-
-      removeBanner: function() {
-        this.$emit("removeBanner");
-      },
-
-      scrollDownEvent: function() {
-        let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-        console.log(st)
-        if (st > this.lastScrollTop){
-          this.removeBanner();
-        }
-        this.lastScrollTop = st <= 0 ? 0 : st;
-      },
-
-      clickNextBtn: function() {
-        if (this.nowBannerIndex == 0) this.$emit("selectBannerIndex", 1);
-        else if (this.nowBannerIndex == 1) this.$emit("selectBannerIndex", 0);
-        
-      }
-
-    },
-    mounted() {
-      window.addEventListener('scroll', this.scrollDownEvent);
-    },
-
-    destroyed() {
-      window.removeEventListener('scroll', this.scrollDownEvent);
+export default {
+  name: 'MainBanner',
+  props: {
+    nowBannerIndex: {
+      type: Number,
+      default: 0
     }
+  },
+  data () {
+    return {
+      bannerDatas: [
+        {
+          backgroundImgUrl: 'https://static.koreatech.in/assets/bcsdlab_img/main_banner__background.png',
+          backgroundColor: '',
+          title: 'BCSD LAB',
+          desc: 'Beyond Computer Software Development Laboratory ',
+          subInfo: '',
+          btns: [
+            {
+              btnTitle: 'BCSD LAB 소개',
+              btnLink: ''
+            }
+          ]
+        }, {
+          backgroundImgUrl: '',
+          backgroundColor: '#f7941e',
+          title: 'KOIN',
+          desc: 'KOREATECH Community Site',
+          subInfo: '2018. 07',
+          subInfoImage: 'https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png',
+          btns: [
+            {
+              btnTitle: '사이트 바로가기',
+              btnLink: 'https://koreatech.in'
+            }
+          ]
+        }
+      ],
+      lastScrollTop: 0
+    }
+  },
+  methods: {
+    clickIndicator: function (index) {
+      this.$emit('selectBannerIndex', index)
+    },
+
+    clickBtn: function (link) {
+      switch (link) {
+        case '':
+          this.removeBanner()
+          break
+
+        case 'https://koreatech.in':
+          window.open(link)
+          break
+      }
+    },
+
+    removeBanner: function () {
+      this.$emit('removeBanner')
+    },
+
+    // scrollDownEvent: function () {
+    //   let st = window.scrollY || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    //   if (st > this.lastScrollTop) {
+    //     this.removeBanner()
+    //   }
+    //   this.lastScrollTop = st <= 0 ? 0 : st
+    // },
+
+    clickNextBtn: function () {
+      if (this.nowBannerIndex === 0) this.$emit('selectBannerIndex', 1)
+      else if (this.nowBannerIndex === 1) this.$emit('selectBannerIndex', 0)
+    }
+
+  },
+  mounted () {
+    window.addEventListener('scroll', this.scrollDownEvent)
+  },
+
+  destroyed () {
+    window.removeEventListener('scroll', this.scrollDownEvent)
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -194,11 +187,10 @@
     background: #f7941e;
     position: relative;
   }
-
   .black__filter {
     background: #3d4551;
     opacity: 0.9;
-    height: 100vh;
+    height: 100%;
     min-height: 500px;
     min-width: 1400px;
   }
@@ -207,7 +199,7 @@
     width: 100%;
     height: 100%;
     min-height: 1000px;
-    background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right center/1260px 768px no-repeat !important;;
+    background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right top 60px /1040px 548px no-repeat !important;
   }
 
   .banner__container {
@@ -215,7 +207,7 @@
   }
 
   .banner__indicators {
-    padding-top: 257px;
+    padding-top: 150px;
     padding-left: 5px;
     width: 100%;
     height: 9px;
@@ -234,6 +226,12 @@
 
   .active {
     opacity: 1;
+  }
+
+  .banner_content {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .banner__title, .banner__desc {
@@ -267,7 +265,7 @@
   }
 
   .banner__btns {
-    margin-top: 75px;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -290,9 +288,8 @@
   }
 
   .banner__footer {
-    position: absolute;
-    bottom: 100px;
     width: 100%;
+    margin-top: 80px;
     font-family: AppleSDGothicNeoL00;
     font-size: 20px;
     font-weight: normal;
@@ -330,36 +327,25 @@
     cursor: pointer;
   }
 
-  .slide-fade-enter-active {
-    transition: all .2s ease;
-  }
-  .slide-fade-leave-active {
-    transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
-  .slide-fade-enter, .slide-fade-leave-to
-    /* .slide-fade-leave-active below version 2.1.8 */ {
-    transform: translateY(-100%);
-  }
-
   .banner__next__btn {
     cursor: pointer;
     position: absolute;
-    top: 543px;
+    top: 400px;
     bottom: 503px;
     right: 74px;
   }
-  
+
   @media (max-height: 870px) {
-    .banner__footer {
+    /* .banner__footer {
       position: relative;
-      margin-top: 190px;
+      margin-top: 10px;
       bottom: 0;
-    }
+    } */
 
     .banner__footer-second-margin {
       position: relative;
       bottom:0;
-      margin-top: 210px;
+      margin-top: 100px;
     }
   }
 
@@ -368,7 +354,7 @@
       width: 100%;
       height: 100%;
       min-height: 1000px;
-      background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right center/882px 537px no-repeat !important;;
+      background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right top 150px/782px 437px no-repeat !important;
     }
   }
 
@@ -377,7 +363,7 @@
       width: 100%;
       height: 100%;
       min-height: 1000px;
-      background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right center/740px 450px no-repeat !important;
+      background: url("https://static.koreatech.in/assets/bcsdlab_img/main_banner__sub-image.png") right 20pxtop 200px/640px 350px no-repeat !important;
     }
   }
 </style>
