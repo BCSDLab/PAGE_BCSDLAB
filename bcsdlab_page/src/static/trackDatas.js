@@ -258,15 +258,17 @@ export const trackDatas = [
         'week': '1',
         'contents': [
           {
-            'title': '객체와 클래스',
+            'title': '개발환경 세팅하기 (IntelliJ, JDK)',
             'descriptions': [
-              '객체지향 프로그래밍',
-              '객체 간 관계와 클래스 간 관계',
-              '상속과 구현'
+              '인텔리제이 설치',
+              'JDK 설정'
             ]
           },
           {
-            'title': '실습: 객체를 활용하는 프로그래밍'
+            'title': '실습: 자바 온보딩 미션 - 자동차경주 게임 구현',
+            'descriptions': [
+              'https://github.com/BCSDLab-Edu/java-racingcar'
+            ]
           }
         ]
       },
@@ -274,15 +276,14 @@ export const trackDatas = [
         'week': '2',
         'contents': [
           {
-            'title': 'JAVA',
+            'title': '객체지향 프로그래밍',
             'descriptions': [
-              'JAVA의 구조(JVM, JRE, JDK)',
-              'Collections Framework',
-              '객체지향 프로그래밍의 4가지 특징'
+              'SOLID 원칙',
+              'OOP의 4가지 특징'
             ]
           },
           {
-            'title': '실습: 객체지향적 프로그래밍'
+            'title': '실습: 자동차 경주 게임 - 리팩터링'
           }
         ]
       },
@@ -290,14 +291,19 @@ export const trackDatas = [
         'week': '3',
         'contents': [
           {
-            'title': 'MVC 패턴',
+            'title': '데이터베이스 기본',
             'descriptions': [
-              'MVC 패턴의 정의',
-              'MVC 패턴의 구성요소 설명'
+              '관계형 데이터베이스',
+              'RDBMS',
+              'SQL (DDL, DCL, DML)',
+              'NoSQL'
             ]
           },
           {
-            'title': '실습: MVC 패턴을 활용한 프로그래밍'
+            'title': '실습: SQL 쿼리 작성'
+          },
+          {
+            'title': '실습: 데이터베이스 설계'
           }
         ]
       },
@@ -305,19 +311,24 @@ export const trackDatas = [
         'week': '4',
         'contents': [
           {
-            'title': 'git이란?'
+            'title': '네트워크 기본',
+            'descriptions': [
+              'IP 주소, PORT, DNS, URL, URI'
+            ]
           },
           {
-            'title': 'pull request'
+            'title': 'HTTP',
+            'descriptions': [
+              'HTTP 메시지의 구조와 기능',
+              'HTTP 메소드와 응답코드',
+              'HTTP를 이용한 웹 요청 흐름'
+            ]
           },
           {
-            'title': 'fork'
+            'title': 'RestAPI'
           },
           {
-            'title': '.gitignore'
-          },
-          {
-            'title': '실습 : pull request 날려보기'
+            'title': '실습: REST API 설계하기'
           }
         ]
       },
@@ -325,19 +336,15 @@ export const trackDatas = [
         'week': '5',
         'contents': [
           {
-            'title': 'database란 무엇인가'
-          },
-          {
-            'title': 'database 기본 개념 조사',
+            'title': 'Spring',
             'descriptions': [
-              '관계형 데이터베이스 모델이란?',
-              'DBMS 필수 기능',
-              '1대1 관계, 1대다 관계, 다대다 관계',
-              'mysql, workbench 설치'
+              'Library, Framework',
+              'Spring Framework란?',
+              'Spring과 SpringBoot'
             ]
           },
           {
-            'title': '실습: DB 설계'
+            'title': '실습: SpringBoot 프로젝트 환경설정'
           }
         ]
       },
@@ -345,30 +352,15 @@ export const trackDatas = [
         'week': '6',
         'contents': [
           {
-            'title': '인터넷 네트워크 기초',
+            'title': 'Spring MVC',
             'descriptions': [
-              'IP, 인터넷 프로토콜',
-              'TCP, UDP',
-              'PORT',
-              'DNS',
-              'URI',
-              '웹 브라우저 요청 흐름'
+              'MVC란?',
+              'Spring MVC',
+              'Spring MVC Request LifeCycle'
             ]
           },
           {
-            'title': 'HTTP',
-            'descriptions': [
-              'HTTP란?',
-              '클라이언트 서버 구조',
-              '무상태성',
-              '비연결성'
-            ]
-          },
-          {
-            'title': 'HTTP 메시지'
-          },
-          {
-            'title': '실습: REST API URI 설계'
+            'title': '실습: GET, POST 요청하는 API 만들기'
           }
         ]
       },
@@ -376,17 +368,11 @@ export const trackDatas = [
         'week': '7',
         'contents': [
           {
-            'title': 'ORM이란 무엇인가?'
-          },
-          {
-            'title': '빌드도구란 무엇인가?',
+            'title': 'Spring JDBC',
             'descriptions': [
-              'Maven',
-              'Gradle'
+              'JdbcTemplate',
+              'h2 Database'
             ]
-          },
-          {
-            'title': 'JDBC'
           },
           {
             'title': '실습: JDBC를 이용한 CRUD'
@@ -397,13 +383,26 @@ export const trackDatas = [
         'week': '8',
         'contents': [
           {
-            'title': 'Spring',
+            'title': 'Spring Bean',
             'descriptions': [
-              'Spring Framework란 무엇인가?'
+              'POJO Bean과 Spring Bean',
+              'Bean Scope (singleton 방식과 prototype 방식)'
             ]
           },
           {
-            'title': '실습: Spring 프로젝트 환경설정(Hello, World)'
+            'title': 'Servlet과 Servlet Container'
+          },
+          {
+            'title': '의존성 주입 (DI) / 제어의 역전 (IOC)',
+            'descriptions': [
+              'Spring Bean 생명주기'
+            ]
+          },
+          {
+            'title': '관점지향 프로그래밍 (AOP)'
+          },
+          {
+            'title': '실습: AOP를 활용한 함수 실행시간 측정하기'
           }
         ]
       },
@@ -411,20 +410,16 @@ export const trackDatas = [
         'week': '9',
         'contents': [
           {
-            'title': 'Bean이란?',
-            'descriptions': [
-              'Bean scope(singleton vs prototype)',
-              'Bean properties'
-            ]
+            'title': 'ORM과 JPA'
           },
           {
-            'title': 'Servlet, 컨테이너'
+            'title': 'Entity, 영속화, 1차캐시'
           },
           {
-            'title': '의존성 주입(DI) / 제어의 역전(IoC)'
+            'title': 'Spring Data JPA'
           },
           {
-            'title': '관점지향 프로그래밍(Aspect Oriented Programming)'
+            'title': '실습: 7주차에서 작성한 코드 JPA로 리팩터링'
           }
         ]
       },
@@ -432,7 +427,8 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'MVC 패턴이란?'
+            'title': 'JPA 연관관계 매핑',
+
           },
           {
             'title': 'Spring MVC Request Lifecycle',
@@ -451,25 +447,6 @@ export const trackDatas = [
         'week': '11',
         'contents': [
           {
-            'title': 'Mybatis, JDBC',
-            'descriptions': [
-              'Mybatis란?',
-              'DAO, DTO, VO',
-              'Transaction',
-              'Mapper',
-              'JSON',
-              'Data binding'
-            ]
-          },
-          {
-            'title': '실습 : Mybatis를 활용한 CRUD'
-          }
-        ]
-      },
-      {
-        'week': '12',
-        'contents': [
-          {
             'title': '보안 기초',
             'descriptions': [
               '보안, 암호화, 복호화',
@@ -477,44 +454,39 @@ export const trackDatas = [
             ]
           },
           {
-            'title': '백엔드를 위한 보안',
+            'title': '웹에서의 보안',
             'descriptions': [
-              'HTTPS',
+              'HTTP와 HTTPS',
               '쿠키, 세션, JWT',
-              'bcrypt'
+              'Bcrypt'
             ]
+          },
+          {
+            'title': '실습: JWT를 활용하여 로그인 구현하기'
           }
         ]
       },
       {
-        'week': '13',
+        'week': '12',
         'contents': [
           {
-            'title': 'AWS',
+            'title': 'AWS와 배포',
             'descriptions': [
-              '온프레미스와 클라우드의 차이',
-              'AWS의 핵심 요소'
-            ]
-          },
-          {
-            'title': 'EC2 인스턴스 생성',
-            'descriptions': [
-              '생성 절차',
-              '설정 방법'
+              'EC2',
+              '간단한 애플리케이션 배포 흐름'
             ]
           },
           {
             'title': '회고 안내',
             'descriptions': [
               '회고프로젝트 설명 및 일정 안내',
-              '프로젝트 진행시 유의사항 안내',
-              '선배들이 진행했던 프로젝트 간단 소개'
+              '프로젝트 진행 방식 설명'
             ]
           }
         ]
       },
       {
-        'week': '14 ~ 16',
+        'week': '13 ~ 16',
         'contents': [
           {
             'title': 'Project',
