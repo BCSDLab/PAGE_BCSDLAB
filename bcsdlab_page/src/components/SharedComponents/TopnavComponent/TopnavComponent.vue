@@ -1,9 +1,10 @@
+<!-- eslint-disable vue/require-v-for-key -->
 <template>
   <div class="topnav__container">
     <div class="topnav__logo">
       <img
         @click="goUrl('/')"
-        src="https://image.bcsdlab.com/favicon.ico" alt="bcsdlab logo">
+        src="../../../assets/logo.svg" alt="bcsdlab logo">
     </div>
 
     <div class="topnav__menu__container">
@@ -82,10 +83,8 @@ export default {
 
   .topnav__logo img{
     float:left;
-    width: 160px;
     margin-top: 24px;
     margin-left: 40px;
-    height: 22.7px;
     cursor: pointer;
   }
 
