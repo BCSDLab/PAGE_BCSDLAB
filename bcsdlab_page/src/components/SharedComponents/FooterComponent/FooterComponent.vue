@@ -4,7 +4,7 @@
       <div class="footer__logo">
         <img
           @click="goUrl('')"
-          src="https://image.bcsdlab.com/favicon.ico" alt="bcadlab logo">
+          src="../../../assets/logo.svg" alt="bcadlab logo">
 
       </div>
       <div class="footer__copyright">
@@ -41,7 +41,7 @@ export default {
 
   .footer__logo img{
     margin-top: 59px;
-    height: 22.7px;
+    height: 40px;
     cursor: pointer;
   }
 
