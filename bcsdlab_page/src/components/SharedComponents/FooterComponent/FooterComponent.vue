@@ -41,15 +41,15 @@ export default {
 
   .footer__logo img{
     margin-top: 59px;
-    height: 40px;
+    height: 37px;
     cursor: pointer;
   }
 
   .footer__copyright {
-    margin-top: 20px;
+    margin-top: 11px;
     float: left;
     font-family: AppleSDGothicNeoL00;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
