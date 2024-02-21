@@ -1155,18 +1155,6 @@ export const trackDatas = [
           {
             'title': 'UI 리뉴얼',
             'descriptions': [
-              '제플린 사용법',
-              '제플린에서 기존 프로젝트 확인'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '13',
-        'contents': [
-          {
-            'title': 'UI 리뉴얼',
-            'descriptions': [
               'Figma 사용법',
               'Figma에서 기존 프로젝트 확인'
             ]
@@ -1174,7 +1162,7 @@ export const trackDatas = [
         ]
       },
       {
-        'week': '14 ~ 18',
+        'week': '13 ~ 17',
         'contents': [
           {
             'title': '내가 만드는 상용화 서비스',
@@ -1188,24 +1176,7 @@ export const trackDatas = [
         ]
       },
       {
-        'week': '19',
-        'contents': [
-          {
-            'title': 'Zeplin을 활용하여 전달하는 방법',
-            'descriptions': [
-              '강의 진행'
-            ]
-          },
-          {
-            'title': '자신이 만든 GUI 페이지 업로드하기',
-            'descriptions': [
-              '과제'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '20',
+        'week': '18',
         'contents': [
           {
             'title': '회고'
