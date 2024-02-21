@@ -1179,6 +1179,17 @@ export const trackDatas = [
         'week': '18',
         'contents': [
           {
+            'title': '자신이 만든 GUI 페이지 업로드하기',
+            'descriptions': [
+              '과제'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '19',
+        'contents': [
+          {
             'title': '회고'
           }
         ]
