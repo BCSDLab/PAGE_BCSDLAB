@@ -128,7 +128,7 @@ export default {
       window.open('https://docs.google.com/forms/d/e/1FAIpQLSctPGdoHbJgnBavVzNAozkLDQkOdg3oEK-TL6S9S4kzhUWZqQ/viewform?usp=sf_link')
     },
     inquiry () {
-      window.open('https://www.facebook.com/BCSD-Lab-1727922507422214/?ref=bookmarks')
+      window.open('mailto:bcsdlab@gmail.com')
     }
   }
 }

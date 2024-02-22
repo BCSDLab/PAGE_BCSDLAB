@@ -83,7 +83,7 @@
           </a>
           <a
             target="_blank"
-            href="https://www.facebook.com/BCSD-Lab-1727922507422214/">
+            href="mailto:bcsdlab@gmail.com">
             <button class="inquiry-btn">
               문의하기
             </button>
