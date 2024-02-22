@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import recruitDatas from '../../../../static/recruitDatas';
-import Tag from './Tag';
+import recruitDatas from '../../../../static/recruitDatas'
+import Tag from './Tag'
 export default {
-  name: "PositionCard",
+  name: 'PositionCard',
   components: {
     'tag': Tag
   },
@@ -50,12 +50,12 @@ export default {
     }
   },
   methods: {
-    goDetailPage(path, index) {
-      this.$router.push({ name: 'RecruitDetailPage', params: {id: path, data: recruitDatas[index]} });
+    goDetailPage (path, index) {
+      this.$router.push({ name: 'RecruitDetailPage', params: {id: path, data: recruitDatas[index]} })
     }
   },
-  created() {
-    this.datas = recruitDatas;
+  created () {
+    this.datas = recruitDatas
   }
 }
 </script>
@@ -69,7 +69,7 @@ export default {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   thead tr th {
     background: #77828f;
     color: #fff;
@@ -89,6 +89,7 @@ export default {
   }
 
   .position {
+    font-family: AppleSDGothicNeoB00;
     width: 200px;
   }
 
@@ -101,9 +102,14 @@ export default {
   }
 
   .tags {
+    font-family: AppleSDGothicNeoB00;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .period {
+    font-family: AppleSDGothicNeoB00;
   }
 
 </style>

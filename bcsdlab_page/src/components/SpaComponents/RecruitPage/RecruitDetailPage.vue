@@ -76,7 +76,7 @@
         <div class="card-footer">
           <a
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdSC__CQPMvbi2Sa-wDV3jWe0JOpMrj8Vsn2d5SO6uAgVhdTw/viewform">
+            href="https://docs.google.com/forms/d/e/1FAIpQLSctPGdoHbJgnBavVzNAozkLDQkOdg3oEK-TL6S9S4kzhUWZqQ/viewform?usp=sf_link ">
             <button class="apply-btn">
               지원하기
             </button>
