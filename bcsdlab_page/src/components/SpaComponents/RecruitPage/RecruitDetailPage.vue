@@ -27,7 +27,7 @@
         </div>
         <div class="card-body">
           <p class="title">◆ 포지션</p>
-          <span>23년도 하반기 {{ data.contents.track }} {{ data.position }}</span>
+          <span>24년도 상반기 {{ data.contents.track }} {{ data.position }}</span>
 
           <p class="title">◆ 지원기간</p>
           <span>{{recruitDatas[0].period}}</span>
