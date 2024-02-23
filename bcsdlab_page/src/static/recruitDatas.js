@@ -39,19 +39,19 @@ const recruitDatas = [
     'learningContents': ['Android 기초', 'Android 기본 view', 'Fragment', 'Android 4대 컴포넌트(Activity, Service, Broadcast Receiver, Content Provider)', 'Android open source library'],
     'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
   },
-  {
-    'position': 'Beginner',
-    'contents': {
-      'name': 'iOS 트랙 Beginner 모집',
-      'track': 'iOS',
-      'tags': ['iOS', 'Beginner', 'Swift', 'SwiftUI', 'Alamofire', 'Combine', 'CocoaPod']
-    },
-    'period': '2024년 상반기',
-    'path': ['ios-beginner', 'ios'],
-    'qualification': ['맥북 등 맥 기기를 가지고 있는 사람', 'iOS에 관심이 많으신 분'],
-    'learningContents': ['iOS 기초', 'iOS 기본 view(SwiftUI)', 'MVVM 패턴', 'API 연결 및 통신', '라이브러리 활용'],
-    'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
-  },
+  // {
+  //   'position': 'Beginner',
+  //   'contents': {
+  //     'name': 'iOS 트랙 Beginner 모집',
+  //     'track': 'iOS',
+  //     'tags': ['iOS', 'Beginner', 'Swift', 'SwiftUI', 'Alamofire', 'Combine', 'CocoaPod']
+  //   },
+  //   'period': '2024년 상반기',
+  //   'path': ['ios-beginner', 'ios'],
+  //   'qualification': ['맥북 등 맥 기기를 가지고 있는 사람', 'iOS에 관심이 많으신 분'],
+  //   'learningContents': ['iOS 기초', 'iOS 기본 view(SwiftUI)', 'MVVM 패턴', 'API 연결 및 통신', '라이브러리 활용'],
+  //   'process': '지원서 접수 -> 지원서 검토 -> 커리큘럼 진행 -> 회고'
+  // },
   {
     'position': 'Beginner',
     'contents': {
