@@ -4,7 +4,7 @@
       <div class="footer__logo">
         <img
           @click="goUrl('')"
-          src="../../../assets/logo.svg" alt="bcadlab logo">
+          src="../../../assets/logo.png" alt="bcadlab logo">
 
       </div>
       <div class="footer__copyright">
@@ -40,13 +40,14 @@ export default {
   }
 
   .footer__logo img{
-    margin-top: 59px;
-    height: 37px;
+    margin-top: 40px;
     cursor: pointer;
+    width: 225px;
   }
 
   .footer__copyright {
     margin-top: 11px;
+    margin-left: 50px;
     float: left;
     font-family: AppleSDGothicNeoL00;
     font-size: 13px;

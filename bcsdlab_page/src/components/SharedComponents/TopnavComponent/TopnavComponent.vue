@@ -4,7 +4,7 @@
     <div class="topnav__logo">
       <img
         @click="goUrl('/')"
-        src="../../../assets/logo.svg" alt="bcsdlab logo">
+        src="../../../assets/logo.png" alt="bcsdlab logo">
     </div>
 
     <div class="topnav__menu__container">
@@ -83,9 +83,9 @@ export default {
 
   .topnav__logo img{
     float:left;
-    margin-top: 24px;
-    margin-left: 40px;
+    margin-top: 5px;
     cursor: pointer;
+    width: 280px;
   }
 
   .topnav__menu__container {
