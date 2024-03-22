@@ -50,7 +50,7 @@ export default {
   methods: {
     goUrl: function (link) {
       if (link === '/tech') {
-        alert('준비 중 입니다.')
+        window.open('https://blog.bcsdlab.com/', '_blank')
       } else {
         this.$router.push(link)
       }
