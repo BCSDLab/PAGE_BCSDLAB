@@ -12,11 +12,11 @@
 
       <div class="submit__btns">
         <span
-          @click="clickBtn('https://docs.google.com/forms/d/1srGyNIfmGkJ8lr1ecdRHD-bizq_2t_CKvX3G9Fwecss/edit')"
+          @click="clickBtn('https://docs.google.com/forms/d/e/1FAIpQLSctPGdoHbJgnBavVzNAozkLDQkOdg3oEK-TL6S9S4kzhUWZqQ/viewform?usp=sf_link')"
           class="submit__btn-submit">지원하기</span>
 
         <span
-          @click="clickBtn('https://www.facebook.com/BCSD-Lab-1727922507422214/')"
+          @click="clickBtn('http://mailto:bcsdlab@gmail.com')"
           class="submit__btn-ask">문의하기</span>
       </div>
     </div>
