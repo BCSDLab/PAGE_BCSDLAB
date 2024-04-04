@@ -37,8 +37,8 @@ export default {
           link: '/activity'
         },
         {
-          name: 'TECH',
-          link: '/tech'
+          name: 'BLOG',
+          link: '/blog'
         },
         {
           name: 'RECRUIT',
@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     goUrl: function (link) {
-      if (link === '/tech') {
+      if (link === '/blog') {
         window.open('https://blog.bcsdlab.com/', '_blank')
       } else {
         this.$router.push(link)
