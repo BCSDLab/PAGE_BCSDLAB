@@ -1,8 +1,9 @@
 import axios from 'axios/index'
 const API_PATH = process.env.ROOT_API
+const INTERNAL_API_PATH = process.env.INTERNAL_API
 
 export function getMembers () {
-  return axios.get(`${API_PATH}members`)
+  return axios.get(`${INTERNAL_API_PATH}members/v2`)
 }
 
 export function getActivites (year) {
