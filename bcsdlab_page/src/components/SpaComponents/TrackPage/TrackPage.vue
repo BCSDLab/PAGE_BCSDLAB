@@ -74,7 +74,7 @@
             <div
               class="members__profile-card mentor-card"
               v-for="(member, index) in members"
-              v-if="member.position == 'Mentor'"
+              v-if="member.position == 'MENTOR'"
               :key="index">
               <img
                 class="members__profile-img"
@@ -90,7 +90,7 @@
             <div
               v-for="(member, index) in members"
               class="members__profile-card regular-card"
-              v-if="member.position == 'Regular'"
+              v-if="member.position == 'REGULAR'"
               :key="index">
               <img
                 class="members__profile-img"
@@ -232,9 +232,9 @@ export default {
       else if (track === 'iOS') id = 8
       if (track) {
         result = await api.getTrackInfo(id)
-        let allMember = result.data.Members
+        let allMember = await api.getMembers()
         this.teckStacks = result.data.TechStacks
-        this.members = allMember.filter(member => member.track === track.split('-').join(''))
+        this.members = allMember.data.filter(item => item.track === track.split('-').join(''))
       }
       this.show = true
     }
