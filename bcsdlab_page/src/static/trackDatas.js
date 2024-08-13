@@ -427,8 +427,7 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'JPA 연관관계 매핑',
-
+            'title': 'JPA 연관관계 매핑'
           },
           {
             'title': 'Spring MVC Request Lifecycle',
@@ -985,7 +984,7 @@ export const trackDatas = [
     ]
   },
   {
-    'name': 'UI/UX',
+    'name': 'Design',
     'about': [
       {
         'title': '상용화 프로젝트 경험',

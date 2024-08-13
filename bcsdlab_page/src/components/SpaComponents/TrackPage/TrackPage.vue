@@ -150,7 +150,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'UI/UX', 'Game'],
+      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'Design', 'Game', 'Data-Analyst', 'Product-Manager'],
       selectedTrack: 'Front-End',
       aboutDatas: null,
       curriculums: null,
@@ -195,14 +195,20 @@ export default {
         case 'Android':
           this.$router.push('android')
           break
-        case 'UI/UX':
-          this.$router.push('uiux')
+        case 'Design':
+          this.$router.push('design')
           break
         case 'Game':
           this.$router.push('game')
           break
         case 'iOS':
           this.$router.push('ios')
+          break
+        case 'Data-Analyst':
+          this.$router.push('data-analyst')
+          break
+        case 'Product-Manager':
+          this.$router.push('product-manager')
           break
       }
     },
@@ -252,14 +258,20 @@ export default {
       case 'android':
         this.selectedTrack = 'Android'
         break
-      case 'uiux':
-        this.selectedTrack = 'UI/UX'
+      case 'design':
+        this.selectedTrack = 'Design'
         break
       case 'game':
         this.selectedTrack = 'Game'
         break
       case 'ios':
         this.selectedTrack = 'iOS'
+        break
+      case 'data-analyst':
+        this.selectedTrack = 'Data-Analyst'
+        break
+      case 'product-manager':
+        this.selectedTrack = 'Product-Manager'
         break
     }
 
@@ -287,14 +299,20 @@ export default {
       case 'android':
         this.selectedTrack = 'Android'
         break
-      case 'uiux':
-        this.selectedTrack = 'UI/UX'
+      case 'design':
+        this.selectedTrack = 'Design'
         break
       case 'game':
         this.selectedTrack = 'Game'
         break
       case 'ios':
         this.selectedTrack = 'iOS'
+        break
+      case 'data-analyst':
+        this.selectedTrack = 'Data-Analyst'
+        break
+      case 'product-manager':
+        this.selectedTrack = 'Product-Manager'
         break
     }
 
