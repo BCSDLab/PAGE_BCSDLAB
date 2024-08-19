@@ -46,7 +46,7 @@ export default new Router({
           component: TrackPage
         },
         {
-          path: 'uiux',
+          path: 'design',
           component: TrackPage
         },
         {
@@ -55,6 +55,14 @@ export default new Router({
         },
         {
           path: 'ios',
+          component: TrackPage
+        },
+        {
+          path: 'data-analyst',
+          component: TrackPage
+        },
+        {
+          path: 'product-manager',
           component: TrackPage
         }
       ]
