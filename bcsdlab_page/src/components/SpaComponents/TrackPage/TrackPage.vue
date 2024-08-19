@@ -143,6 +143,7 @@
 
 <script>
 import { trackDatas } from '../../../static/trackDatas'
+// import { TECH_STACK_DATA } from '../../../static/techStackData'
 import * as api from '../../../api/api'
 
 export default {
@@ -150,7 +151,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'UI/UX', 'Game'],
+      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'Design', 'Game', 'Data-Analyst', 'Product-Manager'],
       selectedTrack: 'Front-End',
       aboutDatas: null,
       curriculums: null,
@@ -182,7 +183,6 @@ export default {
           this.curriculums = data.curriculums
         }
       })
-      console.log(track)
       this.getTrackInfo(track)
 
       switch (track) {
@@ -195,14 +195,20 @@ export default {
         case 'Android':
           this.$router.push('android')
           break
-        case 'UI/UX':
-          this.$router.push('uiux')
+        case 'Design':
+          this.$router.push('design')
           break
         case 'Game':
           this.$router.push('game')
           break
         case 'iOS':
           this.$router.push('ios')
+          break
+        case 'Data-Analyst':
+          this.$router.push('data-analyst')
+          break
+        case 'Product-Manager':
+          this.$router.push('product-manager')
           break
       }
     },
@@ -222,26 +228,33 @@ export default {
       }
     },
     async getTrackInfo (track) {
+      let selectedTrack = track
       let id, result
-      // console.log(track)
       if (track === 'Android') id = 1
       else if (track === 'Back-End') id = 2
       else if (track === 'Front-End') id = 3
       else if (track === 'Game') id = 4
-      else if (track === 'UI/UX') id = 7
+      else if (track === 'Design') id = 7
       else if (track === 'iOS') id = 8
+      else if (track === 'Data-Analyst') selectedTrack = 'Data'
       if (track) {
-        result = await api.getTrackInfo(id)
+        if (id === undefined) {
+          // let selectedTechStackData = TECH_STACK_DATA.find(item => item.name === track)
+          // this.teckStacks = selectedTechStackData.techStacks
+          // console.log(this.teckStacks)
+          this.teckStacks = []
+        } else {
+          result = await api.getTrackInfo(id)
+          this.teckStacks = result.data.TechStacks
+        }
         let allMember = await api.getMembers()
-        this.teckStacks = result.data.TechStacks
-        this.members = allMember.data.filter(item => item.track === track.split('-').join(''))
+        this.members = allMember.data.filter(item => item.track === selectedTrack.split('-').join(''))
       }
       this.show = true
     }
   },
   beforeRouteUpdate (to, from, next) {
     let path = to.fullPath.split('/')
-    console.log(path)
     switch (path[2]) {
       case 'frontend':
         this.selectedTrack = 'Front-End'
@@ -252,14 +265,20 @@ export default {
       case 'android':
         this.selectedTrack = 'Android'
         break
-      case 'uiux':
-        this.selectedTrack = 'UI/UX'
+      case 'design':
+        this.selectedTrack = 'Design'
         break
       case 'game':
         this.selectedTrack = 'Game'
         break
       case 'ios':
         this.selectedTrack = 'iOS'
+        break
+      case 'data-analyst':
+        this.selectedTrack = 'Data-Analyst'
+        break
+      case 'product-manager':
+        this.selectedTrack = 'Product-Manager'
         break
     }
 
@@ -275,7 +294,6 @@ export default {
     next()
   },
   created () {
-    console.log(this.selectedTrack)
     let path = this.$router.history.current.path.split('/')
     switch (path[2]) {
       case 'frontend':
@@ -287,14 +305,20 @@ export default {
       case 'android':
         this.selectedTrack = 'Android'
         break
-      case 'uiux':
-        this.selectedTrack = 'UI/UX'
+      case 'design':
+        this.selectedTrack = 'Design'
         break
       case 'game':
         this.selectedTrack = 'Game'
         break
       case 'ios':
         this.selectedTrack = 'iOS'
+        break
+      case 'data-analyst':
+        this.selectedTrack = 'Data-Analyst'
+        break
+      case 'product-manager':
+        this.selectedTrack = 'Product-Manager'
         break
     }
 

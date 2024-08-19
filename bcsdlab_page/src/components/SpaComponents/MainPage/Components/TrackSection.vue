@@ -18,6 +18,7 @@
         <div
           @click="goUrl(trackData.link)"
           v-for="(trackData, index) in trackDatas"
+          :key="index"
           :class="{'track__card__third': index%3===2}"
           class="track__card">
 
@@ -66,9 +67,9 @@ export default {
           link: 'track/game'
         },
         {
-          name: 'UI/UX',
+          name: 'Design',
           memberCount: '07',
-          link: 'track/uiux'
+          link: 'track/design'
         }
       ]
     }

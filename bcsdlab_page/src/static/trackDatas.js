@@ -427,8 +427,7 @@ export const trackDatas = [
         'week': '10',
         'contents': [
           {
-            'title': 'JPA 연관관계 매핑',
-
+            'title': 'JPA 연관관계 매핑'
           },
           {
             'title': 'Spring MVC Request Lifecycle',
@@ -985,7 +984,7 @@ export const trackDatas = [
     ]
   },
   {
-    'name': 'UI/UX',
+    'name': 'Design',
     'about': [
       {
         'title': '상용화 프로젝트 경험',
@@ -1383,6 +1382,349 @@ export const trackDatas = [
         'contents': [
           {
             'title': '개인 프로젝트 시연 및 회고 진행'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    'name': 'Data-Analyst',
+    'about': [
+      {
+        'title': '데이터 처리 및 분석',
+        'description': 'Python 및 SQL을 활용한<br>데이터 분석 및 시각화'
+      },
+      {
+        'title': 'A/B 테스트 설계 및 실행',
+        'description': 'A/B 테스트의 기본 원리와 실험 설계 방법을<br>이해 및 인사이트 도출'
+      },
+      {
+        'title': '리텐션 분석 및 고객 행동 이해',
+        'description': '고객 유지율, 이탈률 등의 지표 분석을<br>통한 서비스 개선 방향 제시'
+      }
+    ],
+    'curriculums': [
+      {
+        'week': '1',
+        'contents': [
+          {
+            'title': 'Python (정제)',
+            'descriptions': [
+              '파이썬과 R의 차이',
+              '데이터 가져오기와 데이터 프레임',
+              '데이터의 타입이란? '
+            ]
+          }
+        ]
+      },
+      {
+        'week': '2',
+        'contents': [
+          {
+            'title': 'SQL (SELECT, FROM, WHERE)',
+            'descriptions': [
+              'SQL이란?',
+              '데이터를 탐색하는 방법'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': 'Python (요약)',
+            'descriptions': [
+              '데이터 요약하기',
+              '데이터 그룹화하기'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '4',
+        'contents': [
+          {
+            'title': 'SQL (GROUP BY, HAVING, SUM/COUNT)',
+            'descriptions': [
+              '집계를 활용한 데이터 탐색'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '5 ~ 7',
+        'contents': [
+          {
+            'title': 'Python (시각화)',
+            'descriptions': [
+              '시각화 라이브러리 소개',
+              '다양한 plot 소개 및 실습'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '8',
+        'contents': [
+          {
+            'title': 'Python (검증)',
+            'descriptions': [
+              '귀무가설과 대립가설',
+              '정규성 검증',
+              '등분산성 검증'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '9',
+        'contents': [
+          {
+            'title': 'SQL (JOIN, UNNEST)',
+            'descriptions': [
+              'JOIN 이란?',
+              '각 조인의 방법',
+              '빅쿼리(BigQuery)의 UNNEST'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '10',
+        'contents': [
+          {
+            'title': 'Python (예측)',
+            'descriptions': [
+              'ERD를 활용한 데이터 탐색',
+              '모델 생성'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '11',
+        'contents': [
+          {
+            'title': 'SQL (WITH)',
+            'descriptions': [
+              'with문과 파티션',
+              '데이터 결과 검증'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '12 ~ 13',
+        'contents': [
+          {
+            'title': 'A/B test',
+            'descriptions': [
+              'A/B test 소개',
+              'A/B test 시스템 구성 이해',
+              'A/B test 통계 이해',
+              'A/B test 분석',
+              'A/B test 시각화'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '14',
+        'contents': [
+          {
+            'title': '리텐션(Retention) 분석',
+            'descriptions': [
+              '리텐션 분석 소개',
+              '코호트(Cohort) 분석',
+              '실제 데이터를 통한 분석'
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    'name': 'Product-Manager',
+    'about': [
+      {
+        'title': '웹/앱 기획 실습을 통한 기획의 기본 이해 학습',
+        'description': '웹/앱 기획 실습을 통해 기획의 기본 개념과 프로세스를 학습합니다.'
+      },
+      {
+        'title': '유저 중심의 서비스 기획',
+        'description': '타겟 유저의 니즈를 이해하고, 이를 반영한 서비스 기획 능력을 배양합니다.'
+      },
+      {
+        'title': '기획 문서 작성 및 관리',
+        'description': '화면정의서, 기능정의서 작성 및 프로토타입 제작 등의 기획 문서 작성 및 관리 방법을 학습합니다.'
+      }
+    ],
+    'curriculums': [
+      {
+        'week': '1',
+        'contents': [
+          {
+            'title': 'Product Manager란?',
+            'descriptions': [
+              '서비스 기획이란?',
+              '기획자는 어떤 일을 할까'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '2',
+        'contents': [
+          {
+            'title': '웹 기획',
+            'descriptions': [
+              '웹 기획 종류와 UI 특징 알아보기',
+              '웹 기획 실습'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': '앱 기획',
+            'descriptions': [
+              'iOS와 AOS의 UI와 특징 알아보기',
+              '앱 기획 실습'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '4~6',
+        'contents': [
+          {
+            'title': '유저 중심의 서비스 기획하기',
+            'descriptions': [
+              '서비스 기획의 원리 학습하기',
+              '타겟 유저 설정 방법 배우기',
+              '페르소나 정의하기',
+              '설문조사 및 질문 방법'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '7',
+        'contents': [
+          {
+            'title': '타겟 고객의 이해',
+            'descriptions': [
+              '설문조사 데이터 활용',
+              '페르소나 추가 작성',
+              '유저의 Flowchart 작성',
+              '서비스 기획의 4대 요소 정리'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '8',
+        'contents': [
+          {
+            'title': '비즈니스란 무엇일까?',
+            'descriptions': [
+              '비즈니스의 이해 및 비즈니스 모델 제작',
+              '성과 측정 지표 작성',
+              '사업기획안 작성'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '9',
+        'contents': [
+          {
+            'title': '기획의 기초 문서 작성해보기',
+            'descriptions': [
+              'PRD 작성하기',
+              'WBS란?',
+              'IA란?'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '10',
+        'contents': [
+          {
+            'title': '화면정의서란?',
+            'descriptions': [
+              'PPT 버전으로 작성하기',
+              'Figma 버전으로 작성하기'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '11',
+        'contents': [
+          {
+            'title': '기능정의서란?',
+            'descriptions': [
+              'menu tree 작성하기',
+              '정책안 작성하기',
+              '기능정의서 작성하기'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '12~13',
+        'contents': [
+          {
+            'title': '프로토타입 제작',
+            'descriptions': [
+              'Figma 활용해서 제작하기',
+              'QA & Test Case 정리'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '14',
+        'contents': [
+          {
+            'title': '역기획',
+            'descriptions': [
+              '역기획이란?',
+              '역기획 실습'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '15',
+        'contents': [
+          {
+            'title': '프로젝트 운영 방법에는 어떤 것들이 있을까',
+            'descriptions': [
+              '워터폴',
+              '디자인씽킹',
+              '애자일'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '16~17',
+        'contents': [
+          {
+            'title': '기획 A to Z 실습',
+            'descriptions': [
+              '주제 및 니즈 파악하기',
+              '유저의 니즈 및 솔루션 도출하기',
+              '문서화 작성하기',
+              '프로토타입 만들기',
+              '발표 및 피드백'
+            ]
           }
         ]
       }
