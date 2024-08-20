@@ -237,7 +237,7 @@ export default {
       else if (track === 'Design') id = 7
       else if (track === 'iOS') id = 8
       else if (track === 'Data-Analyst') selectedTrack = 'Data'
-      else if (track === 'Data-Analyst') selectedTrack = 'PM'
+      else if (track === 'Product-Manager') selectedTrack = 'PM'
       if (track) {
         if (id === undefined) {
           // let selectedTechStackData = TECH_STACK_DATA.find(item => item.name === track)
@@ -249,6 +249,7 @@ export default {
           this.teckStacks = result.data.TechStacks
         }
         let allMember = await api.getMembers()
+        console.log(allMember)
         this.members = allMember.data.filter(item => item.track === selectedTrack.split('-').join(''))
       }
       this.show = true
