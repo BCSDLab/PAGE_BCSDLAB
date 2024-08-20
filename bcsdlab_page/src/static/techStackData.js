@@ -3,12 +3,6 @@ export const TECH_STACK_DATA = [
     'name': 'Data-Analyst',
     'techStacks': [
       {
-        id: 100,
-        name: 'google-bigquery',
-        image_url: ' https://bcsdlab-storage.s3.ap-northeast-2.amazonaws.com/images/google-bigquery.png',
-        description: 'Data Tool'
-      },
-      {
         id: 101,
         name: 'Google-BigQuery',
         image_url: 'https://bcsdlab-storage.s3.ap-northeast-2.amazonaws.com/images/google-bigquery.png',

@@ -237,6 +237,7 @@ export default {
       else if (track === 'Design') id = 7
       else if (track === 'iOS') id = 8
       else if (track === 'Data-Analyst') selectedTrack = 'Data'
+      else if (track === 'Data-Analyst') selectedTrack = 'PM'
       if (track) {
         if (id === undefined) {
           // let selectedTechStackData = TECH_STACK_DATA.find(item => item.name === track)
