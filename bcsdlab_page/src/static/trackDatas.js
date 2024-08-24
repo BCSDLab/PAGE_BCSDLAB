@@ -871,118 +871,354 @@ export const trackDatas = [
     'name': 'iOS',
     'about': [
       {
-        'title': '기초 위주의 수업',
-        'description': '비기너 과정에 맞게 커리큘럼 구성'
+        'title': '사용자 인터페이스 설계',
+        'description': '다양한 UI 컴포넌트를 사용해 직관적이고 반응성이 뛰어난 iOS 애플리케이션 개발'
       },
       {
-        'title': '디자인 패턴 기반의 프로젝트',
-        'description': '실무에서의 프로젝트 구조 이해'
+        'title': '확장 가능한 모듈 설계',
+        'description': '유연한 모듈화 구조를 통해 새로운 기능 추가 및 유지보수가 용이한 앱 개발'
       },
       {
-        'title': '프로젝트 기반의 커리큘럼',
-        'description': '프로젝트 제작 과정 이해'
+        'title': 'Swift의 최신 기능 활용',
+        'description': 'Swift의 최신 기능을 사용해 빠르고 안전한 코드 작성'
       }
     ],
-    'curriculums': [
-      {
-        'week': '1~2',
-        'contents': [
-          {
-            'title': 'Swift 언어 특징 및 기본 문법',
-            'descriptions': [
-              '변수, 상수',
-              '옵셔널',
-              '함수, Closure'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '3',
-        'contents': [
-          {
-            'title': 'XCode 설치 및 프로젝트 생성',
-            'descriptions': [
-              'Xcode 설치 시 준비물',
-              'Xcode 설치',
-              'iOS 프로젝트 생성'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '4~5',
-        'contents': [
-          {
-            'title': '[프로젝트1] 인스타그램 만들기 - 화면 만들기',
-            'descriptions': [
-              '텍스트 넣기',
-              '레이아웃 구성하기',
-              '이미지 삽입하기'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '6',
-        'contents': [
-          {
-            'title': '[프로젝트1] 인스타그램 만들기 - 동작하기(1)',
-            'descriptions': [
-              'State에 대해',
-              'State에 따른 UI 변경 구현'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '7',
-        'contents': [
-          {
-            'title': '[프로젝트1] 인스타그램 만들기 - 동작하기(2)',
-            'descriptions': [
-              '여러 아이템 보여주기',
-              '다른 페이지로 이동'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '8~10',
-        'contents': [
-          {
-            'title': '[프로젝트2] 주변 식당 소개 앱 만들기 - 디자인 패턴',
-            'descriptions': [
-              '디자인 패턴에 대해',
-              'MVC, MVVM패턴의 특징과 차이점',
-              'SwiftUI에서의 MVVM 패턴 구조'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '11~13',
-        'contents': [
-          {
-            'title': '[프로젝트2] 주변 식당 소개 앱 만들기 - 라이브러리 활용',
-            'descriptions': [
-              'Cocoapod에 대해',
-              'Alamofire에 대해',
-              'API 연결'
-            ]
-          }
-        ]
-      },
-      {
-        'week': '14~',
-        'contents': [
-          {
-            'title': '최종 과제 및 회고'
-          }
-        ]
-      }
-    ]
-  },
+    {
+  "curriculums": [
+    {
+      "week": "1",
+      "contents": [
+        {
+          "title": "iOS 개발의 기본 이해 및 개발 환경 준비",
+          "descriptions": [
+            "iOS 플랫폼 개요",
+            "앱 생태계"
+          ]
+        },
+        {
+          "title": "Swift 언어의 특징",
+          "descriptions": [
+            "Objective-C",
+            "Swift의 장점"
+          ]
+        },
+        {
+          "title": "Swift 기초 문법",
+          "descriptions": [
+            "변수와 상수, 데이터 타입",
+            "배열과 딕셔너리, 집합"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "2",
+      "contents": [
+        {
+          "title": "Swift 심화 문법",
+          "descriptions": [
+            "옵셔널과 옵셔널 바인딩",
+            "접근 제어와 초기화 메서드",
+            "익스텐션",
+            "열거형(enum), 구조체(struct), 클래스(class)",
+            "프로퍼티와 메서드"
+          ]
+        },
+        {
+          "title": "메모리 구조",
+          "descriptions": [
+            "iOS의 메모리 구조",
+            "ARC",
+            "인스턴스 생성 및 소멸"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "3",
+      "contents": [
+        {
+          "title": "클로저",
+          "descriptions": [
+            "Named Closure, UnNamed Closure",
+            "캡처 리스트",
+            "Trailing Closure"
+          ]
+        },
+        {
+          "title": "프로토콜"
+        },
+        {
+          "title": "기본 UI 컴포넌트",
+          "descriptions": [
+            "UILabel",
+            "UIButton",
+            "UITextField",
+            "UIImageView",
+            "UIView"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "4",
+      "contents": [
+        {
+          "title": "iOS 앱의 생명 주기",
+          "descriptions": [
+            "Inactive, Active, Background, Suspended",
+            "AppDelegate, SceneDelegate"
+          ]
+        },
+        {
+          "title": "iOS 앱의 구조",
+          "descriptions": [
+            "스토리보드를 통한 UI 구성",
+            "Scene과 Segue"
+          ]
+        },
+        {
+          "title": "UIStackView"
+        },
+        {
+          "title": "Human Interface Guidelines"
+        }
+      ]
+    },
+    {
+      "week": "5",
+      "contents": [
+        {
+          "title": "Auto Layout과 제약 조건",
+          "descriptions": [
+            "제약 조건(Constraints) 이해 및 활용",
+            "CodeBase, StoryBoard 방식의 차이"
+          ]
+        },
+        {
+          "title": "UIKit vs SwiftUI"
+        },
+        {
+          "title": "Animation",
+          "descriptions": [
+            "UIView.animate",
+            "Core Animation"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "6",
+      "contents": [
+        {
+          "title": "NavigationController",
+          "descriptions": [
+            "Navigation Stack"
+          ]
+        },
+        {
+          "title": "ViewController LifeCycle",
+          "descriptions": [
+            "ViewDidLoad, ViewWillAppear, ViewDidAppear"
+          ]
+        },
+        {
+          "title": "객체지향 프로그래밍",
+          "descriptions": [
+            "상속, 캡슐화, 다형성, 추상화",
+            "SOLID 원칙"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "7",
+      "contents": [
+        {
+          "title": "디자인 패턴, 아키텍처",
+          "descriptions": [
+            "MVC pattern",
+            "MVVM pattern",
+            "Apple의 MVC는 무엇이 다른가"
+          ]
+        },
+        {
+          "title": "프로토콜 지향 프로그래밍",
+          "descriptions": [
+            "프로토콜을 통한 다형성 구현"
+          ]
+        },
+        {
+          "title": "Initializer Delegation"
+        }
+      ]
+    },
+    {
+      "week": "8",
+      "contents": [
+        {
+          "title": "많은 양의 데이터를 표시하는 방법",
+          "descriptions": [
+            "UICollectionView",
+            "UITableView"
+          ]
+        },
+        {
+          "title": "함수형 프로그래밍",
+          "descriptions": [
+            "고차함수",
+            "순수 함수, 불변성"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "9",
+      "contents": [
+        {
+          "title": "Swift에서 데이터를 저장하는 방법",
+          "descriptions": [
+            "SQLite",
+            "Core Data",
+            "Realm",
+            "User Defaults",
+            "Keychain"
+          ]
+        },
+        {
+          "title": "다양한 UI 컴포넌트",
+          "descriptions": [
+            "UISlider",
+            "UISwitch",
+            "UIProgressView",
+            "UIScrollView"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "10",
+      "contents": [
+        {
+          "title": "데이터 전달 방법",
+          "descriptions": [
+            "Delegate Pattern",
+            "Closure",
+            "Combine",
+            "NotificationCenter"
+          ]
+        },
+        {
+          "title": "데이터 전달 시 메모리 관리",
+          "descriptions": [
+            "weak self, unowned"
+          ]
+        },
+        {
+          "title": "API Design Guideline"
+        }
+      ]
+    },
+    {
+      "week": "11",
+      "contents": [
+        {
+          "title": "Combine 심화",
+          "descriptions": [
+            "Publisher, Subscriber",
+            "RxSwift"
+          ]
+        },
+        {
+          "title": "서드파티 라이브러리 설치 방법",
+          "descriptions": [
+            "CocoaPods",
+            "SPM",
+            "Carthage"
+          ]
+        },
+        {
+          "title": "서드파티 라이브러리",
+          "descriptions": [
+            "KingFisher",
+            "SnapKit",
+            "Alamofire"
+          ]
+        }
+      ]
+    },
+    {
+      "week": "12",
+      "contents": [
+        {
+          "title": "네트워크 요청",
+          "descriptions": [
+            "Alamofire",
+            "URLSession",
+            "Codable"
+          ]
+        },
+        {
+          "title": "에러 처리 기법",
+          "descriptions": [
+            "Result 타입"
+          ]
+        },
+        {
+          "title": "제너릭"
+        }
+      ]
+    },
+    {
+      "week": "13",
+      "contents": [
+        {
+          "title": "비동기 프로그래밍",
+          "descriptions": [
+            "GCD",
+            "OperationQueue"
+          ]
+        },
+        {
+          "title": "async / await & concurrency"
+        }
+      ]
+    },
+    {
+      "week": "14",
+      "contents": [
+        {
+          "title": "Test Code 작성",
+          "descriptions": [
+            "UnitTest",
+            "UIText",
+            "의존성 주입과 Mocking",
+            "Testable한 코드란?"
+          ]
+        },
+        {
+          "title": "SandBox의 개념"
+        }
+      ]
+    },
+    {
+      "week": "15~18",
+      "contents": [
+        {
+          "title": "프로젝트 개발"
+        }
+      ]
+    },
+    {
+      "week": "19",
+      "contents": [
+        {
+          "title": "회고"
+        }
+      ]
+    }
+  ]
+},
   {
     'name': 'Design',
     'about': [
