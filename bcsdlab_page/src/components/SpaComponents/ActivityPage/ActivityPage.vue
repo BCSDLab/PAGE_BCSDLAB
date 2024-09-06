@@ -78,7 +78,7 @@
 import * as api from '../../../api/api'
 export default {
   name: 'ActivityPage',
-  data() {
+  data () {
     return {
       msg: 'Welcome to Your Vue.js App',
       years: [2019, 2018, 2017],
@@ -87,53 +87,60 @@ export default {
       activities: null,
       activityIndex: 0,
       imageIndex: 0,
-      popupImage: null,
+      popupImage: null
     }
   },
   methods: {
     selectYear (year) {
-      this.selectedYear = year;
-      this.getActivitesOfYear(year);
+      this.selectedYear = year
+      this.getActivitesOfYear(year)
     },
     showImagePopup (index, imgIdx) {
-      console.log(index, imgIdx);
-      this.popupFlag = true;
-      this.activityIndex = index;
-      this.imageIndex = imgIdx;
-      this.popupImage = this.activities[index].image_urls[imgIdx];
+      console.log(index, imgIdx)
+      this.popupFlag = true
+      this.activityIndex = index
+      this.imageIndex = imgIdx
+      this.popupImage = this.activities[index].image_urls[imgIdx]
     },
     prev () {
-      this.imageIndex--;
+      this.imageIndex--
       if (this.imageIndex < 0) {
-        this.imageIndex = this.activities[this.activityIndex].image_urls.length - 1;
+        this.imageIndex = this.activities[this.activityIndex].image_urls.length - 1
       }
       this.popupImage = this.activities[this.activityIndex].image_urls[this.imageIndex]
     },
     next () {
-      this.imageIndex++;
-      if (this.imageIndex > this.activities[this.activityIndex].image_urls.length - 1)
-        this.imageIndex = 0;
+      this.imageIndex++
+      if (this.imageIndex > this.activities[this.activityIndex].image_urls.length - 1) { this.imageIndex = 0 }
       this.popupImage = this.activities[this.activityIndex].image_urls[this.imageIndex]
     },
     closePopup () {
-      this.popupFlag = false;
+      this.popupFlag = false
     },
-    async getActivitesOfYear(year) {
-      let result = await api.getActivites(year);
-      this.activities = result.data.Activities;
-      console.log(this.activities);
+    async getActivitesOfYear (year) {
+      let result = await api.getActivites(year)
+      this.activities = result.data.Activities
+      this.activities.forEach((item) => {
+        item.image_urls = item.image_urls.map((image) => {
+          // 불필요한 문자 제거
+          // eslint-disable-next-line no-useless-escape
+          let cleanedImage = image.replace(/[\[\]\\\""]/g, '')
+          return cleanedImage
+        })
+      })
+      console.log(this.activities)
     }
   },
   created () {
-    this.getActivitesOfYear(this.selectedYear);
+    this.getActivitesOfYear(this.selectedYear)
     // esc: 27, right: 39, left: 37
-    window.onkeydown = ((e) => {
+    window.onkeydown = (e) => {
       if (this.popupFlag) {
-        if (e.keyCode == 27) this.closePopup();
-        else if(e.keyCode == 39) this.next();
-        else if(e.keyCode == 37) this.prev();
+        if (e.keyCode === 27) this.closePopup()
+        else if (e.keyCode === 39) this.next()
+        else if (e.keyCode === 37) this.prev()
       }
-    })
+    }
   }
 }
 </script>
@@ -143,7 +150,7 @@ export default {
   .container {
     width: 100%;
   }
-  
+
   .popup-overlay {
     width: 100%;
     height: 100vh;
@@ -230,7 +237,7 @@ export default {
   .contents {
     margin-bottom: 56.5px;
   }
-  
+
   .body .contents:last-child {
     margin-bottom: 117.5px;
   }
