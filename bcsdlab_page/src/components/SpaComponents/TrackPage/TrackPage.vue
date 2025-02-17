@@ -151,7 +151,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'Design', 'Game', 'Data-Analyst', 'Product-Manager'],
+      tracks: ['Front-End', 'Back-End', 'Android', 'iOS', 'Design', 'Game', 'Data-Analyst', 'Product-Manager', 'Security'],
       selectedTrack: 'Front-End',
       aboutDatas: null,
       curriculums: null,
@@ -210,6 +210,9 @@ export default {
         case 'Product-Manager':
           this.$router.push('product-manager')
           break
+        case 'Security':
+          this.$router.push('security')
+          break
       }
     },
     contentStyle (length, index) {
@@ -238,6 +241,7 @@ export default {
       else if (track === 'iOS') id = 8
       else if (track === 'Data-Analyst') selectedTrack = 'Data'
       else if (track === 'Product-Manager') selectedTrack = 'PM'
+      else if (track === 'Security') selectedTrack = 'Security'
       if (track) {
         if (id === undefined) {
           // let selectedTechStackData = TECH_STACK_DATA.find(item => item.name === track)
@@ -282,6 +286,9 @@ export default {
       case 'product-manager':
         this.selectedTrack = 'Product-Manager'
         break
+      case 'Security':
+        this.selectedTrack = 'Security'
+        break
     }
 
     trackDatas.forEach((data) => {
@@ -321,6 +328,9 @@ export default {
         break
       case 'product-manager':
         this.selectedTrack = 'Product-Manager'
+        break
+      case 'Security':
+        this.selectedTrack = 'Security'
         break
     }
 

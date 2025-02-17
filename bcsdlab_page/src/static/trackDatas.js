@@ -1965,5 +1965,291 @@ export const trackDatas = [
         ]
       }
     ]
+  },
+  {
+    'name': 'Security',
+    'about': [
+      {
+        'title': '웹해킹 기초 및 보안 원리 학습',
+        'description': '네트워크 보안 개념과 함께 웹 서비스에서 발생할 수 있는 주요 보안 취약점 학습'
+      },
+      {
+        'title': '취약점 분석 및 공격 기법 실습',
+        'description': 'OWASP Top 10을 기반으로 다양한 웹 서비스 취약점 분석 및 모의해킹 실습'
+      },
+      {
+        'title': '보안 강화를 위한 방어 기법 적용',
+        'description': '프로젝트를 통해 보안 취약점에 대한 방어 기술 적용'
+      }
+    ],
+    'curriculums': [
+      {
+        'week': '1',
+        'contents': [
+          {
+            'title': '보안의 정의와 중요성',
+            'descriptions': [
+              '정보보안의 기본 개념(기밀성, 무결성, 가용성, 인증)',
+              '사회 공학 공격'
+            ]
+          },
+          {
+            'title': '보안 세부분야 소개',
+            'descriptions': [
+              '웹해킹',
+              '시스템해킹',
+              '리버싱 엔지니어링'
+            ]
+          },
+          {
+            'title': '로드맵(웹해킹 취약점 분석) 및 일정 소개'
+          },
+          {
+            'title': '보안 주요 개념 소개',
+            'descriptions': [
+              'OWASP TOP10',
+              '워게임, CTF',
+              '버그바운티, 제로데이'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '2',
+        'contents': [
+          {
+            'title': '네트워크 계층',
+            'descriptions': [
+              'OSI 7 Layer, TCP/IP 4 Layer'
+            ]
+          },
+          {
+            'title': 'HTTP 프로토콜',
+            'descriptions': [
+              'HTTP Request, Response',
+              'HTTP Method'
+            ]
+          },
+          {
+            'title': 'HTTPS',
+            'descriptions': [
+              'HTTP와 차이점 비교'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '3',
+        'contents': [
+          {
+            'title': '기초 프론트엔드',
+            'descriptions': [
+              'HTML, CSS, JavaScript 기초',
+              '개발자 도구(F12) 활용법'
+            ]
+          },
+          {
+            'title': '실습',
+            'descriptions': [
+              '/login 페이지 제작'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '4',
+        'contents': [
+          {
+            'title': '암호학',
+            'descriptions': [
+              '단방향 암호화(해시 함수, 솔트)',
+              '대칭키와 공개키 암호화',
+              '패스워드 관리와 인증서의 활용 분야'
+            ]
+          },
+          {
+            'title': '실습',
+            'descriptions': [
+              '해시 함수를 통한 비밀번호 유효성 검사'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '5',
+        'contents': [
+          {
+            'title': '프록시'
+          },
+          {
+            'title': '웹해킹 툴 사용',
+            'descriptions': [
+              '버프스위트의 주요 기능',
+              '관련 취약점 소개'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '6',
+        'contents': [
+          {
+            'title': '세션과 쿠키 기반 인증',
+            'descriptions': [
+              '세션 하이재킹'
+            ]
+          },
+          {
+            'title': 'JWT 기반 인증',
+            'descriptions': [
+              'JWT 취약점 (토큰 변조, 탈취, 키 관리 문제)'
+            ]
+          },
+          {
+            'title': '실습 : JWT를 활용하여 로그인하는 프로젝트의 취약점 방어'
+          }
+        ]
+      },
+      {
+        'week': '7',
+        'contents': [
+          {
+            'title': 'SOP',
+            'descriptions': [
+              'SOP의 개념'
+            ]
+          },
+          {
+            'title': 'CORS',
+            'descriptions': [
+              'CORS 동작 방식'
+            ]
+          },
+          {
+            'title': '실습 : /cross-origin 페이지 제작 후 취약점 방어',
+            'descriptions': [
+              'SOP, CORS'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '8',
+        'contents': [
+          {
+            'title': '웹해킹 분석',
+            'descriptions': [
+              'Server-Side, Client-Side 취약점 분석 소개'
+            ]
+          },
+          {
+            'title': 'XSS, CSRF, SSRF 공격 시나리오 및 방어 기법',
+            'descriptions': [
+              'XSS',
+              'CSRF',
+              'SSRF'
+            ]
+          },
+          {
+            'title': '실습 : /memo페이지 제작 후 취약점 방어',
+            'descriptions': [
+              'XSS, CSRF, SSRF'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '9',
+        'contents': [
+          {
+            'title': 'Injection이란?'
+          },
+          {
+            'title': 'SQL Injection ',
+            'descriptions': [
+              'SQL Injection 유형 분석',
+              'SQL 인젝션 방어 기법',
+              'NoSQL 인젝션 방어 기법'
+            ]
+          },
+          {
+            'title': '실습 : /login 페이지에 DB 연결 후 취약점 방어',
+            'descriptions': [
+              'SQL Injection'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '10',
+        'contents': [
+          {
+            'title': '서버 사이드 Injection 분석',
+            'descriptions': [
+              'Command Injection',
+              'Shell Injection'
+            ]
+          },
+          {
+            'title': 'XXE',
+            'descriptions': [
+              'XML External Entity'
+            ]
+          },
+          {
+            'title': '실습 : /login, /memo 페이지에서 취약점 방어',
+            'descriptions': [
+              'Injection'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '11',
+        'contents': [
+          {
+            'title': '파일 경조 조작 취약점',
+            'descriptions': [
+              'LFI',
+              'Path Traversal',
+              'PRO'
+            ]
+          },
+          {
+            'title': '실습 : /flie 페이지 제작 후 취약점 방어',
+            'descriptions': [
+              'LFI, Path Traversal, PRO'
+            ]
+          }
+        ]
+      },
+      {
+        'week': '12',
+        'contents': [
+          {
+            'title': 'DevSecOps',
+            'descriptions': [
+              'DevOps',
+              '젠킨스를 사용한 CI/CD 파이프라인 구성 실습',
+              'DevSecOps 구조'
+            ]
+          },
+          {
+            'title': '실습 : 기존 프로젝트의 취약점 방어 대책 적용'
+          }
+        ]
+      },
+      {
+        'week': '13~16',
+        'contents': [
+          {
+            'title': 'Project',
+            'descriptions': [
+              '동료 프로젝트 취약점 분석 및 보완'
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

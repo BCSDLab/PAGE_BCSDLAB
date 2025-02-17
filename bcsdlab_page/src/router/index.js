@@ -64,6 +64,10 @@ export default new Router({
         {
           path: 'product-manager',
           component: TrackPage
+        },
+        {
+          path: 'security',
+          component: TrackPage
         }
       ]
 
