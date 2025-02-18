@@ -2212,13 +2212,13 @@ export const trackDatas = [
             'descriptions': [
               'LFI',
               'Path Traversal',
-              'PRO'
+              'RPO'
             ]
           },
           {
             'title': '실습 : /flie 페이지 제작 후 취약점 방어',
             'descriptions': [
-              'LFI, Path Traversal, PRO'
+              'LFI, Path Traversal, RPO'
             ]
           }
         ]
