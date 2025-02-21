@@ -81,8 +81,8 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      years: [2019, 2018, 2017],
-      selectedYear: 2019,
+      years: [2024, 2019, 2018, 2017],
+      selectedYear: 2024,
       popupFlag: false,
       activities: null,
       activityIndex: 0,
